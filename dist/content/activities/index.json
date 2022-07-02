@@ -1,0 +1,27 @@
+[
+    {
+        "key": "climbing",
+        "name": "Klettersteig",
+        "file": "climbing.json"
+    },
+    {
+        "key": "cycling",
+        "name": "Fahrrad fahren",
+        "file": "cycling.json"
+    },
+    {
+        "key": "diving",
+        "name": "Tauchen",
+        "file": "diving.json"
+    },
+    {
+        "key": "hiking",
+        "name": "Wandern",
+        "file": "hiking.json"
+    },
+    {
+        "key": "rowing",
+        "name": "Rudern",
+        "file": "rowing.json"
+    }
+]

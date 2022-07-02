@@ -1,0 +1,22 @@
+[
+    {
+        "key": "bus",
+        "name": "Bus",
+        "file": "bus.json"
+    },
+    {
+        "key": "car",
+        "name": "Auto",
+        "file": "car.json"
+    },
+    {
+        "key": "flight",
+        "name": "Flugzeug",
+        "file": "flight.json"
+    },
+    {
+        "key": "train",
+        "name": "Zug",
+        "file": "train.json"
+    }
+]

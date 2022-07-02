@@ -1,0 +1,12 @@
+[
+    {
+        "key": "business",
+        "file": "business.json",
+        "name": "Business Trip"
+    },
+    {
+        "key": "leisure",
+        "file": "leisure.json",
+        "name": "Freizeit"
+    }
+]

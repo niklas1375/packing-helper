@@ -1,0 +1,17 @@
+[
+    {
+        "key": "cold",
+        "name": "Kaltes Wetter",
+        "file": "cold.json"
+    },
+    {
+        "key": "sunny",
+        "name": "Sonniges Wetter",
+        "file": "sunny.json"
+    },
+    {
+        "key": "wet",
+        "name": "Nasses Wetter",
+        "file": "wet.json"
+    }
+]

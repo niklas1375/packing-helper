@@ -1,0 +1,17 @@
+[
+    {
+        "key": "camping",
+        "name": "Camping",
+        "file": "camping.json"
+    },
+    {
+        "key": "hotel",
+        "name": "Hotel",
+        "file": "hotel.json"
+    },
+    {
+        "key": "huette",
+        "name": "Hütte",
+        "file": "huette.json"
+    }
+]
