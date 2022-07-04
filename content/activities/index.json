@@ -23,5 +23,10 @@
         "key": "rowing",
         "name": "Rudern",
         "file": "rowing.json"
+    },
+    {
+        "key": "concert",
+        "name": "Konzert",
+        "file": "concert.json"
     }
 ]
