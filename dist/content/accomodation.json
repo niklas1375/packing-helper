@@ -1,0 +1,92 @@
+[
+    {
+        "key": "camping",
+        "name": "Camping",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "hotel",
+        "name": "Hotel",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "huette",
+        "name": "Hütte",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    }
+]

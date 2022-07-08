@@ -1,0 +1,122 @@
+[
+    {
+        "key": "bus",
+        "name": "Bus",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "car",
+        "name": "Auto",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "flight",
+        "name": "Flugzeug",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "train",
+        "name": "Zug",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    }
+]

@@ -1,9 +1,9 @@
 import { Request, Response } from 'express'
-import accomodations from '../content/accomodation/index.json'
-import activities from '../content/activities/index.json'
-import transport from '../content/transport/index.json'
-import triptypes from '../content/types/index.json'
-import weather from '../content/weather/index.json'
+import accomodations from '../content/accomodation.json'
+import activities from '../content/activities.json'
+import transport from '../content/transport.json'
+import triptypes from '../content/tripType.json'
+import weather from '../content/weather.json'
 import { ContentType } from '../types/contentType';
 
 function getAccomodationTypes(_: Request, res: Response) {

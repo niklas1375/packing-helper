@@ -1,0 +1,190 @@
+[
+    {
+        "key": "climbing",
+        "name": "Klettersteig",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Jacke"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Handschuhe"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "cycling",
+        "name": "Fahrrad fahren",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "diving",
+        "name": "Tauchen",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "hiking",
+        "name": "Wandern",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "rowing",
+        "name": "Rudern",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "concert",
+        "name": "Konzert",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    }
+]

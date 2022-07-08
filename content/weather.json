@@ -1,0 +1,122 @@
+[
+    {
+        "key": "cold",
+        "name": "Kaltes Wetter",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "sunny",
+        "name": "Sonniges Wetter",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "warm",
+        "name": "Warmes Wetter",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
+        "key": "wet",
+        "name": "Nasses Wetter",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    }
+]
