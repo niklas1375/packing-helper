@@ -23,8 +23,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.staticContent = exports.compiler = void 0;
+exports.todoist = exports.staticContent = exports.compiler = void 0;
 const compiler = __importStar(require("./compiler"));
 exports.compiler = compiler;
 const staticContent = __importStar(require("./static"));
 exports.staticContent = staticContent;
+const todoist = __importStar(require("./todoist"));
+exports.todoist = todoist;

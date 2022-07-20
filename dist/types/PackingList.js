@@ -10,6 +10,29 @@ class PackingList {
         this.entertainment.content = this.entertainment.content.concat(additionalList.entertainment.content);
         this.other.content = this.other.content.concat(additionalList.other.content);
     }
-    convertToTodoistJSON() { } // any just for now -> from lib?
+    convertToTodoistJSON() {
+        return [
+            this.clothing,
+            this.entertainment,
+            this.gear,
+            this.organisational,
+            this.toiletries,
+            this.other,
+        ].map((category) => {
+            return {
+                task: {
+                    content: category.name,
+                },
+                subTasks: category.content.map((item) => {
+                    const taskString = item.dayModifier && item.dayModifier > 0
+                        ? item.dayModifier + "x " + item.name
+                        : item.name;
+                    return {
+                        content: taskString
+                    };
+                }),
+            };
+        });
+    }
 }
 exports.PackingList = PackingList;
