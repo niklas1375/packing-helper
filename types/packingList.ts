@@ -34,7 +34,7 @@ export class PackingList implements IPackingList {
     );
   }
 
-  convertToTodoistJSON(): any {
+  convertToTodoistJSON(tripLength: number): any {
     return [
       this.clothing,
       this.entertainment,
@@ -51,13 +51,13 @@ export class PackingList implements IPackingList {
           // TODO: Day modifier mit Trip Länge kombinieren
           const taskString =
             item.dayModifier && item.dayModifier > 0
-              ? item.dayModifier + "x " + item.name
+              ? item.dayModifier * tripLength + "x " + item.name
               : item.name;
           return {
             content: taskString
           };
         }),
       };
-    });
+    }).filter(mainTask => (mainTask.subTasks && mainTask.subTasks.length > 0));
   }
 }

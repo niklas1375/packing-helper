@@ -16,12 +16,38 @@ const TODOIST_API_TOKEN = process.env.TODOIST_API_TOKEN || "";
 const api = new todoist_api_typescript_1.TodoistApi(TODOIST_API_TOKEN);
 function submitTasks(req, res) {
     const packingList = new packingList_1.PackingList();
-    Object.assign(packingList, req.body);
-    res.json(packingList.convertToTodoistJSON());
+    Object.assign(packingList, req.body.packingList);
+    const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
+    console.log(req.body.tripName);
+    api.addTask({
+        content: "Packen für " + req.body.tripName,
+        dueDate: _getDueDate(req.body.tripBeginDate)
+    }).then((rootTask) => {
+        // await _traverseTasks(todoistJson, rootTask.id);
+        // res.status(201);
+        // res.send("Created");
+        res.json(rootTask);
+    }).catch((error) => {
+        console.log(error);
+    });
 }
 exports.submitTasks = submitTasks;
-function _createDeepTasks(task) {
+function _traverseTasks(todoistJSON, rootTaskId) {
     return __awaiter(this, void 0, void 0, function* () {
-        return api.addTask(task);
+        const innerPromiseArray = [];
+        for (let mainTask of todoistJSON) {
+            mainTask.parent_id = rootTaskId;
+            const createdTask = yield api.addTask(mainTask);
+            for (let subTask of mainTask.subTasks) {
+                subTask.parent_id = createdTask.id;
+                innerPromiseArray.push(api.addTask(subTask));
+            }
+        }
+        return Promise.all(innerPromiseArray);
     });
+}
+function _getDueDate(tripBeginDate) {
+    const tripDate = new Date(tripBeginDate);
+    tripDate.setDate(tripDate.getDate() - 1);
+    return tripDate.toISOString().split("T")[0];
 }

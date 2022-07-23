@@ -1,5 +1,53 @@
 [
     {
+        "key": "bouldering",
+        "name": "Bouldern",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Sportshirt"
+                    },
+                    {
+                        "name": "Sporthose kurz/lang"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": [
+                    {
+                        "name": "Handcreme"
+                    }
+                ]
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Boulderschuhe"
+                    },
+                    {
+                        "name": "Chalkbag"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
         "key": "climbing",
         "name": "Klettersteig",
         "content": {

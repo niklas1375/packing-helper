@@ -10,7 +10,7 @@ class PackingList {
         this.entertainment.content = this.entertainment.content.concat(additionalList.entertainment.content);
         this.other.content = this.other.content.concat(additionalList.other.content);
     }
-    convertToTodoistJSON() {
+    convertToTodoistJSON(tripLength) {
         return [
             this.clothing,
             this.entertainment,
@@ -24,15 +24,16 @@ class PackingList {
                     content: category.name,
                 },
                 subTasks: category.content.map((item) => {
+                    // TODO: Day modifier mit Trip Länge kombinieren
                     const taskString = item.dayModifier && item.dayModifier > 0
-                        ? item.dayModifier + "x " + item.name
+                        ? item.dayModifier * tripLength + "x " + item.name
                         : item.name;
                     return {
                         content: taskString
                     };
                 }),
             };
-        });
+        }).filter(mainTask => (mainTask.subTasks && mainTask.subTasks.length > 0));
     }
 }
 exports.PackingList = PackingList;
