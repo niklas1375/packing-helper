@@ -14,10 +14,14 @@ function submitTasks(req: Request, res: Response) {
     content: "Packen für " + req.body.tripName,
     dueDate: _getDueDate(req.body.tripBeginDate)
   }).then((rootTask) => {
-    // await _traverseTasks(todoistJson, rootTask.id);
-    // res.status(201);
-    // res.send("Created");
-    res.json(rootTask)
+    _traverseTasks(todoistJson, rootTask.id).then(() => {
+      res.status(201);
+      res.send("Created");
+    }).catch((error) => {
+      console.log(error);
+      res.status(500);
+      res.send("Error. See logs for details.");
+    });
   }).catch((error) => {
     console.log(error);
   });
@@ -26,10 +30,10 @@ function submitTasks(req: Request, res: Response) {
 async function _traverseTasks(todoistJSON: any[], rootTaskId: number) {
   const innerPromiseArray = [];
   for (let mainTask of todoistJSON) {
-    mainTask.parent_id = rootTaskId;
-    const createdTask = await api.addTask(mainTask);
+    mainTask.task.parentId = rootTaskId;
+    const createdTask = await api.addTask(mainTask.task);
     for (let subTask of mainTask.subTasks) {
-      subTask.parent_id = createdTask.id;
+      subTask.parentId = createdTask.id;
       innerPromiseArray.push(api.addTask(subTask));
     }
   }
