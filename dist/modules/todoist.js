@@ -36,15 +36,15 @@ function submitTasks(req, res) {
     });
 }
 exports.submitTasks = submitTasks;
-function _traverseTasks(todoistJSON, rootTaskId) {
+function _traverseTasks(todoistJSON, parentTaskId) {
     return __awaiter(this, void 0, void 0, function* () {
         const innerPromiseArray = [];
-        for (let mainTask of todoistJSON) {
-            mainTask.task.parentId = rootTaskId;
-            const createdTask = yield api.addTask(mainTask.task);
-            for (let subTask of mainTask.subTasks) {
-                subTask.parentId = createdTask.id;
-                innerPromiseArray.push(api.addTask(subTask));
+        for (let jsonTask of todoistJSON) {
+            const task = jsonTask.task ? jsonTask.task : jsonTask;
+            task.parentId = parentTaskId;
+            const createdTask = yield api.addTask(task);
+            if (jsonTask.subTasks && jsonTask.subTasks.length > 0) {
+                innerPromiseArray.push(_traverseTasks(jsonTask.subTasks, createdTask.id));
             }
         }
         return Promise.all(innerPromiseArray);

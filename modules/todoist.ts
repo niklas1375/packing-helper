@@ -9,7 +9,6 @@ function submitTasks(req: Request, res: Response) {
   const packingList = new PackingList();
   Object.assign(packingList, req.body.packingList);
   const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
-  console.log(req.body.tripName);
   api.addTask({
     content: "Packen für " + req.body.tripName,
     dueDate: _getDueDate(req.body.tripBeginDate)
@@ -27,14 +26,14 @@ function submitTasks(req: Request, res: Response) {
   });
 }
 
-async function _traverseTasks(todoistJSON: any[], rootTaskId: number) {
+async function _traverseTasks(todoistJSON: any[], parentTaskId: number): Promise<any []> {
   const innerPromiseArray = [];
-  for (let mainTask of todoistJSON) {
-    mainTask.task.parentId = rootTaskId;
-    const createdTask = await api.addTask(mainTask.task);
-    for (let subTask of mainTask.subTasks) {
-      subTask.parentId = createdTask.id;
-      innerPromiseArray.push(api.addTask(subTask));
+  for (let jsonTask of todoistJSON) {
+    const task = jsonTask.task ? jsonTask.task : jsonTask;
+    task.parentId = parentTaskId;
+    const createdTask = await api.addTask(task);
+    if (jsonTask.subTasks && jsonTask.subTasks.length > 0) {
+      innerPromiseArray.push(_traverseTasks(jsonTask.subTasks, createdTask.id));
     }
   }
   return Promise.all(innerPromiseArray);
