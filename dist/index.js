@@ -32,8 +32,10 @@ const port = 3000;
 const routes = __importStar(require("./routes"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-routes.register(app);
-// run server 
+const router = express_1.default.Router();
+routes.register(router);
+app.use("/api", router);
+// run server
 app.listen(port, () => {
     console.log(`[server]: Server is running at https://localhost:${port}`);
 });

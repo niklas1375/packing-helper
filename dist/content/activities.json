@@ -30,6 +30,9 @@
                     },
                     {
                         "name": "Chalkbag"
+                    },
+                    {
+                        "name": "Fingertape"
                     }
                 ]
             },
@@ -67,7 +70,7 @@
                 "name": "Ausrüstung",
                 "content": [
                     {
-                        "name": "Handschuhe"
+                        "name": "Fingerhandschuhe"
                     }
                 ]
             },
@@ -159,7 +162,11 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Stirnlampe"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
