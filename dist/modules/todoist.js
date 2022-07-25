@@ -18,7 +18,6 @@ function submitTasks(req, res) {
     const packingList = new packingList_1.PackingList();
     Object.assign(packingList, req.body.packingList);
     const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
-    console.log(req.body.tripName);
     api.addTask({
         content: "Packen für " + req.body.tripName,
         dueDate: _getDueDate(req.body.tripBeginDate)
