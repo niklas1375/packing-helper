@@ -1,5 +1,50 @@
 [
     {
+        "key": "beach",
+        "name": "Strand",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Badehose"
+                    },
+                    {
+                        "name": "Badelatschen"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": [
+                    {
+                        "name": "Sonnencreme"
+                    }
+                ]
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Strandtuch"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
         "key": "bouldering",
         "name": "Bouldern",
         "content": {
