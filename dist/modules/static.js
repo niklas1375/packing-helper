@@ -30,10 +30,16 @@ function getWeatherTypes(_, res) {
 }
 exports.getWeatherTypes = getWeatherTypes;
 function _getTypesFromJSON(typesJSON) {
-    return typesJSON.map(typeJSON => {
+    return typesJSON
+        .map((typeJSON) => {
         return {
-            "key": typeJSON.key,
-            "name": typeJSON.name
+            key: typeJSON.key,
+            name: typeJSON.name,
         };
+    })
+        .sort((itemA, itemB) => {
+        if ((itemA.name === itemB.name))
+            return 0;
+        return itemA.name > itemB.name ? 1 : -1;
     });
 }

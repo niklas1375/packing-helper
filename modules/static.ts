@@ -1,44 +1,49 @@
-import { Request, Response } from 'express'
-import accomodations from '../content/accomodation.json'
-import activities from '../content/activities.json'
-import transport from '../content/transport.json'
-import triptypes from '../content/tripType.json'
-import weather from '../content/weather.json'
-import { ContentType } from '../types/contentType';
+import { Request, Response } from "express";
+import accomodations from "../content/accomodation.json";
+import activities from "../content/activities.json";
+import transport from "../content/transport.json";
+import triptypes from "../content/tripType.json";
+import weather from "../content/weather.json";
+import { ContentType } from "../types/contentType";
 
 function getAccomodationTypes(_: Request, res: Response) {
-    res.json(_getTypesFromJSON(accomodations))
+  res.json(_getTypesFromJSON(accomodations));
 }
 
 function getActivityTypes(_: Request, res: Response) {
-    res.json(_getTypesFromJSON(activities));
+  res.json(_getTypesFromJSON(activities));
 }
 
 function getTransportTypes(_: Request, res: Response) {
-    res.json(_getTypesFromJSON(transport));
+  res.json(_getTypesFromJSON(transport));
 }
 
 function getTripTypes(_: Request, res: Response) {
-    res.json(_getTypesFromJSON(triptypes));
+  res.json(_getTypesFromJSON(triptypes));
 }
 
 function getWeatherTypes(_: Request, res: Response) {
-    res.json(_getTypesFromJSON(weather));
+  res.json(_getTypesFromJSON(weather));
 }
 
 function _getTypesFromJSON(typesJSON: ContentType[]) {
-    return typesJSON.map(typeJSON => {
-        return {
-            "key": typeJSON.key,
-            "name": typeJSON.name
-        }
+  return typesJSON
+    .map((typeJSON) => {
+      return {
+        key: typeJSON.key,
+        name: typeJSON.name,
+      };
     })
+    .sort((itemA, itemB) => {
+      if ((itemA.name === itemB.name)) return 0;
+      return itemA.name > itemB.name ? 1 : -1;
+    });
 }
 
 export {
-    getAccomodationTypes,
-    getActivityTypes,
-    getTransportTypes,
-    getTripTypes,
-    getWeatherTypes,
-}
+  getAccomodationTypes,
+  getActivityTypes,
+  getTransportTypes,
+  getTripTypes,
+  getWeatherTypes,
+};
