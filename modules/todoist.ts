@@ -9,24 +9,35 @@ function submitTasks(req: Request, res: Response) {
   const packingList = new PackingList();
   Object.assign(packingList, req.body.packingList);
   const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
-  api.addTask({
-    content: "Packen für " + req.body.tripName,
-    dueDate: _getDueDate(req.body.tripBeginDate)
-  }).then((rootTask) => {
-    _traverseTasks(todoistJson, rootTask.id).then(() => {
-      res.status(201);
-      res.send("Created");
-    }).catch((error) => {
+  api
+    .addTask({
+      content: "Packen für " + req.body.tripName,
+      dueDate: _getDueDate(req.body.tripBeginDate),
+    })
+    .then((rootTask) => {
+      _traverseTasks(todoistJson, rootTask.id)
+        .then(() => {
+          res.status(201);
+          res.json({
+            status: 201,
+            text: "Created",
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+          res.status(500);
+          res.send("Error. See logs for details.");
+        });
+    })
+    .catch((error) => {
       console.log(error);
-      res.status(500);
-      res.send("Error. See logs for details.");
     });
-  }).catch((error) => {
-    console.log(error);
-  });
 }
 
-async function _traverseTasks(todoistJSON: any[], parentTaskId: number): Promise<any []> {
+async function _traverseTasks(
+  todoistJSON: any[],
+  parentTaskId: number
+): Promise<any[]> {
   const innerPromiseArray = [];
   for (let jsonTask of todoistJSON) {
     const task = jsonTask.task ? jsonTask.task : jsonTask;

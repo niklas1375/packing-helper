@@ -18,19 +18,27 @@ function submitTasks(req, res) {
     const packingList = new packingList_1.PackingList();
     Object.assign(packingList, req.body.packingList);
     const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
-    api.addTask({
+    api
+        .addTask({
         content: "Packen für " + req.body.tripName,
-        dueDate: _getDueDate(req.body.tripBeginDate)
-    }).then((rootTask) => {
-        _traverseTasks(todoistJson, rootTask.id).then(() => {
+        dueDate: _getDueDate(req.body.tripBeginDate),
+    })
+        .then((rootTask) => {
+        _traverseTasks(todoistJson, rootTask.id)
+            .then(() => {
             res.status(201);
-            res.send("Created");
-        }).catch((error) => {
+            res.json({
+                status: 201,
+                text: "Created",
+            });
+        })
+            .catch((error) => {
             console.log(error);
             res.status(500);
             res.send("Error. See logs for details.");
         });
-    }).catch((error) => {
+    })
+        .catch((error) => {
         console.log(error);
     });
 }
