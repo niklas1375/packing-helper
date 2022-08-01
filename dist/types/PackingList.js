@@ -10,6 +10,26 @@ class PackingList {
         this.entertainment.content = this.entertainment.content.concat(additionalList.entertainment.content);
         this.other.content = this.other.content.concat(additionalList.other.content);
     }
+    removeDuplicates() {
+        this.clothing.content = this._filterArrayDuplicates(this.clothing.content);
+        this.toiletries.content = this._filterArrayDuplicates(this.toiletries.content);
+        this.gear.content = this._filterArrayDuplicates(this.gear.content);
+        this.organisational.content = this._filterArrayDuplicates(this.organisational.content);
+        this.entertainment.content = this._filterArrayDuplicates(this.entertainment.content);
+        this.other.content = this._filterArrayDuplicates(this.other.content);
+    }
+    _filterArrayDuplicates(items) {
+        const keeperObject = {};
+        return items.filter((item) => {
+            if (keeperObject.hasOwnProperty(item.name)) {
+                return false;
+            }
+            else {
+                keeperObject[item.name] = true;
+                return true;
+            }
+        });
+    }
     convertToTodoistJSON(tripLength) {
         return [
             this.clothing,
@@ -18,7 +38,8 @@ class PackingList {
             this.organisational,
             this.toiletries,
             this.other,
-        ].map((category) => {
+        ]
+            .map((category) => {
             return {
                 task: {
                     content: category.name,
@@ -29,11 +50,12 @@ class PackingList {
                         ? item.dayModifier * tripLength + "x " + item.name
                         : item.name;
                     return {
-                        content: taskString
+                        content: taskString,
                     };
                 }),
             };
-        }).filter(mainTask => (mainTask.subTasks && mainTask.subTasks.length > 0));
+        })
+            .filter((mainTask) => mainTask.subTasks && mainTask.subTasks.length > 0);
     }
 }
 exports.PackingList = PackingList;

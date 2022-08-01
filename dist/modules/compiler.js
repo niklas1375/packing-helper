@@ -33,6 +33,7 @@ function compileListFromSelections(req, res) {
     [actChoices, weatherSelection].forEach((list) => list.forEach((choice) => {
         packingList.addPackingList(choice.content);
     }));
+    packingList.removeDuplicates();
     res.json(packingList);
 }
 exports.compileListFromSelections = compileListFromSelections;

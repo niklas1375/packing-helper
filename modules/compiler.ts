@@ -49,6 +49,8 @@ function compileListFromSelections(req: Request, res: Response) {
     })
   );
 
+  packingList.removeDuplicates();
+
   res.json(packingList);
 }
 

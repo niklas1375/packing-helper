@@ -34,6 +34,38 @@ export class PackingList implements IPackingList {
     );
   }
 
+  removeDuplicates() {
+    this.clothing.content = this._filterArrayDuplicates(this.clothing.content);
+
+    this.toiletries.content = this._filterArrayDuplicates(
+      this.toiletries.content
+    );
+
+    this.gear.content = this._filterArrayDuplicates(this.gear.content);
+
+    this.organisational.content = this._filterArrayDuplicates(
+      this.organisational.content
+    );
+
+    this.entertainment.content = this._filterArrayDuplicates(
+      this.entertainment.content
+    );
+
+    this.other.content = this._filterArrayDuplicates(this.other.content);
+  }
+
+  _filterArrayDuplicates(items: PackingItem[]): PackingItem[] {
+    const keeperObject: any = {};
+    return items.filter((item: PackingItem) => {
+      if (keeperObject.hasOwnProperty(item.name)) {
+        return false;
+      } else {
+        keeperObject[item.name as keyof {}] = true;
+        return true;
+      }
+    });
+  }
+
   convertToTodoistJSON(tripLength: number): any {
     return [
       this.clothing,
@@ -42,22 +74,24 @@ export class PackingList implements IPackingList {
       this.organisational,
       this.toiletries,
       this.other,
-    ].map((category: PackingCategory) => {
-      return {
-        task: {
-          content: category.name,
-        },
-        subTasks: category.content.map((item: PackingItem) => {
-          // TODO: Day modifier mit Trip Länge kombinieren
-          const taskString =
-            item.dayModifier && item.dayModifier > 0
-              ? item.dayModifier * tripLength + "x " + item.name
-              : item.name;
-          return {
-            content: taskString
-          };
-        }),
-      };
-    }).filter(mainTask => (mainTask.subTasks && mainTask.subTasks.length > 0));
+    ]
+      .map((category: PackingCategory) => {
+        return {
+          task: {
+            content: category.name,
+          },
+          subTasks: category.content.map((item: PackingItem) => {
+            // TODO: Day modifier mit Trip Länge kombinieren
+            const taskString =
+              item.dayModifier && item.dayModifier > 0
+                ? item.dayModifier * tripLength + "x " + item.name
+                : item.name;
+            return {
+              content: taskString,
+            };
+          }),
+        };
+      })
+      .filter((mainTask) => mainTask.subTasks && mainTask.subTasks.length > 0);
   }
 }
