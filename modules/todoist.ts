@@ -1,4 +1,4 @@
-import { Task, TodoistApi } from "@doist/todoist-api-typescript";
+import { TodoistApi } from "@doist/todoist-api-typescript";
 import { Request, Response } from "express";
 import { PackingList } from "../types/packingList";
 
