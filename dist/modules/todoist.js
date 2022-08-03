@@ -12,19 +12,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.submitTasks = void 0;
 const todoist_api_typescript_1 = require("@doist/todoist-api-typescript");
 const packingList_1 = require("../types/packingList");
-const TODOIST_API_TOKEN = process.env.TODOIST_API_TOKEN || "";
-const api = new todoist_api_typescript_1.TodoistApi(TODOIST_API_TOKEN);
 function submitTasks(req, res) {
     const packingList = new packingList_1.PackingList();
     Object.assign(packingList, req.body.packingList);
     const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
+    const api = _getTodoistApi(req, res);
+    if (api == undefined) {
+        return;
+    }
     api
         .addTask({
         content: "Packen für " + req.body.tripName,
         dueDate: _getDueDate(req.body.tripBeginDate),
     })
         .then((rootTask) => {
-        _traverseTasks(todoistJson, rootTask.id)
+        _traverseTasks(todoistJson, rootTask.id, api)
             .then(() => {
             res.status(201);
             res.json({
@@ -43,7 +45,7 @@ function submitTasks(req, res) {
     });
 }
 exports.submitTasks = submitTasks;
-function _traverseTasks(todoistJSON, parentTaskId) {
+function _traverseTasks(todoistJSON, parentTaskId, api) {
     return __awaiter(this, void 0, void 0, function* () {
         const innerPromiseArray = [];
         for (let jsonTask of todoistJSON) {
@@ -51,7 +53,7 @@ function _traverseTasks(todoistJSON, parentTaskId) {
             task.parentId = parentTaskId;
             const createdTask = yield api.addTask(task);
             if (jsonTask.subTasks && jsonTask.subTasks.length > 0) {
-                innerPromiseArray.push(_traverseTasks(jsonTask.subTasks, createdTask.id));
+                innerPromiseArray.push(_traverseTasks(jsonTask.subTasks, createdTask.id, api));
             }
         }
         return Promise.all(innerPromiseArray);
@@ -61,4 +63,13 @@ function _getDueDate(tripBeginDate) {
     const tripDate = new Date(tripBeginDate);
     tripDate.setDate(tripDate.getDate() - 1);
     return tripDate.toISOString().split("T")[0];
+}
+function _getTodoistApi(req, res) {
+    if (req.session.todoist_token) {
+        return new todoist_api_typescript_1.TodoistApi(req.session.todoist_token);
+    }
+    else {
+        res.redirect("/auth/login");
+        return undefined;
+    }
 }
