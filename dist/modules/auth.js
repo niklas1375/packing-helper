@@ -19,13 +19,18 @@ function loginRedirect(req, res) {
     if (req.session.todoist_token) {
         res.status(200);
         res.send({
-            message: "logged in",
+            loggedIn: true
         });
         return;
     }
     const stateUUID = (0, uuid_1.v4)();
     req.session.state_token = stateUUID;
-    res.redirect(`https://todoist.com/oauth/authorize?client_id=${process.env.TODOIST_CLIENT_ID}&scope=${process.env.TODOIST_SCOPES}&state=${stateUUID}`);
+    res.json({
+        loggedIn: false,
+        client_id: process.env.TODOIST_CLIENT_ID,
+        scopes: process.env.TODOIST_SCOPES,
+        state: stateUUID
+    });
 }
 exports.loginRedirect = loginRedirect;
 function loginCallback(req, res) {
@@ -66,3 +71,4 @@ function logout(req, res) {
     });
 }
 exports.logout = logout;
+//# sourceMappingURL=auth.js.map

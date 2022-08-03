@@ -6,15 +6,18 @@ export function loginRedirect(req: Request, res: Response) {
   if (req.session.todoist_token) {
     res.status(200);
     res.send({
-      message: "logged in",
+      loggedIn: true
     });
     return;
   }
   const stateUUID = uuid();
   req.session.state_token = stateUUID;
-  res.redirect(
-    `https://todoist.com/oauth/authorize?client_id=${process.env.TODOIST_CLIENT_ID}&scope=${process.env.TODOIST_SCOPES}&state=${stateUUID}`
-  );
+  res.json({
+    loggedIn: false,
+    client_id: process.env.TODOIST_CLIENT_ID,
+    scopes: process.env.TODOIST_SCOPES,
+    state: stateUUID
+  });
 }
 
 export async function loginCallback(req: Request, res: Response) {

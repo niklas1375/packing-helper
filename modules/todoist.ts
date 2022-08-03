@@ -32,6 +32,8 @@ function submitTasks(req: Request, res: Response) {
     })
     .catch((error) => {
       console.log(error);
+      res.status(500);
+      res.send("Error. See logs for details.");
     });
 }
 

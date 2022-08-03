@@ -8,3 +8,4 @@ const register = (app) => {
     app.get('/auth/logout', modules_1.auth.logout);
 };
 exports.register = register;
+//# sourceMappingURL=auth.js.map

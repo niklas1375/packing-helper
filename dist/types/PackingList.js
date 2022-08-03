@@ -59,3 +59,4 @@ class PackingList {
     }
 }
 exports.PackingList = PackingList;
+//# sourceMappingURL=packingList.js.map

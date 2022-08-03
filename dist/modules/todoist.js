@@ -42,6 +42,8 @@ function submitTasks(req, res) {
     })
         .catch((error) => {
         console.log(error);
+        res.status(500);
+        res.send("Error. See logs for details.");
     });
 }
 exports.submitTasks = submitTasks;
@@ -73,3 +75,4 @@ function _getTodoistApi(req, res) {
         return undefined;
     }
 }
+//# sourceMappingURL=todoist.js.map

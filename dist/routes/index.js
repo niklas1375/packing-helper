@@ -35,3 +35,4 @@ const register = (app) => {
     auth.register(app);
 };
 exports.register = register;
+//# sourceMappingURL=index.js.map
