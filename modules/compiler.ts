@@ -26,7 +26,7 @@ function compileListFromSelections(req: Request, res: Response) {
     (entry) => entry.key === choices.accomodation
   );
   const actChoices = activitiesList.filter((entry) =>
-    choices.activities.includes(entry.key)
+    choices.activities?.includes(entry.key)
   );
   const transportChoice = transportList.find(
     (entry) => entry.key === choices.transport
@@ -35,7 +35,7 @@ function compileListFromSelections(req: Request, res: Response) {
     (entry) => entry.key === choices.triptype
   );
   const weatherSelection = weatherList.filter((entry) =>
-    choices.weather.includes(entry.key)
+    choices.weather?.includes(entry.key)
   );
 
   [accChoice, transportChoice, tripChoice].forEach((choice) => {
