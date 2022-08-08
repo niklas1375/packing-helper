@@ -24,7 +24,7 @@ if (process.env.CONTAINER_RUN && process.env.CONTAINER_RUN == "1") {
 
 function read(secretName: string): string {
   try {
-    return fs.readFileSync(`/run/secrets/${secretName}`, "utf8");
+    return fs.readFileSync(`/run/secrets/${secretName}`, "utf8").trim();
   } catch (err: any) {
     if (err["code" as keyof {}] !== "ENOENT") {
       console.error(
