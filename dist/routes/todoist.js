@@ -6,3 +6,4 @@ const register = (app) => {
     app.post('/submitTasks', modules_1.todoist.submitTasks);
 };
 exports.register = register;
+//# sourceMappingURL=todoist.js.map

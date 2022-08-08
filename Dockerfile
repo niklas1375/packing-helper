@@ -13,4 +13,5 @@ COPY package* ./
 RUN npm install --production
 COPY --from=packing-helper-build ./app/dist ./dist
 EXPOSE 3000
+ENV CONTAINER_RUN 1
 CMD ["npm", "start"]

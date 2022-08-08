@@ -21,10 +21,10 @@ function compileListFromSelections(req, res) {
     const weatherList = weather_json_1.default;
     const choices = req.body;
     const accChoice = accomodationsList.find((entry) => entry.key === choices.accomodation);
-    const actChoices = activitiesList.filter((entry) => choices.activities.includes(entry.key));
+    const actChoices = activitiesList.filter((entry) => { var _a; return (_a = choices.activities) === null || _a === void 0 ? void 0 : _a.includes(entry.key); });
     const transportChoice = transportList.find((entry) => entry.key === choices.transport);
     const tripChoice = triptypesList.find((entry) => entry.key === choices.triptype);
-    const weatherSelection = weatherList.filter((entry) => choices.weather.includes(entry.key));
+    const weatherSelection = weatherList.filter((entry) => { var _a; return (_a = choices.weather) === null || _a === void 0 ? void 0 : _a.includes(entry.key); });
     [accChoice, transportChoice, tripChoice].forEach((choice) => {
         if (!!choice)
             return;
@@ -37,3 +37,4 @@ function compileListFromSelections(req, res) {
     res.json(packingList);
 }
 exports.compileListFromSelections = compileListFromSelections;
+//# sourceMappingURL=compiler.js.map

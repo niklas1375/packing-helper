@@ -27,9 +27,12 @@ exports.register = void 0;
 const compiler = __importStar(require("./compiler"));
 const staticContent = __importStar(require("./static"));
 const todoist = __importStar(require("./todoist"));
+const auth = __importStar(require("./auth"));
 const register = (app) => {
     compiler.register(app);
     staticContent.register(app);
     todoist.register(app);
+    auth.register(app);
 };
 exports.register = register;
+//# sourceMappingURL=index.js.map

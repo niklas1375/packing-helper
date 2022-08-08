@@ -6,3 +6,4 @@ const register = (app) => {
     app.post('/compile', modules_1.compiler.compileListFromSelections);
 };
 exports.register = register;
+//# sourceMappingURL=compiler.js.map

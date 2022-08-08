@@ -1,5 +1,7 @@
 import express from "express";
+import session from "express-session";
 import "dotenv/config";
+import { sessionSecret } from "./modules/secret-config";
 
 const port = 3000;
 
@@ -8,6 +10,18 @@ import * as routes from "./routes";
 const app = express();
 
 app.use(express.json());
+
+app.use(
+  session({
+    secret: sessionSecret,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: "auto",
+      maxAge: 3600000,
+    },
+  })
+);
 
 const router = express.Router();
 routes.register(router);

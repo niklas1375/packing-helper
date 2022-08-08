@@ -12,19 +12,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.submitTasks = void 0;
 const todoist_api_typescript_1 = require("@doist/todoist-api-typescript");
 const packingList_1 = require("../types/packingList");
-const TODOIST_API_TOKEN = process.env.TODOIST_API_TOKEN || "";
-const api = new todoist_api_typescript_1.TodoistApi(TODOIST_API_TOKEN);
+const secret_config_1 = require("./secret-config");
 function submitTasks(req, res) {
     const packingList = new packingList_1.PackingList();
     Object.assign(packingList, req.body.packingList);
     const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
+    const api = _getTodoistApi(req, res);
+    if (api == undefined) {
+        return;
+    }
     api
         .addTask({
         content: "Packen für " + req.body.tripName,
         dueDate: _getDueDate(req.body.tripBeginDate),
     })
         .then((rootTask) => {
-        _traverseTasks(todoistJson, rootTask.id)
+        _traverseTasks(todoistJson, rootTask.id, api)
             .then(() => {
             res.status(201);
             res.json({
@@ -40,10 +43,12 @@ function submitTasks(req, res) {
     })
         .catch((error) => {
         console.log(error);
+        res.status(500);
+        res.send("Error. See logs for details.");
     });
 }
 exports.submitTasks = submitTasks;
-function _traverseTasks(todoistJSON, parentTaskId) {
+function _traverseTasks(todoistJSON, parentTaskId, api) {
     return __awaiter(this, void 0, void 0, function* () {
         const innerPromiseArray = [];
         for (let jsonTask of todoistJSON) {
@@ -51,7 +56,7 @@ function _traverseTasks(todoistJSON, parentTaskId) {
             task.parentId = parentTaskId;
             const createdTask = yield api.addTask(task);
             if (jsonTask.subTasks && jsonTask.subTasks.length > 0) {
-                innerPromiseArray.push(_traverseTasks(jsonTask.subTasks, createdTask.id));
+                innerPromiseArray.push(_traverseTasks(jsonTask.subTasks, createdTask.id, api));
             }
         }
         return Promise.all(innerPromiseArray);
@@ -62,3 +67,15 @@ function _getDueDate(tripBeginDate) {
     tripDate.setDate(tripDate.getDate() - 1);
     return tripDate.toISOString().split("T")[0];
 }
+function _getTodoistApi(req, res) {
+    // TODO: remove personal fallback token once https://github.com/Doist/todoist-api-typescript/issues/117 is resolved
+    const token = secret_config_1.fallbackTodoistApiToken; // req.session.todoist_token
+    if (token && token.length > 0) {
+        return new todoist_api_typescript_1.TodoistApi(token);
+    }
+    else {
+        res.redirect("/auth/login");
+        return undefined;
+    }
+}
+//# sourceMappingURL=todoist.js.map

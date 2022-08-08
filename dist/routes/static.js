@@ -10,3 +10,4 @@ const register = (app) => {
     app.get('/weather', modules_1.staticContent.getWeatherTypes);
 };
 exports.register = register;
+//# sourceMappingURL=static.js.map

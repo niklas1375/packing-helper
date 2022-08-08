@@ -43,3 +43,4 @@ function _getTypesFromJSON(typesJSON) {
         return itemA.name > itemB.name ? 1 : -1;
     });
 }
+//# sourceMappingURL=static.js.map
