@@ -1,6 +1,7 @@
 import express from "express";
 import session from "express-session";
 import "dotenv/config";
+import { sessionSecret } from "./modules/secret-config";
 
 const port = 3000;
 
@@ -12,7 +13,7 @@ app.use(express.json());
 
 app.use(
   session({
-    secret: process.env.SESSION_SECRET!,
+    secret: sessionSecret,
     resave: false,
     saveUninitialized: false,
     cookie: {

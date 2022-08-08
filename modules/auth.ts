@@ -1,12 +1,17 @@
 import axios from "axios";
 import { Request, Response } from "express";
 import { v4 as uuid } from "uuid";
+import {
+  todoistClientId,
+  todoistClientSecret,
+  todoistScopes,
+} from "./secret-config";
 
 export function loginRedirect(req: Request, res: Response) {
   if (req.session.todoist_token) {
     res.status(200);
     res.send({
-      loggedIn: true
+      loggedIn: true,
     });
     return;
   }
@@ -14,9 +19,9 @@ export function loginRedirect(req: Request, res: Response) {
   req.session.state_token = stateUUID;
   res.json({
     loggedIn: false,
-    client_id: process.env.TODOIST_CLIENT_ID,
-    scopes: process.env.TODOIST_SCOPES,
-    state: stateUUID
+    client_id: todoistClientId,
+    scopes: todoistScopes,
+    state: stateUUID,
   });
 }
 
@@ -33,8 +38,8 @@ export async function loginCallback(req: Request, res: Response) {
 
   await axios
     .post("https://todoist.com/oauth/access_token", {
-      client_id: process.env.TODOIST_CLIENT_ID,
-      client_secret: process.env.TODOIST_CLIENT_SECRET,
+      client_id: todoistClientId,
+      client_secret: todoistClientSecret,
       code: code,
     })
     .then((response) => {
@@ -42,7 +47,7 @@ export async function loginCallback(req: Request, res: Response) {
       res.redirect("/");
     })
     .catch((response) => {
-      console.log(response.data.error);
+      console.log(response.data?.error || response);
       // TODO: error redirect?
     });
 }

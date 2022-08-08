@@ -15,11 +15,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.logout = exports.loginCallback = exports.loginRedirect = void 0;
 const axios_1 = __importDefault(require("axios"));
 const uuid_1 = require("uuid");
+const secret_config_1 = require("./secret-config");
 function loginRedirect(req, res) {
     if (req.session.todoist_token) {
         res.status(200);
         res.send({
-            loggedIn: true
+            loggedIn: true,
         });
         return;
     }
@@ -27,9 +28,9 @@ function loginRedirect(req, res) {
     req.session.state_token = stateUUID;
     res.json({
         loggedIn: false,
-        client_id: process.env.TODOIST_CLIENT_ID,
-        scopes: process.env.TODOIST_SCOPES,
-        state: stateUUID
+        client_id: secret_config_1.todoistClientId,
+        scopes: secret_config_1.todoistScopes,
+        state: stateUUID,
     });
 }
 exports.loginRedirect = loginRedirect;
@@ -46,8 +47,8 @@ function loginCallback(req, res) {
         }
         yield axios_1.default
             .post("https://todoist.com/oauth/access_token", {
-            client_id: process.env.TODOIST_CLIENT_ID,
-            client_secret: process.env.TODOIST_CLIENT_SECRET,
+            client_id: secret_config_1.todoistClientId,
+            client_secret: secret_config_1.todoistClientSecret,
             code: code,
         })
             .then((response) => {
@@ -55,7 +56,8 @@ function loginCallback(req, res) {
             res.redirect("/");
         })
             .catch((response) => {
-            console.log(response.data.error);
+            var _a;
+            console.log(((_a = response.data) === null || _a === void 0 ? void 0 : _a.error) || response);
             // TODO: error redirect?
         });
     });

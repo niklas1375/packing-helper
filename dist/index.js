@@ -29,12 +29,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const express_session_1 = __importDefault(require("express-session"));
 require("dotenv/config");
+const secret_config_1 = require("./modules/secret-config");
 const port = 3000;
 const routes = __importStar(require("./routes"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, express_session_1.default)({
-    secret: process.env.SESSION_SECRET,
+    secret: secret_config_1.sessionSecret,
     resave: false,
     saveUninitialized: false,
     cookie: {

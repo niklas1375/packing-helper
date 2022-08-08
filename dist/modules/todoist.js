@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.submitTasks = void 0;
 const todoist_api_typescript_1 = require("@doist/todoist-api-typescript");
 const packingList_1 = require("../types/packingList");
+const secret_config_1 = require("./secret-config");
 function submitTasks(req, res) {
     const packingList = new packingList_1.PackingList();
     Object.assign(packingList, req.body.packingList);
@@ -67,8 +68,10 @@ function _getDueDate(tripBeginDate) {
     return tripDate.toISOString().split("T")[0];
 }
 function _getTodoistApi(req, res) {
-    if (req.session.todoist_token) {
-        return new todoist_api_typescript_1.TodoistApi(req.session.todoist_token);
+    // TODO: remove personal fallback token once https://github.com/Doist/todoist-api-typescript/issues/117 is resolved
+    const token = secret_config_1.fallbackTodoistApiToken; // req.session.todoist_token
+    if (token && token.length > 0) {
+        return new todoist_api_typescript_1.TodoistApi(token);
     }
     else {
         res.redirect("/auth/login");

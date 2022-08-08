@@ -1,6 +1,7 @@
 import { TodoistApi } from "@doist/todoist-api-typescript";
 import { Request, Response } from "express";
 import { PackingList } from "../types/packingList";
+import { fallbackTodoistApiToken } from "./secret-config";
 
 function submitTasks(req: Request, res: Response) {
   const packingList = new PackingList();
@@ -63,8 +64,10 @@ function _getDueDate(tripBeginDate: Date): string {
 }
 
 function _getTodoistApi(req: Request, res: Response): TodoistApi | undefined {
-  if (req.session.todoist_token) {
-    return new TodoistApi(req.session.todoist_token);
+  // TODO: remove personal fallback token once https://github.com/Doist/todoist-api-typescript/issues/117 is resolved
+  const token = fallbackTodoistApiToken; // req.session.todoist_token
+  if (token && token.length > 0) {
+    return new TodoistApi(token);
   } else {
     res.redirect("/auth/login");
     return undefined;
