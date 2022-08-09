@@ -5,7 +5,14 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Kleidung entsprechend Dresscode"
+                    },
+                    {
+                        "name": "Schuhe entsprechend Dresscode"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
@@ -13,15 +20,36 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "SAP Mac"
+                    },
+                    {
+                        "name": "SAP iPhone"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Hotelreservierung"
+                    },
+                    {
+                        "name": "Bargeld"
+                    },
+                    {
+                        "name": "SAP-Badge?"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Buch"
+                    }
+                ]
             },
             "other": {
                 "name": "sonstiges",

@@ -5,7 +5,14 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Badelatschen"
+                    },
+                    {
+                        "name": "Pulli"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
@@ -13,7 +20,38 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Schlafsack"
+                    },
+                    {
+                        "name": "Isomatte"
+                    },
+                    {
+                        "name": "Zelt"
+                    },
+                    {
+                        "name": "Campinggeschirr"
+                    },
+                    {
+                        "name": "Campingbesteck"
+                    },
+                    {
+                        "name": "Becher"
+                    },
+                    {
+                        "name": "Taschenlampe"
+                    },
+                    {
+                        "name": "Campingstuhl"
+                    },
+                    {
+                        "name": "Taschenmesser"
+                    },
+                    {
+                        "name": "Microfaser-Handtücher"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
@@ -25,7 +63,11 @@
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Powerbank"
+                    }
+                ]
             }
         }
     },
@@ -47,7 +89,14 @@
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Hotelreservierung"
+                    },
+                    {
+                        "name": "Perso"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
@@ -73,19 +122,44 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Hüttenschlafsack"
+                    },
+                    {
+                        "name": "Taschenlampe"
+                    },
+                    {
+                        "name": "Microfaser-Handtücher"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "DAV-Ausweis"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Kartenspiel"
+                    }
+                ]
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Powerbank"
+                    },
+                    {
+                        "name": "Bargeld"
+                    }
+                ]
             }
         }
     }
