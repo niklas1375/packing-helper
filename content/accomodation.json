@@ -66,6 +66,12 @@
                 "content": [
                     {
                         "name": "Powerbank"
+                    },
+                    {
+                        "name": "Schlafmaske"
+                    },
+                    {
+                        "name": "Ohrstöpsel"
                     }
                 ]
             }
@@ -161,6 +167,9 @@
                     },
                     {
                         "name": "Bargeld"
+                    },
+                    {
+                        "name": "Ohrstöpsel"
                     }
                 ]
             }
