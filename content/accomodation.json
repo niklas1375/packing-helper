@@ -16,13 +16,29 @@
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Spülmittel"
+                    },
+                    {
+                        "name": "Paracord Wäscheleine"
+                    },
+                    {
+                        "name": "Wäscheklammern"
+                    },
+                    {
+                        "name": "Mülltüten"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
                 "content": [
                     {
                         "name": "Schlafsack"
+                    },
+                    {
+                        "name": "Kopfkissen"
                     },
                     {
                         "name": "Isomatte"
@@ -66,6 +82,12 @@
                 "content": [
                     {
                         "name": "Powerbank"
+                    },
+                    {
+                        "name": "Panzertape"
+                    },
+                    {
+                        "name": "Salz"
                     },
                     {
                         "name": "Schlafmaske"
@@ -133,13 +155,16 @@
                         "name": "Hüttenschlafsack"
                     },
                     {
+                        "name": "Kopfkissen"
+                    },
+                    {
                         "name": "Taschenlampe"
                     },
                     {
                         "name": "Microfaser-Handtücher"
                     },
                     {
-                        "name": "(Multi-)Daypack"
+                        "name": "40l-Rucksack"
                     }
                 ]
             },
