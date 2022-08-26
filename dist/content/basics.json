@@ -5,12 +5,32 @@
             {
                 "name": "Unterwäsche",
                 "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
             }
         ]
     },
     "toiletries": {
         "name": "Hygiene & Co.",
-        "content": []
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            }
+        ]
     },
     "gear": {
         "name": "Ausrüstung",
@@ -26,6 +46,10 @@
     },
     "other": {
         "name": "sonstiges",
-        "content": []
+        "content": [
+            {
+                "name": "Handyladekabel"
+            }
+        ]
     }
 }

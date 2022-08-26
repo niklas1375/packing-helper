@@ -5,15 +5,69 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Badelatschen"
+                    },
+                    {
+                        "name": "Pulli"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Spülmittel"
+                    },
+                    {
+                        "name": "Paracord Wäscheleine"
+                    },
+                    {
+                        "name": "Wäscheklammern"
+                    },
+                    {
+                        "name": "Mülltüten"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Schlafsack"
+                    },
+                    {
+                        "name": "Kopfkissen"
+                    },
+                    {
+                        "name": "Isomatte"
+                    },
+                    {
+                        "name": "Zelt"
+                    },
+                    {
+                        "name": "Campinggeschirr"
+                    },
+                    {
+                        "name": "Campingbesteck"
+                    },
+                    {
+                        "name": "Becher"
+                    },
+                    {
+                        "name": "Taschenlampe"
+                    },
+                    {
+                        "name": "Campingstuhl"
+                    },
+                    {
+                        "name": "Taschenmesser"
+                    },
+                    {
+                        "name": "Microfaser-Handtücher"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
@@ -25,7 +79,23 @@
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Powerbank"
+                    },
+                    {
+                        "name": "Panzertape"
+                    },
+                    {
+                        "name": "Salz"
+                    },
+                    {
+                        "name": "Schlafmaske"
+                    },
+                    {
+                        "name": "Ohrstöpsel"
+                    }
+                ]
             }
         }
     },
@@ -47,7 +117,14 @@
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Hotelreservierung"
+                    },
+                    {
+                        "name": "Perso"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
@@ -73,19 +150,53 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Hüttenschlafsack"
+                    },
+                    {
+                        "name": "Kopfkissen"
+                    },
+                    {
+                        "name": "Taschenlampe"
+                    },
+                    {
+                        "name": "Microfaser-Handtücher"
+                    },
+                    {
+                        "name": "40l-Rucksack"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "DAV-Ausweis"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Kartenspiel"
+                    }
+                ]
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Powerbank"
+                    },
+                    {
+                        "name": "Bargeld"
+                    },
+                    {
+                        "name": "Ohrstöpsel"
+                    }
+                ]
             }
         }
     }

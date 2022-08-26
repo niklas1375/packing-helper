@@ -29,7 +29,7 @@ else {
 }
 function read(secretName) {
     try {
-        return fs_1.default.readFileSync(`/run/secrets/${secretName}`, "utf8");
+        return fs_1.default.readFileSync(`/run/secrets/${secretName}`, "utf8").trim();
     }
     catch (err) {
         if (err["code"] !== "ENOENT") {

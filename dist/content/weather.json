@@ -5,15 +5,39 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Lange Kleidung"
+                    },
+                    {
+                        "name": "Pulli"
+                    },
+                    {
+                        "name": "Dicke Jacke"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Handcreme"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Mütze"
+                    },
+                    {
+                        "name": "Handschuhe"
+                    },
+                    {
+                        "name": "Schal"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
@@ -39,11 +63,19 @@
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Sonnencreme"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Kappe"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
@@ -55,7 +87,11 @@
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Sonnenbrille"
+                    }
+                ]
             }
         }
     },
@@ -65,15 +101,30 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Kurze Kleidung"
+                    },
+                    {
+                        "name": "Badehose"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Sonnencreme"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Trinkflasche"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
@@ -85,7 +136,11 @@
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Sonnenbrille"
+                    }
+                ]
             }
         }
     },
@@ -95,7 +150,14 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Regenjacke"
+                    },
+                    {
+                        "name": "Regenfeste Schuhe"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",

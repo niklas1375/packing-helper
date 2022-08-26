@@ -36,11 +36,19 @@
             },
             "entertainment": {
                 "name": "Unterhaltung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Kartenspiel a la Wizard"
+                    }
+                ]
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Snacks"
+                    }
+                ]
             }
         }
     },
@@ -78,6 +86,9 @@
                     },
                     {
                         "name": "Fingertape"
+                    },
+                    {
+                        "name": "Trinkflasche"
                     }
                 ]
             },
@@ -103,7 +114,13 @@
                 "name": "Kleidung",
                 "content": [
                     {
-                        "name": "Jacke"
+                        "name": "Wind-/Regenjacke"
+                    },
+                    {
+                        "name": "Wandersocken"
+                    },
+                    {
+                        "name": "Erste Hilfe Set"
                     }
                 ]
             },
@@ -116,6 +133,107 @@
                 "content": [
                     {
                         "name": "Fingerhandschuhe"
+                    },
+                    {
+                        "name": "Bergschuhe"
+                    },
+                    {
+                        "name": "Kopflampe"
+                    },
+                    {
+                        "name": "Klettersteigset (mieten?)"
+                    },
+                    {
+                        "name": "Helm (mieten?)"
+                    },
+                    {
+                        "name": "Wasserblase"
+                    },
+                    {
+                        "name": "Kappe / Mütze"
+                    },
+                    {
+                        "name": "Notfallregencape"
+                    },
+                    {
+                        "name": "Daypack"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": [
+                    {
+                        "name": "DAV-Ausweis"
+                    },
+                    {
+                        "name": "Bargeld"
+                    }
+                ]
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": [
+                    {
+                        "name": "Snacks"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "key": "cycling",
+        "name": "Fahrrad fahren",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Radtrikot"
+                    },
+                    {
+                        "name": "Radhose"
+                    },
+                    {
+                        "name": "Socken für Radschuhe"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": [
+                    {
+                        "name": "Erste Hilfe Set"
+                    }
+                ]
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Radschuhe"
+                    },
+                    {
+                        "name": "Helm"
+                    },
+                    {
+                        "name": "Brille (Sonnen/Wind)"
+                    },
+                    {
+                        "name": "Radhandschuhe"
+                    },
+                    {
+                        "name": "wahoo"
+                    },
+                    {
+                        "name": "Trinkflasche"
+                    },
+                    {
+                        "name": "Werkzeugset"
                     }
                 ]
             },
@@ -129,37 +247,14 @@
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
-            }
-        }
-    },
-    {
-        "key": "cycling",
-        "name": "Fahrrad fahren",
-        "content": {
-            "clothing": {
-                "name": "Kleidung",
-                "content": []
-            },
-            "toiletries": {
-                "name": "Hygiene & Co.",
-                "content": []
-            },
-            "gear": {
-                "name": "Ausrüstung",
-                "content": []
-            },
-            "organisational": {
-                "name": "Organisatorisches",
-                "content": []
-            },
-            "entertainment": {
-                "name": "Unterhaltung",
-                "content": []
-            },
-            "other": {
-                "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Snacks"
+                    },
+                    {
+                        "name": "Iso-Pulver"
+                    }
+                ]
             }
         }
     },
@@ -169,19 +264,62 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Badehose plain"
+                    },
+                    {
+                        "name": "Badelatschen"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Sonnencreme"
+                    },
+                    {
+                        "name": "Body Lotion"
+                    },
+                    {
+                        "name": "Erste Hilfe Set"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Schnorchel"
+                    },
+                    {
+                        "name": "Tauchmaske"
+                    },
+                    {
+                        "name": "Tauchcomputer"
+                    },
+                    {
+                        "name": "Füßlinge"
+                    },
+                    {
+                        "name": "Flossen"
+                    },
+                    {
+                        "name": "Tauch-Ohrstöpsel"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Brevet"
+                    },
+                    {
+                        "name": "Logbuch"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
@@ -199,17 +337,126 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Wanderhose kurz / lang"
+                    },
+                    {
+                        "name": "Kurzarmshirt"
+                    },
+                    {
+                        "name": "Langarmshirt"
+                    },
+                    {
+                        "name": "Notfallregencape"
+                    },
+                    {
+                        "name": "Wandersocken"
+                    },
+                    {
+                        "name": "Wind-/Regenjacke"
+                    },
+                    {
+                        "name": "Kappe / Mütze"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Erste Hilfe Set"
+                    },
+                    {
+                        "name": "Sonnencreme"
+                    },
+                    {
+                        "name": "Blasenpflaster"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
                 "content": [
                     {
                         "name": "Stirnlampe"
+                    },
+                    {
+                        "name": "Wanderschuhe"
+                    },
+                    {
+                        "name": "Wasserblase"
+                    },
+                    {
+                        "name": "Daypack"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": [
+                    {
+                        "name": "DAV-Ausweis"
+                    },
+                    {
+                        "name": "Bargeld"
+                    }
+                ]
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": [
+                    {
+                        "name": "Snacks"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "key": "rowing",
+        "name": "Rudern",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Ruderoberteil"
+                    },
+                    {
+                        "name": "Ruderhose"
+                    },
+                    {
+                        "name": "Badelatschen"
+                    },
+                    {
+                        "name": "Sportschuhe"
+                    },
+                    {
+                        "name": "Kappe / Mütze"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": [
+                    {
+                        "name": "Euca-Tape"
+                    }
+                ]
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Sitzkissen"
+                    },
+                    {
+                        "name": "Trinkflasche"
                     }
                 ]
             },
@@ -223,37 +470,11 @@
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
-            }
-        }
-    },
-    {
-        "key": "rowing",
-        "name": "Rudern",
-        "content": {
-            "clothing": {
-                "name": "Kleidung",
-                "content": []
-            },
-            "toiletries": {
-                "name": "Hygiene & Co.",
-                "content": []
-            },
-            "gear": {
-                "name": "Ausrüstung",
-                "content": []
-            },
-            "organisational": {
-                "name": "Organisatorisches",
-                "content": []
-            },
-            "entertainment": {
-                "name": "Unterhaltung",
-                "content": []
-            },
-            "other": {
-                "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Snacks"
+                    }
+                ]
             }
         }
     },
@@ -263,7 +484,14 @@
         "content": {
             "clothing": {
                 "name": "Kleidung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Konzertschuhe"
+                    },
+                    {
+                        "name": "Notfallregencape"
+                    }
+                ]
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
@@ -271,11 +499,22 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "faltbare Trinkflasche"
+                    },
+                    {
+                        "name": "Karabiner für Flasche"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Konzertticket"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",

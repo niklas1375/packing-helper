@@ -13,19 +13,41 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Nackenkissen o.ä."
+                    },
+                    {
+                        "name": "NC-Kopfhörer"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Busticket"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Buch"
+                    }
+                ]
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Snacks"
+                    },
+                    {
+                        "name": "Wasser für Fahrt"
+                    }
+                ]
             }
         }
     },
@@ -55,7 +77,14 @@
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Snacks"
+                    },
+                    {
+                        "name": "Wasser für Fahrt"
+                    }
+                ]
             }
         }
     },
@@ -69,15 +98,36 @@
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Handgepäckgröße Hygienartikel"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "NC-Kopfhörer"
+                    },
+                    {
+                        "name": "Kopfhörer-Adapter"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Flugticket"
+                    },
+                    {
+                        "name": "Perso / Reisepass"
+                    },
+                    {
+                        "name": "Visum?"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
@@ -103,19 +153,38 @@
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                    {
+                        "name": "NC-Kopfhörer"
+                    }
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Zugticket"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
-                "content": []
+                "content": [
+                    {
+                        "name": "Buch"
+                    }
+                ]
             },
             "other": {
                 "name": "sonstiges",
-                "content": []
+                "content": [
+                    {
+                        "name": "Snacks"
+                    },
+                    {
+                        "name": "Wasser für Fahrt"
+                    }
+                ]
             }
         }
     }
