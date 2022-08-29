@@ -25,6 +25,7 @@ function submitTasks(req, res) {
         .addTask({
         content: "Packen für " + req.body.tripName,
         dueDate: _getDueDate(req.body.tripBeginDate),
+        labelIds: [2161775713],
     })
         .then((rootTask) => {
         _traverseTasks(todoistJson, rootTask.id, api)
