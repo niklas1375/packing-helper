@@ -3,12 +3,30 @@ import { PackingItem } from "./packingItem";
 import { IPackingList } from "./packingListInterface";
 
 export class PackingList implements IPackingList {
-  clothing!: PackingCategory;
-  toiletries!: PackingCategory;
-  gear!: PackingCategory;
-  organisational!: PackingCategory;
-  entertainment!: PackingCategory;
-  other!: PackingCategory;
+  clothing: PackingCategory = {
+    name: "clothing",
+    content: []
+  };
+  toiletries: PackingCategory = {
+    name: "toiletries",
+    content: []
+  };
+  gear: PackingCategory = {
+    name: "gear",
+    content: []
+  };
+  organisational: PackingCategory = {
+    name: "organisational",
+    content: []
+  };
+  entertainment: PackingCategory = {
+    name: "entertainment",
+    content: []
+  };
+  other: PackingCategory = {
+    name: "other",
+    content: []
+  };
 
   addPackingList(additionalList: IPackingList): void {
     this.clothing.content = this.clothing.content.concat(

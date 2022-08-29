@@ -13,7 +13,8 @@ const basics_json_1 = __importDefault(require("../content/basics.json"));
 const packingList_1 = require("../types/packingList");
 function compileListFromSelections(req, res) {
     const packingList = new packingList_1.PackingList();
-    Object.assign(packingList, basics_json_1.default);
+    const basics = Object.assign({}, basics_json_1.default);
+    packingList.addPackingList(basics);
     const accomodationsList = accomodation_json_1.default;
     const activitiesList = activities_json_1.default;
     const transportList = transport_json_1.default;

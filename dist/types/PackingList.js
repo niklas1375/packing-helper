@@ -2,6 +2,32 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PackingList = void 0;
 class PackingList {
+    constructor() {
+        this.clothing = {
+            name: "clothing",
+            content: []
+        };
+        this.toiletries = {
+            name: "toiletries",
+            content: []
+        };
+        this.gear = {
+            name: "gear",
+            content: []
+        };
+        this.organisational = {
+            name: "organisational",
+            content: []
+        };
+        this.entertainment = {
+            name: "entertainment",
+            content: []
+        };
+        this.other = {
+            name: "other",
+            content: []
+        };
+    }
     addPackingList(additionalList) {
         this.clothing.content = this.clothing.content.concat(additionalList.clothing.content);
         this.toiletries.content = this.toiletries.content.concat(additionalList.toiletries.content);

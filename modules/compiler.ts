@@ -5,15 +5,19 @@ import activities from "../content/activities.json";
 import transport from "../content/transport.json";
 import triptypes from "../content/tripType.json";
 import weather from "../content/weather.json";
-import basics from "../content/basics.json";
+import basics_import from "../content/basics.json";
 
 import { UserChoices } from "../types/userChoices";
 import { PackingList } from "../types/packingList";
+import { IPackingList } from "../types/packingListInterface";
 import { ContentType } from "../types/contentType";
 
 function compileListFromSelections(req: Request, res: Response) {
   const packingList = new PackingList();
-  Object.assign(packingList, basics);
+
+  const basics: IPackingList = Object.assign({}, basics_import);
+  packingList.addPackingList(basics);
+
   const accomodationsList: ContentType[] = accomodations;
   const activitiesList: ContentType[] = activities;
   const transportList: ContentType[] = transport;
