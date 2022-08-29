@@ -4,27 +4,27 @@ import { IPackingList } from "./packingListInterface";
 
 export class PackingList implements IPackingList {
   clothing: PackingCategory = {
-    name: "clothing",
+    name: "Kleidung",
     content: []
   };
   toiletries: PackingCategory = {
-    name: "toiletries",
+    name: "Hygiene & Co.",
     content: []
   };
   gear: PackingCategory = {
-    name: "gear",
+    name: "Ausrüstung",
     content: []
   };
   organisational: PackingCategory = {
-    name: "organisational",
+    name: "Organisatorisches",
     content: []
   };
   entertainment: PackingCategory = {
-    name: "entertainment",
+    name: "Unterhaltung",
     content: []
   };
   other: PackingCategory = {
-    name: "other",
+    name: "sonstiges",
     content: []
   };
 
