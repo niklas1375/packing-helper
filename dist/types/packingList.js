@@ -4,27 +4,27 @@ exports.PackingList = void 0;
 class PackingList {
     constructor() {
         this.clothing = {
-            name: "clothing",
+            name: "Kleidung",
             content: []
         };
         this.toiletries = {
-            name: "toiletries",
+            name: "Hygiene & Co.",
             content: []
         };
         this.gear = {
-            name: "gear",
+            name: "Ausrüstung",
             content: []
         };
         this.organisational = {
-            name: "organisational",
+            name: "Organisatorisches",
             content: []
         };
         this.entertainment = {
-            name: "entertainment",
+            name: "Unterhaltung",
             content: []
         };
         this.other = {
-            name: "other",
+            name: "sonstiges",
             content: []
         };
     }

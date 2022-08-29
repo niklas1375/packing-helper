@@ -43,7 +43,7 @@ function compileListFromSelections(req: Request, res: Response) {
   );
 
   [accChoice, transportChoice, tripChoice].forEach((choice) => {
-    if (!!choice) return;
+    if (!choice) return;
     packingList.addPackingList(choice!.content);
   });
 

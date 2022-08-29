@@ -27,7 +27,7 @@ function compileListFromSelections(req, res) {
     const tripChoice = triptypesList.find((entry) => entry.key === choices.triptype);
     const weatherSelection = weatherList.filter((entry) => { var _a; return (_a = choices.weather) === null || _a === void 0 ? void 0 : _a.includes(entry.key); });
     [accChoice, transportChoice, tripChoice].forEach((choice) => {
-        if (!!choice)
+        if (!choice)
             return;
         packingList.addPackingList(choice.content);
     });
