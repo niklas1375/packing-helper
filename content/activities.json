@@ -141,10 +141,10 @@
                         "name": "Kopflampe"
                     },
                     {
-                        "name": "Klettersteigset (mieten?)"
+                        "name": "Klettersteigset"
                     },
                     {
-                        "name": "Helm (mieten?)"
+                        "name": "Helm"
                     },
                     {
                         "name": "Wasserblase"
@@ -157,6 +157,9 @@
                     },
                     {
                         "name": "Daypack"
+                    },
+                    {
+                        "name": "Wenn Steigeisen: Tuch zum Einwickeln"
                     }
                 ]
             },
