@@ -1,0 +1,34 @@
+[
+    {
+        "key": "bouldering",
+        "name": "Bouldern"
+    },
+    {
+        "key": "cycling",
+        "name": "Fahrrad fahren"
+    },
+    {
+        "key": "climbing",
+        "name": "Klettersteig"
+    },
+    {
+        "key": "concert",
+        "name": "Konzert"
+    },
+    {
+        "key": "rowing",
+        "name": "Rudern"
+    },
+    {
+        "key": "beach",
+        "name": "Strand"
+    },
+    {
+        "key": "diving",
+        "name": "Tauchen"
+    },
+    {
+        "key": "hiking",
+        "name": "Wandern"
+    }
+]

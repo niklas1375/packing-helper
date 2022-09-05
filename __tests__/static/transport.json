@@ -1,0 +1,18 @@
+[
+    {
+        "key": "car",
+        "name": "Auto"
+    },
+    {
+        "key": "bus",
+        "name": "Bus"
+    },
+    {
+        "key": "flight",
+        "name": "Flugzeug"
+    },
+    {
+        "key": "train",
+        "name": "Zug"
+    }
+]

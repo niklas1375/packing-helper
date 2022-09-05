@@ -1,0 +1,14 @@
+[
+    {
+        "key": "camping",
+        "name": "Camping"
+    },
+    {
+        "key": "hotel",
+        "name": "Hotel"
+    },
+    {
+        "key": "huette",
+        "name": "Hütte"
+    }
+]

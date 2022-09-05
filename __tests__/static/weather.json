@@ -1,0 +1,18 @@
+[
+    {
+        "key": "cold",
+        "name": "Kaltes Wetter"
+    },
+    {
+        "key": "wet",
+        "name": "Nasses Wetter"
+    },
+    {
+        "key": "sunny",
+        "name": "Sonniges Wetter"
+    },
+    {
+        "key": "warm",
+        "name": "Warmes Wetter"
+    }
+]
