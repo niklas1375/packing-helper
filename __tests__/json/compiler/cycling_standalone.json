@@ -1,0 +1,108 @@
+{
+    "clothing": {
+        "name": "Kleidung",
+        "content": [
+            {
+                "name": "Unterwäsche",
+                "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
+            },
+            {
+                "name": "Radtrikot"
+            },
+            {
+                "name": "Radhose"
+            },
+            {
+                "name": "Socken für Radschuhe"
+            }
+        ]
+    },
+    "toiletries": {
+        "name": "Hygiene & Co.",
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            },
+            {
+                "name": "Medikamente"
+            },
+            {
+                "name": "Erste Hilfe Set"
+            }
+        ]
+    },
+    "gear": {
+        "name": "Ausrüstung",
+        "content": [
+            {
+                "name": "Radschuhe"
+            },
+            {
+                "name": "Helm"
+            },
+            {
+                "name": "Brille (Sonnen/Wind)"
+            },
+            {
+                "name": "Radhandschuhe"
+            },
+            {
+                "name": "wahoo"
+            },
+            {
+                "name": "Trinkflasche"
+            },
+            {
+                "name": "Werkzeugset"
+            }
+        ]
+    },
+    "organisational": {
+        "name": "Organisatorisches",
+        "content": [
+            {
+                "name": "Hotelreservierung"
+            },
+            {
+                "name": "Perso"
+            }
+        ]
+    },
+    "entertainment": {
+        "name": "Unterhaltung",
+        "content": []
+    },
+    "other": {
+        "name": "sonstiges",
+        "content": [
+            {
+                "name": "Handyladekabel"
+            },
+            {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            },
+            {
+                "name": "Iso-Pulver"
+            }
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "clothing": {
+        "name": "Kleidung",
+        "content": [
+            {
+                "name": "Unterwäsche",
+                "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
+            },
+            {
+                "name": "Kleidung entsprechend Dresscode"
+            },
+            {
+                "name": "Schuhe entsprechend Dresscode"
+            }
+        ]
+    },
+    "toiletries": {
+        "name": "Hygiene & Co.",
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            },
+            {
+                "name": "Medikamente"
+            }
+        ]
+    },
+    "gear": {
+        "name": "Ausrüstung",
+        "content": [
+            {
+                "name": "SAP Mac"
+            },
+            {
+                "name": "SAP iPhone"
+            }
+        ]
+    },
+    "organisational": {
+        "name": "Organisatorisches",
+        "content": [
+            {
+                "name": "Hotelreservierung"
+            },
+            {
+                "name": "Perso"
+            },
+            {
+                "name": "Bargeld"
+            },
+            {
+                "name": "SAP-Badge?"
+            }
+        ]
+    },
+    "entertainment": {
+        "name": "Unterhaltung",
+        "content": [
+            {
+                "name": "Buch"
+            }
+        ]
+    },
+    "other": {
+        "name": "sonstiges",
+        "content": [
+            {
+                "name": "Handyladekabel"
+            },
+            {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            }
+        ]
+    }
+}

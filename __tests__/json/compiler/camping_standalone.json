@@ -1,0 +1,131 @@
+{
+    "clothing": {
+        "name": "Kleidung",
+        "content": [
+            {
+                "name": "Unterwäsche",
+                "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
+            },
+            {
+                "name": "Badelatschen"
+            },
+            {
+                "name": "Pulli"
+            }
+        ]
+    },
+    "toiletries": {
+        "name": "Hygiene & Co.",
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            },
+            {
+                "name": "Medikamente"
+            },
+            {
+                "name": "Spülmittel"
+            },
+            {
+                "name": "Paracord Wäscheleine"
+            },
+            {
+                "name": "Wäscheklammern"
+            },
+            {
+                "name": "Mülltüten"
+            }
+        ]
+    },
+    "gear": {
+        "name": "Ausrüstung",
+        "content": [
+            {
+                "name": "Schlafsack"
+            },
+            {
+                "name": "Kopfkissen"
+            },
+            {
+                "name": "Isomatte"
+            },
+            {
+                "name": "Zelt"
+            },
+            {
+                "name": "Campinggeschirr"
+            },
+            {
+                "name": "Campingbesteck"
+            },
+            {
+                "name": "Becher"
+            },
+            {
+                "name": "Taschenlampe"
+            },
+            {
+                "name": "Campingstuhl"
+            },
+            {
+                "name": "Taschenmesser"
+            },
+            {
+                "name": "Microfaser-Handtücher"
+            }
+        ]
+    },
+    "organisational": {
+        "name": "Organisatorisches",
+        "content": []
+    },
+    "entertainment": {
+        "name": "Unterhaltung",
+        "content": []
+    },
+    "other": {
+        "name": "sonstiges",
+        "content": [
+            {
+                "name": "Handyladekabel"
+            },
+            {
+                "name": "Powerbank"
+            },
+            {
+                "name": "Panzertape"
+            },
+            {
+                "name": "Salz"
+            },
+            {
+                "name": "Schlafmaske"
+            },
+            {
+                "name": "Ohrstöpsel"
+            },
+            {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            }
+        ]
+    }
+}

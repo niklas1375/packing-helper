@@ -1,0 +1,90 @@
+{
+    "clothing": {
+        "name": "Kleidung",
+        "content": [
+            {
+                "name": "Unterwäsche",
+                "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
+            },
+            {
+                "name": "Kurze Kleidung"
+            },
+            {
+                "name": "Badehose"
+            }
+        ]
+    },
+    "toiletries": {
+        "name": "Hygiene & Co.",
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            },
+            {
+                "name": "Medikamente"
+            },
+            {
+                "name": "Sonnencreme"
+            }
+        ]
+    },
+    "gear": {
+        "name": "Ausrüstung",
+        "content": [
+            {
+                "name": "Kappe"
+            },
+            {
+                "name": "Trinkflasche"
+            }
+        ]
+    },
+    "organisational": {
+        "name": "Organisatorisches",
+        "content": [
+            {
+                "name": "Hotelreservierung"
+            },
+            {
+                "name": "Perso"
+            }
+        ]
+    },
+    "entertainment": {
+        "name": "Unterhaltung",
+        "content": []
+    },
+    "other": {
+        "name": "sonstiges",
+        "content": [
+            {
+                "name": "Handyladekabel"
+            },
+            {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            },
+            {
+                "name": "Sonnenbrille"
+            }
+        ]
+    }
+}
