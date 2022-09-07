@@ -2,11 +2,11 @@ import request from "supertest";
 
 import app from "../../app";
 
-import static_accomodation from "../static/accomodation.json";
-import static_activities from "../static/activities.json";
-import static_transport from "../static/transport.json";
-import static_triptypes from "../static/triptypes.json";
-import static_weather from "../static/weather.json";
+import static_accomodation from "../json/static/accomodation.json";
+import static_activities from "../json/static/activities.json";
+import static_transport from "../json/static/transport.json";
+import static_triptypes from "../json/static/triptypes.json";
+import static_weather from "../json/static/weather.json";
 
 describe("Static routes", () => {
   test("Get all accomodations", async () => {
