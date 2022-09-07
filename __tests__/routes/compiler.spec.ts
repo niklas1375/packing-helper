@@ -13,7 +13,7 @@ import camping_standalone from "../json/compiler/camping_standalone.json";
 import cycling_diving from "../json/compiler/cycling_diving.json";
 import sunny_warm from "../json/compiler/sunny_warm.json";
 
-describe("Static routes", () => {
+describe("Compiler routes", () => {
   /*
    * Test empty object
    */
