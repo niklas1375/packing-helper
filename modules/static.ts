@@ -35,7 +35,7 @@ function _getTypesFromJSON(typesJSON: ContentType[]) {
       };
     })
     .sort((itemA, itemB) => {
-      if ((itemA.name === itemB.name)) return 0;
+      // ignore equal names --> doesn't matter if they appear after each other as long as they're together
       return itemA.name > itemB.name ? 1 : -1;
     });
 }
