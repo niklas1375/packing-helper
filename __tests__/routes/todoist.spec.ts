@@ -1,9 +1,13 @@
 import request from "supertest";
+import { TodoistApi } from "@doist/todoist-api-typescript";
+
 import "../../jest.setup";
 
 import app from "../../app";
 
 describe("Submit Tasks to todoist", () => {
+  // increase timeout due to performance of nested task creation
+  jest.setTimeout(12000);
   /*
    * Create basic packing list first and create todoist task second
    */
@@ -26,6 +30,13 @@ describe("Submit Tasks to todoist", () => {
       .expect("Content-Type", /json/)
       .expect(201);
     expect(submitRes.body).toBeSubmitResponse();
-    // --> check created task (& delete) via api as well? Would need task ID in reply...
+
+    const api = new TodoistApi("" + process.env.TODOIST_API_TOKEN);
+    const createdTask = await api.getTask(submitRes.body.rootTaskId);
+    expect(createdTask.id).toBe(submitRes.body.rootTaskId);
+    // deep check would also be possible...
+
+    // clean up
+    expect(await api.deleteTask(submitRes.body.rootTaskId)).toBeTruthy();
   });
 });
