@@ -1,4 +1,5 @@
 import request from "supertest";
+import "../../jest.setup";
 
 import app from "../../app";
 
@@ -24,10 +25,7 @@ describe("Submit Tasks to todoist", () => {
       })
       .expect("Content-Type", /json/)
       .expect(201);
-    expect(submitRes.body).toEqual({
-      status: 201,
-      text: "Created",
-    });
+    expect(submitRes.body).toBeSubmitResponse();
     // --> check created task (& delete) via api as well? Would need task ID in reply...
   });
 });
