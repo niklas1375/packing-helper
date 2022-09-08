@@ -24,6 +24,7 @@ function submitTasks(req: Request, res: Response) {
           res.json({
             status: 201,
             text: "Created",
+            rootTaskId: rootTask.id,
           });
         })
         .catch((error) => {
