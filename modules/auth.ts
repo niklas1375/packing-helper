@@ -10,7 +10,7 @@ import {
 export function loginRedirect(req: Request, res: Response) {
   if (req.session.todoist_token) {
     res.status(200);
-    res.send({
+    res.json({
       loggedIn: true,
     });
     return;
