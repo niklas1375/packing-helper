@@ -8,7 +8,7 @@ function submitTasks(req: Request, res: Response) {
   Object.assign(packingList, req.body.packingList);
   const todoistJson = packingList.convertToTodoistJSON(req.body.tripLength);
   const api = _getTodoistApi(req, res);
-  if (api == undefined) {
+  if (!api) {
     return;
   }
   api
