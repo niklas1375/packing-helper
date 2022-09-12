@@ -61,12 +61,12 @@ describe("Auth module test", () => {
     // setup
     const req = {
       session: {
-        state_token: uuid()
+        state_token: uuid(),
       },
       query: {
         state: uuid(),
-        code: uuid()
-      }
+        code: uuid(),
+      },
     } as any as Request;
     const res = {
       json: jest.fn(),
