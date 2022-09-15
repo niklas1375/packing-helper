@@ -9,7 +9,7 @@ declare global {
 interface SubmitResponse {
   status: number;
   text: string;
-  rootTaskId: number;
+  rootTaskId: string;
 }
 
 function isSubmitResponse(obj: any): obj is SubmitResponse {
@@ -22,16 +22,16 @@ const matchers = {
       isSubmitResponse(received) &&
       received.status === 201 &&
       received.text === "Created" &&
-      typeof received.rootTaskId === "number";
+      typeof received.rootTaskId === "string";
     if (pass) {
       return {
         message: () =>
-          `expected ${received} not to be a successful SubmitResponse`,
+          `expected ${JSON.stringify(received)} not to be a successful SubmitResponse`,
         pass: true,
       };
     } else {
       return {
-        message: () => `expected ${received} to be a successful SubmitResponse`,
+        message: () => `expected ${JSON.stringify(received)} to be a successful SubmitResponse`,
         pass: false,
       };
     }
