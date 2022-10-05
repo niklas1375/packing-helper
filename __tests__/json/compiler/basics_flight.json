@@ -34,6 +34,9 @@
                 "name": "Medikamente"
             },
             {
+                "name": "Handgepäckgröße Hygienartikel"
+            },
+            {
                 "name": "FFP2-Maske"
             }
         ]
@@ -43,6 +46,9 @@
         "content": [
             {
                 "name": "NC-Kopfhörer"
+            },
+            {
+                "name": "Kopfhörer-Adapter"
             }
         ]
     },
@@ -56,29 +62,25 @@
                 "name": "Perso"
             },
             {
-                "name": "Zugticket"
+                "name": "Flugticket"
+            },
+            {
+                "name": "Perso / Reisepass"
+            },
+            {
+                "name": "Visum?"
             }
         ]
     },
     "entertainment": {
         "name": "Unterhaltung",
-        "content": [
-            {
-                "name": "Buch"
-            }
-        ]
+        "content": []
     },
     "other": {
         "name": "sonstiges",
         "content": [
             {
                 "name": "Handyladekabel"
-            },
-            {
-                "name": "Snacks"
-            },
-            {
-                "name": "Wasser für Fahrt"
             }
         ]
     }

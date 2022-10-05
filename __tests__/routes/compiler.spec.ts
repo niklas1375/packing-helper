@@ -6,6 +6,7 @@ import basics_standalone from "../json/compiler/basics_standalone.json";
 import basics_result_car from "../json/compiler/basics_car.json";
 import basics_result_train from "../json/compiler/basics_train.json";
 import basics_result_bus from "../json/compiler/basics_bus.json";
+import basics_result_flight from "../json/compiler/basics_flight.json";
 import cycling_standalone from "../json/compiler/cycling_standalone.json";
 import sunny_standalone from "../json/compiler/sunny_standalone.json";
 import business_standalone from "../json/compiler/business_standalone.json";
@@ -179,6 +180,20 @@ describe("Compiler routes", () => {
       .expect("Content-Type", /json/)
       .expect(200);
     expect(res.body).toEqual(basics_result_bus);
+  });
+  test("Test transport type flight with empty choices", async () => {
+    const res = await request(app)
+      .post("/api/compile")
+      .send({
+        accomodation: "hotel",
+        activities: [],
+        transport: "flight",
+        triptype: "leisure",
+        weather: [],
+      })
+      .expect("Content-Type", /json/)
+      .expect(200);
+    expect(res.body).toEqual(basics_result_flight);
   });
   /*
    * Test accomodation types
