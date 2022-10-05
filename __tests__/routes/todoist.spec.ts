@@ -7,7 +7,7 @@ import app from "../../app";
 
 describe("Submit Tasks to todoist", () => {
   // increase timeout due to performance of nested task creation
-  jest.setTimeout(12000);
+  jest.setTimeout(15000);
   /*
    * Create basic packing list first and create todoist task second
    */
