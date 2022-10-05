@@ -15,7 +15,7 @@ function submitTasks(req: Request, res: Response) {
     .addTask({
       content: "Packen für " + req.body.tripName,
       dueDate: _getDueDate(req.body.tripBeginDate),
-      labelIds: [2161775713],
+      labels: ["2161775713"],
     })
     .then((rootTask) => {
       _traverseTasks(todoistJson, rootTask.id, api)
@@ -42,7 +42,7 @@ function submitTasks(req: Request, res: Response) {
 
 async function _traverseTasks(
   todoistJSON: any[],
-  parentTaskId: number,
+  parentTaskId: string,
   api: TodoistApi
 ): Promise<any[]> {
   const innerPromiseArray = [];
