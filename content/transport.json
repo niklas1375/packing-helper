@@ -101,6 +101,9 @@
                 "content": [
                     {
                         "name": "Handgepäckgröße Hygienartikel"
+                    },
+                    {
+                        "name": "FFP2-Maske"
                     }
                 ]
             },
@@ -149,7 +152,11 @@
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "FFP2-Maske"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
