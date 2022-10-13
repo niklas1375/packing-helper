@@ -1,3 +1,16 @@
+import express from "express";
+import session from "express-session";
+declare module "express-session" {
+  interface SessionData {
+    state_token?: string;
+    todoist_token?: string;
+  }
+}
+import {
+  fallbackTodoistApiToken,
+  sessionSecret,
+} from "../../modules/secret-config";
+
 import request from "supertest";
 import { TodoistApi } from "@doist/todoist-api-typescript";
 
@@ -6,20 +19,35 @@ import "../../jest.setup";
 import app from "../../app";
 
 describe("Submit Tasks to todoist", () => {
+  // set up session token to use fallbackTodoistApiToken
+  var mockApp = express();
+  mockApp.use(
+    session({
+      secret: sessionSecret,
+      resave: false,
+      saveUninitialized: false,
+    })
+  );
+  mockApp.all("*", function (req, _, next) {
+    req.session.todoist_token = fallbackTodoistApiToken;
+    next();
+  });
+  mockApp.use(app);
+
   // increase timeout due to performance of nested task creation
-  jest.setTimeout(15000);
+  jest.setTimeout(30000);
   /*
    * Create basic packing list first and create todoist task second
    */
   test("Test submitting tasks to todoist", async () => {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
-    const compileRes = await request(app)
+    const compileRes = await request(mockApp)
       .post("/api/compile")
       .send({})
       .expect("Content-Type", /json/)
       .expect(200);
-    const submitRes = await request(app)
+    const submitRes = await request(mockApp)
       .post("/api/submitTasks")
       .send({
         tripName: "Testtrip",
