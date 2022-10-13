@@ -1,7 +1,7 @@
 import { TodoistApi } from "@doist/todoist-api-typescript";
 import { Request, Response } from "express";
 import { PackingList } from "../types/packingList";
-import { fallbackTodoistApiToken } from "./secret-config";
+// import { fallbackTodoistApiToken } from "./secret-config";
 
 function submitTasks(req: Request, res: Response) {
   const packingList = new PackingList();
