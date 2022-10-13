@@ -37,6 +37,6 @@ describe("Submit Tasks to todoist", () => {
     // deep check would also be possible...
 
     // clean up
-    expect(await api.deleteTask(submitRes.body.rootTaskId)).toBeTruthy();
+    // expect(await api.deleteTask("" + submitRes.body.rootTaskId)).toBeTruthy();
   });
 });
