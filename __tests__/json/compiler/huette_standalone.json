@@ -1,0 +1,97 @@
+{
+    "clothing": {
+        "name": "Kleidung",
+        "content": [
+            {
+                "name": "Unterwäsche",
+                "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
+            }
+        ]
+    },
+    "toiletries": {
+        "name": "Hygiene & Co.",
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            },
+            {
+                "name": "Medikamente"
+            }
+        ]
+    },
+    "gear": {
+        "name": "Ausrüstung",
+        "content": [
+            {
+                "name": "Hüttenschlafsack"
+            },
+            {
+                "name": "Kopfkissen"
+            },
+            {
+                "name": "Taschenlampe"
+            },
+            {
+                "name": "Microfaser-Handtücher"
+            },
+            {
+                "name": "40l-Rucksack"
+            }
+        ]
+    },
+    "organisational": {
+        "name": "Organisatorisches",
+        "content": [
+            {
+                "name": "DAV-Ausweis"
+            }
+        ]
+    },
+    "entertainment": {
+        "name": "Unterhaltung",
+        "content": [
+            {
+                "name": "Kartenspiel"
+            }
+        ]
+    },
+    "other": {
+        "name": "sonstiges",
+        "content": [
+            {
+                "name": "Handyladekabel"
+            },
+            {
+                "name": "Powerbank"
+            },
+            {
+                "name": "Bargeld"
+            },
+            {
+                "name": "Ohrstöpsel"
+            },
+            {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            }
+        ]
+    }
+}

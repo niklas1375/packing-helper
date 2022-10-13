@@ -11,6 +11,8 @@ import cycling_standalone from "../json/compiler/cycling_standalone.json";
 import sunny_standalone from "../json/compiler/sunny_standalone.json";
 import business_standalone from "../json/compiler/business_standalone.json";
 import camping_standalone from "../json/compiler/camping_standalone.json";
+import huette_standalone from "../json/compiler/huette_standalone.json";
+import youthhostel_standalone from "../json/compiler/youthhostel_standalone.json";
 import cycling_diving from "../json/compiler/cycling_diving.json";
 import sunny_warm from "../json/compiler/sunny_warm.json";
 
@@ -211,6 +213,34 @@ describe("Compiler routes", () => {
       .expect("Content-Type", /json/)
       .expect(200);
     expect(res.body).toEqual(camping_standalone);
+  });
+  test("Test accomodation type huette with empty choices", async () => {
+    const res = await request(app)
+      .post("/api/compile")
+      .send({
+        accomodation: "huette",
+        activities: [],
+        transport: "car",
+        triptype: "leisure",
+        weather: [],
+      })
+      .expect("Content-Type", /json/)
+      .expect(200);
+    expect(res.body).toEqual(huette_standalone);
+  });
+  test("Test accomodation type youthhostel with empty choices", async () => {
+    const res = await request(app)
+      .post("/api/compile")
+      .send({
+        accomodation: "youthhostel",
+        activities: [],
+        transport: "car",
+        triptype: "leisure",
+        weather: [],
+      })
+      .expect("Content-Type", /json/)
+      .expect(200);
+    expect(res.body).toEqual(youthhostel_standalone);
   });
   /*
    * Test combining activities

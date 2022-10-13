@@ -199,5 +199,46 @@
                 ]
             }
         }
+    },
+    {
+        "key": "youthhostel",
+        "name": "Jugendherberge",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": []
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": [
+                    {
+                        "name": "Handtuch"
+                    }
+                ]
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": []
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": [
+                    {
+                        "name": "Herbergenreservierung"
+                    },
+                    {
+                        "name": "Perso"
+                    }
+                ]
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
     }
 ]

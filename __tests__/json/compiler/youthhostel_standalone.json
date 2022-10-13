@@ -1,0 +1,74 @@
+{
+    "clothing": {
+        "name": "Kleidung",
+        "content": [
+            {
+                "name": "Unterwäsche",
+                "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
+            }
+        ]
+    },
+    "toiletries": {
+        "name": "Hygiene & Co.",
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            },
+            {
+                "name": "Medikamente"
+            },
+            {
+                "name": "Handtuch"
+            }
+        ]
+    },
+    "gear": {
+        "name": "Ausrüstung",
+        "content": []
+    },
+    "organisational": {
+        "name": "Organisatorisches",
+        "content": [
+            {
+                "name": "Herbergenreservierung"
+            },
+            {
+                "name": "Perso"
+            }
+        ]
+    },
+    "entertainment": {
+        "name": "Unterhaltung",
+        "content": []
+    },
+    "other": {
+        "name": "sonstiges",
+        "content": [
+            {
+                "name": "Handyladekabel"
+            },
+            {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            }
+        ]
+    }
+}
