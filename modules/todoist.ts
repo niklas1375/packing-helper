@@ -66,8 +66,8 @@ function _getDueDate(tripBeginDate: Date): string {
 }
 
 function _getTodoistApi(req: Request, res: Response): TodoistApi | undefined {
-  // TODO: remove personal fallback token once https://github.com/Doist/todoist-api-typescript/issues/117 is resolved
-  const token = fallbackTodoistApiToken; // req.session.todoist_token
+  // const token = fallbackTodoistApiToken; // use if token mechanism in todoist fails
+  const token = req.session.todoist_token;
   if (token && token.length > 0) {
     return new TodoistApi(token);
   } else {
