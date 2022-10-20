@@ -32,6 +32,9 @@
             },
             {
                 "name": "Medikamente"
+            },
+            {
+                "name": "Ohrstöpsel"
             }
         ]
     },
@@ -82,9 +85,6 @@
             },
             {
                 "name": "Bargeld"
-            },
-            {
-                "name": "Ohrstöpsel"
             },
             {
                 "name": "Snacks"

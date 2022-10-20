@@ -146,7 +146,11 @@
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Ohrstöpsel"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
@@ -192,9 +196,6 @@
                     },
                     {
                         "name": "Bargeld"
-                    },
-                    {
-                        "name": "Ohrstöpsel"
                     }
                 ]
             }
@@ -213,6 +214,9 @@
                 "content": [
                     {
                         "name": "Handtuch"
+                    },
+                    {
+                        "name": "Ohrstöpsel"
                     }
                 ]
             },
