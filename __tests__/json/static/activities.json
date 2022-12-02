@@ -16,6 +16,10 @@
         "name": "Konzert"
     },
     {
+        "key": "running",
+        "name": "Laufen"
+    },
+    {
         "key": "rowing",
         "name": "Rudern"
     },

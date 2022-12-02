@@ -310,6 +310,9 @@
                     },
                     {
                         "name": "Tauch-Ohrstöpsel"
+                    },
+                    {
+                        "name": "Neopren-Stirnband"
                     }
                 ]
             },
@@ -484,6 +487,71 @@
                         "name": "Snacks"
                     }
                 ]
+            }
+        }
+    },
+    {
+        "key": "running",
+        "name": "Laufen",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Sportshirt"
+                    },
+                    {
+                        "name": "Laufschuhe"
+                    },
+                    {
+                        "name": "Laufhose lang/kurz"
+                    },
+                    {
+                        "name": "Laufsocken"
+                    },
+                    {
+                        "name": "Kappe / Mütze ?"
+                    },
+                    {
+                        "name": "Pro Vest ?"
+                    },
+                    {
+                        "name": "Handschuhe ?"
+                    },
+                    {
+                        "name": "Buff ?"
+                    },
+                    {
+                        "name": "Regenjacke ?"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Handy-Arm-Dings"
+                    },
+                    {
+                        "name": "Garmin Uhr"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
             }
         }
     },
