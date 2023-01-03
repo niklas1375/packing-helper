@@ -110,10 +110,16 @@
         "name": "Organisatorisches",
         "content": [
             {
+                "name": "OoO einrichten?"
+            },
+            {
                 "name": "Hotelreservierung"
             },
             {
                 "name": "Perso"
+            },
+            {
+                "name": "Todo anlegen, Postkarten zu schicken"
             },
             {
                 "name": "Brevet"
@@ -125,7 +131,11 @@
     },
     "entertainment": {
         "name": "Unterhaltung",
-        "content": []
+        "content": [
+            {
+                "name": "Buch"
+            }
+        ]
     },
     "other": {
         "name": "sonstiges",

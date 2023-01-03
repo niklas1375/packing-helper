@@ -62,13 +62,22 @@
         "name": "Organisatorisches",
         "content": [
             {
+                "name": "OoO einrichten?"
+            },
+            {
                 "name": "DAV-Ausweis"
+            },
+            {
+                "name": "Todo anlegen, Postkarten zu schicken"
             }
         ]
     },
     "entertainment": {
         "name": "Unterhaltung",
         "content": [
+            {
+                "name": "Buch"
+            },
             {
                 "name": "Kartenspiel"
             }

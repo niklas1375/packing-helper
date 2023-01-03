@@ -50,6 +50,9 @@
         "name": "Organisatorisches",
         "content": [
             {
+                "name": "OoO einrichten?"
+            },
+            {
                 "name": "Hotelreservierung"
             },
             {
@@ -57,6 +60,9 @@
             },
             {
                 "name": "Zugticket"
+            },
+            {
+                "name": "Todo anlegen, Postkarten zu schicken"
             }
         ]
     },

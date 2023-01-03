@@ -45,11 +45,7 @@
             },
             "entertainment": {
                 "name": "Unterhaltung",
-                "content": [
-                    {
-                        "name": "Buch"
-                    }
-                ]
+                "content": []
             },
             "other": {
                 "name": "sonstiges",
@@ -75,7 +71,11 @@
             },
             "organisational": {
                 "name": "Organisatorisches",
-                "content": []
+                "content": [
+                    {
+                        "name": "Todo anlegen, Postkarten zu schicken"
+                    }
+                ]
             },
             "entertainment": {
                 "name": "Unterhaltung",
