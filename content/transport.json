@@ -115,9 +115,6 @@
                     },
                     {
                         "name": "Kopfhörer-Adapter"
-                    },
-                    {
-                        "name": "Steckdosen-Adapter Zielland?"
                     }
                 ]
             },
@@ -137,7 +134,7 @@
                         "name": "Kreditkarte für Zielland freigeben"
                     },
                     {
-                        "name": "Stromadapter?"
+                        "name": "Steckdosenadapter Zielland?"
                     }
                 ]
             },
