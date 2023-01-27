@@ -237,6 +237,9 @@
                     },
                     {
                         "name": "Werkzeugset"
+                    },
+                    {
+                        "name": "Pulsgurt"
                     }
                 ]
             },
@@ -472,6 +475,9 @@
                     },
                     {
                         "name": "10er Schlüssel"
+                    },
+                    {
+                        "name": "Pulsgurt"
                     }
                 ]
             },
@@ -526,6 +532,9 @@
                     },
                     {
                         "name": "Regenjacke ?"
+                    },
+                    {
+                        "name": "Pulsgurt"
                     }
                 ]
             },
