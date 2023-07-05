@@ -62,13 +62,13 @@
                 "name": "Hotelreservierung"
             },
             {
-                "name": "Perso"
-            },
-            {
                 "name": "Bargeld"
             },
             {
                 "name": "SAP-Badge?"
+            },
+            {
+                "name": "Perso"
             }
         ]
     },

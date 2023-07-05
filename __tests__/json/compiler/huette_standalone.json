@@ -65,10 +65,10 @@
                 "name": "OoO einrichten?"
             },
             {
-                "name": "DAV-Ausweis"
+                "name": "Todo anlegen, Postkarten zu schicken"
             },
             {
-                "name": "Todo anlegen, Postkarten zu schicken"
+                "name": "DAV-Ausweis"
             }
         ]
     },
@@ -90,16 +90,16 @@
                 "name": "Handyladekabel"
             },
             {
-                "name": "Powerbank"
-            },
-            {
-                "name": "Bargeld"
-            },
-            {
                 "name": "Snacks"
             },
             {
                 "name": "Wasser für Fahrt"
+            },
+            {
+                "name": "Powerbank"
+            },
+            {
+                "name": "Bargeld"
             }
         ]
     }

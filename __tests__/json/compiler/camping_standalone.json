@@ -120,6 +120,12 @@
                 "name": "Handyladekabel"
             },
             {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            },
+            {
                 "name": "Powerbank"
             },
             {
@@ -133,12 +139,6 @@
             },
             {
                 "name": "Ohrstöpsel"
-            },
-            {
-                "name": "Snacks"
-            },
-            {
-                "name": "Wasser für Fahrt"
             }
         ]
     }

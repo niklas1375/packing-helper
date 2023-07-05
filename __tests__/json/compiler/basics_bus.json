@@ -53,16 +53,16 @@
                 "name": "OoO einrichten?"
             },
             {
-                "name": "Hotelreservierung"
-            },
-            {
-                "name": "Perso"
-            },
-            {
                 "name": "Busticket"
             },
             {
                 "name": "Todo anlegen, Postkarten zu schicken"
+            },
+            {
+                "name": "Hotelreservierung"
+            },
+            {
+                "name": "Perso"
             }
         ]
     },
