@@ -568,6 +568,87 @@
         }
     },
     {
+        "key": "skiing",
+        "name": "Ski fahren",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Ski-Unterwäsche (mehrfach)"
+                    },
+                    {
+                        "name": "Skisocken"
+                    },
+                    {
+                        "name": "Dünner Baselayer"
+                    },
+                    {
+                        "name": "Skihose"
+                    },
+                    {
+                        "name": "Skijacke"
+                    },
+                    {
+                        "name": "Dünne Fleecemütze"
+                    },
+                    {
+                        "name": "Buff"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": [
+                    {
+                        "name": "Kontaktlinsen"
+                    },
+                    {
+                        "name": "Sonnencreme"
+                    }
+                ]
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Ski"
+                    },
+                    {
+                        "name": "Skischuhe"
+                    },
+                    {
+                        "name": "Skistöcke"
+                    },
+                    {
+                        "name": "Skibrille"
+                    },
+                    {
+                        "name": "Skihelm"
+                    },
+                    {
+                        "name": "Skihandschuhe (mehrfach)"
+                    },
+                    {
+                        "name": "Garmin Uhr"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
         "key": "concert",
         "name": "Konzert",
         "content": {

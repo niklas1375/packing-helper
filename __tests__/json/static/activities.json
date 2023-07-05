@@ -24,6 +24,10 @@
         "name": "Rudern"
     },
     {
+        "key": "skiing",
+        "name": "Ski fahren"
+    },
+    {
         "key": "beach",
         "name": "Strand"
     },
