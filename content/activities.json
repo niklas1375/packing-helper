@@ -507,7 +507,7 @@
                 "name": "Kleidung",
                 "content": [
                     {
-                        "name": "Sportshirt"
+                        "name": "Sportshirt lang/kurz"
                     },
                     {
                         "name": "Laufschuhe"
@@ -519,19 +519,41 @@
                         "name": "Laufsocken"
                     },
                     {
-                        "name": "Kappe / Mütze ?"
+                        "name": "Kappe",
+                        "relevantForWeather": [
+                            "sunny",
+                            "warm"
+                        ]
                     },
                     {
-                        "name": "Pro Vest ?"
+                        "name": "Mütze",
+                        "relevantForWeather": [
+                            "cold"
+                        ]
                     },
                     {
-                        "name": "Handschuhe ?"
+                        "name": "Pro Vest",
+                        "relevantForWeather": [
+                            "cold"
+                        ]
                     },
                     {
-                        "name": "Buff ?"
+                        "name": "Laufhandschuhe",
+                        "relevantForWeather": [
+                            "cold"
+                        ]
                     },
                     {
-                        "name": "Regenjacke ?"
+                        "name": "Buff",
+                        "relevantForWeather": [
+                            "cold"
+                        ]
+                    },
+                    {
+                        "name": "Regenjacke",
+                        "relevantForWeather": [
+                            "wet"
+                        ]
                     },
                     {
                         "name": "Pulsgurt"

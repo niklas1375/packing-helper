@@ -41,6 +41,7 @@ function compileListFromSelections(req: Request, res: Response) {
   const weatherSelection = weatherList.filter((entry) =>
     choices.weather?.includes(entry.key)
   );
+  const weatherChoiceKeys = weatherSelection.map(weatherSel => weatherSel.key);
 
   [transportChoice, tripChoice].forEach((choice) => {
     if (!choice) return;
@@ -49,7 +50,7 @@ function compileListFromSelections(req: Request, res: Response) {
 
   [accChoice, actChoices, weatherSelection].forEach((list) =>
     list.forEach((choice) => {
-      packingList.addPackingList(choice.content);
+      packingList.addPackingList(choice.content, weatherChoiceKeys);
     })
   );
 

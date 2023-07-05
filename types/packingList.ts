@@ -5,39 +5,65 @@ import { IPackingList } from "./packingListInterface";
 export class PackingList implements IPackingList {
   clothing: PackingCategory = {
     name: "Kleidung",
-    content: []
+    content: [],
   };
   toiletries: PackingCategory = {
     name: "Hygiene & Co.",
-    content: []
+    content: [],
   };
   gear: PackingCategory = {
     name: "Ausrüstung",
-    content: []
+    content: [],
   };
   organisational: PackingCategory = {
     name: "Organisatorisches",
-    content: []
+    content: [],
   };
   entertainment: PackingCategory = {
     name: "Unterhaltung",
-    content: []
+    content: [],
   };
   other: PackingCategory = {
     name: "sonstiges",
-    content: []
+    content: [],
   };
 
-  addPackingList(additionalList: IPackingList): void {
+  addPackingList(
+    additionalList: IPackingList,
+    weatherChoiceKeys?: string[]
+  ): void {
+    // weather filtering is for now only relevant for clothes and gear
     this.clothing.content = this.clothing.content.concat(
-      additionalList.clothing.content
+      additionalList.clothing.content.filter((item) => {
+        // item is not dependent on weather
+        if (!item.relevantForWeather || item.relevantForWeather.length === 0)
+          return true;
+        // item does depend on weather -> see if itemWeather intersects with weatherChoice for trip
+        return (
+          item.relevantForWeather.filter((itemWeather) =>
+            weatherChoiceKeys?.includes(itemWeather)
+          ).length > 0
+        );
+      })
     );
 
     this.toiletries.content = this.toiletries.content.concat(
       additionalList.toiletries.content
     );
 
-    this.gear.content = this.gear.content.concat(additionalList.gear.content);
+    this.gear.content = this.gear.content.concat(
+      additionalList.gear.content.filter((item) => {
+        // item is not dependent on weather
+        if (!item.relevantForWeather || item.relevantForWeather.length === 0)
+          return true;
+        // item does depend on weather -> see if itemWeather intersects with weatherChoice for trip
+        return (
+          item.relevantForWeather.filter((itemWeather) =>
+            weatherChoiceKeys?.includes(itemWeather)
+          ).length > 0
+        );
+      })
+    );
 
     this.organisational.content = this.organisational.content.concat(
       additionalList.organisational.content
@@ -99,7 +125,6 @@ export class PackingList implements IPackingList {
             content: category.name,
           },
           subTasks: category.content.map((item: PackingItem) => {
-            // TODO: Day modifier mit Trip Länge kombinieren
             const taskString =
               item.dayModifier && item.dayModifier > 0
                 ? item.dayModifier * tripLength + "x " + item.name
