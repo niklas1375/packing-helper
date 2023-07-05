@@ -86,5 +86,62 @@
                 "content": []
             }
         }
+    },
+    {
+        "key": "mix",
+        "name": "Mix",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Kleidung entsprechend Dresscode"
+                    },
+                    {
+                        "name": "Schuhe entsprechend Dresscode"
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "SAP Mac"
+                    },
+                    {
+                        "name": "SAP iPhone"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": [
+                    {
+                        "name": "Hotelreservierung"
+                    },
+                    {
+                        "name": "Bargeld"
+                    },
+                    {
+                        "name": "SAP-Badge?"
+                    },
+                    {
+                        "name": "Todo anlegen, Postkarten zu schicken"
+                    }
+                ]
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
     }
 ]

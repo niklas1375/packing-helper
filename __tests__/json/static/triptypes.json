@@ -6,5 +6,9 @@
     {
         "key": "leisure",
         "name": "Freizeit"
+    },
+    {
+        "key": "mix",
+        "name": "Mix"
     }
 ]
