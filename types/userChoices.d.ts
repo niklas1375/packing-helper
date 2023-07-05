@@ -1,5 +1,5 @@
 export type UserChoices = {
-  accomodation: string;
+  accomodation: string[];
   activities: string[];
   transport: string;
   triptype: string;

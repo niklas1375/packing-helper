@@ -26,8 +26,8 @@ function compileListFromSelections(req: Request, res: Response) {
 
   const choices: UserChoices = req.body;
 
-  const accChoice = accomodationsList.find(
-    (entry) => entry.key === choices.accomodation
+  const accChoice = accomodationsList.filter((entry) =>
+    choices.accomodation?.includes(entry.key)
   );
   const actChoices = activitiesList.filter((entry) =>
     choices.activities?.includes(entry.key)
@@ -42,12 +42,12 @@ function compileListFromSelections(req: Request, res: Response) {
     choices.weather?.includes(entry.key)
   );
 
-  [accChoice, transportChoice, tripChoice].forEach((choice) => {
+  [transportChoice, tripChoice].forEach((choice) => {
     if (!choice) return;
     packingList.addPackingList(choice!.content);
   });
 
-  [actChoices, weatherSelection].forEach((list) =>
+  [accChoice, actChoices, weatherSelection].forEach((list) =>
     list.forEach((choice) => {
       packingList.addPackingList(choice.content);
     })
