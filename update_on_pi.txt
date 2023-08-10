@@ -1,0 +1,4 @@
+# cd to directory
+git pull
+docker build -t packing-helper .
+docker service update --force --image packing-helper:latest localstack_packing-helper
