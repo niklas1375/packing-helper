@@ -41,11 +41,7 @@
     },
     "organisational": {
         "name": "Organisatorisches",
-        "content": [
-            {
-                "name": "OoO einrichten?"
-            }
-        ]
+        "content": []
     },
     "entertainment": {
         "name": "Unterhaltung",

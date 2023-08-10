@@ -10,10 +10,16 @@ interface SubmitResponse {
   status: number;
   text: string;
   rootTaskId: string;
+  oooTaskId: any;
 }
 
 function isSubmitResponse(obj: any): obj is SubmitResponse {
-  return "rootTaskId" in obj && "status" in obj && "text" in obj;
+  return (
+    "rootTaskId" in obj &&
+    "oooTaskId" in obj &&
+    "status" in obj &&
+    "text" in obj
+  );
 }
 
 const matchers = {
@@ -22,16 +28,22 @@ const matchers = {
       isSubmitResponse(received) &&
       received.status === 201 &&
       received.text === "Created" &&
-      typeof received.rootTaskId === "string";
+      typeof received.rootTaskId === "string" &&
+      typeof received.oooTaskId === "string";
     if (pass) {
       return {
         message: () =>
-          `expected ${JSON.stringify(received)} not to be a successful SubmitResponse`,
+          `expected ${JSON.stringify(
+            received
+          )} not to be a successful SubmitResponse`,
         pass: true,
       };
     } else {
       return {
-        message: () => `expected ${JSON.stringify(received)} to be a successful SubmitResponse`,
+        message: () =>
+          `expected ${JSON.stringify(
+            received
+          )} to be a successful SubmitResponse`,
         pass: false,
       };
     }

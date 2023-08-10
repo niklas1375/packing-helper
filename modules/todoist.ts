@@ -11,27 +11,49 @@ function submitTasks(req: Request, res: Response) {
   if (!api) {
     return;
   }
-  api
-    .addTask({
-      content: "Packen für " + req.body.tripName,
-      dueDate: _getDueDate(req.body.tripBeginDate),
-      labels: ["Reisen"],
-    })
-    .then((rootTask) => {
-      _traverseTasks(todoistJson, rootTask.id, api)
-        .then(() => {
-          res.status(201);
-          res.json({
-            status: 201,
-            text: "Created",
-            rootTaskId: rootTask.id,
-          });
-        })
-        .catch((error) => {
-          console.log(error);
-          res.status(500);
-          res.send("Error. See logs for details.");
-        });
+  let rootTaskId: string;
+  let oooTaskId: string;
+  const dueDate = _getDueDate(req.body.tripBeginDate);
+  const rootTaskPromiseArray = [
+    api
+      .addTask({
+        content: "OOO erstellen für " + req.body.tripName,
+        dueDate: dueDate,
+        labels: ["Arbeit"],
+      })
+      .then((oooTask) => {
+        oooTaskId = oooTask.id;
+      })
+      .catch((error) => {
+        console.log(error);
+        res.status(500);
+        res.send("Error. See logs for details.");
+      }),
+    api
+      .addTask({
+        content: "Packen für " + req.body.tripName,
+        dueDate: dueDate,
+        labels: ["Reisen"],
+      })
+      .then((rootTask) => {
+        rootTaskId = rootTask.id;
+        _traverseTasks(todoistJson, rootTaskId, api);
+      })
+      .catch((error) => {
+        console.log(error);
+        res.status(500);
+        res.send("Error. See logs for details.");
+      }),
+  ];
+  Promise.all(rootTaskPromiseArray)
+    .then(() => {
+      res.status(201);
+      res.json({
+        status: 201,
+        text: "Created",
+        rootTaskId: rootTaskId,
+        oooTaskId: oooTaskId,
+      });
     })
     .catch((error) => {
       console.log(error);
