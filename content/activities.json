@@ -151,13 +151,19 @@
                         "name": "Wasserblase"
                     },
                     {
-                        "name": "Kappe / Mütze"
+                        "name": "Kappe"
+                    },
+                    {
+                        "name": "Mütze"
                     },
                     {
                         "name": "Notfallregencape"
                     },
                     {
                         "name": "Daypack"
+                    },
+                    {
+                        "name": "Buff"
                     },
                     {
                         "name": "Wenn Steigeisen: Tuch zum Einwickeln"
@@ -370,7 +376,13 @@
                         "name": "Wind-/Regenjacke"
                     },
                     {
-                        "name": "Kappe / Mütze"
+                        "name": "Kappe"
+                    },
+                    {
+                        "name": "Mütze"
+                    },
+                    {
+                        "name": "Buff"
                     }
                 ]
             },
