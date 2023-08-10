@@ -10,7 +10,7 @@ RUN npm run build
 FROM docker.io/node:alpine
 WORKDIR /app
 COPY package* ./
-RUN npm install --production
+RUN npm install --omit=dev
 COPY --from=packing-helper-build ./app/dist ./dist
 EXPOSE 3000
 ENV CONTAINER_RUN 1
