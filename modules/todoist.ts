@@ -19,7 +19,7 @@ function submitTasks(req: Request, res: Response) {
       .addTask({
         content: "OOO erstellen für " + req.body.tripName,
         dueDate: dueDate,
-        labels: ["Arbeit"],
+        labels: ["Arbeit", "Reisen"],
       })
       .then((oooTask) => {
         oooTaskId = oooTask.id;
