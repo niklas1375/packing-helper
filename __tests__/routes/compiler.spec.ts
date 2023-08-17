@@ -15,6 +15,7 @@ import huette_standalone from "../json/compiler/huette_standalone.json";
 import youthhostel_standalone from "../json/compiler/youthhostel_standalone.json";
 import cycling_diving from "../json/compiler/cycling_diving.json";
 import sunny_warm from "../json/compiler/sunny_warm.json";
+import weather_dependent from "../json/compiler/weather_dependent.json";
 
 describe("Compiler routes", () => {
   /*
@@ -260,37 +261,54 @@ describe("Compiler routes", () => {
     expect(res.body).toEqual(cycling_diving);
   });
   /*
-  * Test combining weathers
-  */
- test("Test combining two or more weathers", async () => {
-   const res = await request(app)
-   .post("/api/compile")
-   .send({
-     accomodation: "hotel",
-     activities: [],
-     transport: "car",
-     triptype: "leisure",
-     weather: ["sunny", "warm"],
-    })
-    .expect("Content-Type", /json/)
-    .expect(200);
+   * Test combining weathers
+   */
+  test("Test combining two or more weathers", async () => {
+    const res = await request(app)
+      .post("/api/compile")
+      .send({
+        accomodation: "hotel",
+        activities: [],
+        transport: "car",
+        triptype: "leisure",
+        weather: ["sunny", "warm"],
+      })
+      .expect("Content-Type", /json/)
+      .expect(200);
     expect(res.body).toEqual(sunny_warm);
   });
   /*
-  * Test combining weathers while ignoring duplicates and nonsense
-  */
- test("Test combining two or more weathers while ignoring duplicates and nonsense", async () => {
-   const res = await request(app)
-   .post("/api/compile")
-   .send({
-     accomodation: "hotel",
-     activities: [],
-     transport: "car",
-     triptype: "leisure",
-     weather: ["sunny", "sunny", "warm", "raining cats and dogs", "sunny"],
-    })
-    .expect("Content-Type", /json/)
-    .expect(200);
+   * Test weather relevant items
+   */
+  test("Test weather dependent items", async () => {
+    const res = await request(app)
+      .post("/api/compile")
+      .send({
+        accomodation: "hotel",
+        activities: ["running"],
+        transport: "car",
+        triptype: "leisure",
+        weather: ["wet"],
+      })
+      .expect("Content-Type", /json/)
+      .expect(200);
+    expect(res.body).toEqual(weather_dependent);
+  });
+  /*
+   * Test combining weathers while ignoring duplicates and nonsense
+   */
+  test("Test combining two or more weathers while ignoring duplicates and nonsense", async () => {
+    const res = await request(app)
+      .post("/api/compile")
+      .send({
+        accomodation: "hotel",
+        activities: [],
+        transport: "car",
+        triptype: "leisure",
+        weather: ["sunny", "sunny", "warm", "raining cats and dogs", "sunny"],
+      })
+      .expect("Content-Type", /json/)
+      .expect(200);
     expect(res.body).toEqual(sunny_warm);
   });
   /*
@@ -301,7 +319,13 @@ describe("Compiler routes", () => {
       .post("/api/compile")
       .send({
         accomodation: "hotel",
-        activities: ["cycling", "cycling", "diving", "thumb twiddling", "cycling"],
+        activities: [
+          "cycling",
+          "cycling",
+          "diving",
+          "thumb twiddling",
+          "cycling",
+        ],
         transport: "car",
         triptype: "leisure",
         weather: [],

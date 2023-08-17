@@ -1,0 +1,109 @@
+{
+    "clothing": {
+        "name": "Kleidung",
+        "content": [
+            {
+                "name": "Unterwäsche",
+                "dayModifier": 1
+            },
+            {
+                "name": "Socken lang / kurz",
+                "dayModifier": 1
+            },
+            {
+                "name": "Schlafshirt"
+            },
+            {
+                "name": "Schuhe"
+            },
+            {
+                "name": "Sportshirt lang/kurz"
+            },
+            {
+                "name": "Laufschuhe"
+            },
+            {
+                "name": "Laufhose lang/kurz"
+            },
+            {
+                "name": "Laufsocken"
+            },
+            {
+                "name": "Regenjacke",
+                "relevantForWeather": [
+                    "wet"
+                ]
+            },
+            {
+                "name": "Pulsgurt"
+            },
+            {
+                "name": "Regenfeste Schuhe"
+            }
+        ]
+    },
+    "toiletries": {
+        "name": "Hygiene & Co.",
+        "content": [
+            {
+                "name": "Zahnbürste & Zahnpasta"
+            },
+            {
+                "name": "Duschgel"
+            },
+            {
+                "name": "Brillenetui"
+            },
+            {
+                "name": "Medikamente"
+            }
+        ]
+    },
+    "gear": {
+        "name": "Ausrüstung",
+        "content": [
+            {
+                "name": "Handy-Arm-Dings"
+            },
+            {
+                "name": "Garmin Uhr"
+            }
+        ]
+    },
+    "organisational": {
+        "name": "Organisatorisches",
+        "content": [
+            {
+                "name": "Todo anlegen, Postkarten zu schicken"
+            },
+            {
+                "name": "Hotelreservierung"
+            },
+            {
+                "name": "Perso"
+            }
+        ]
+    },
+    "entertainment": {
+        "name": "Unterhaltung",
+        "content": [
+            {
+                "name": "Buch"
+            }
+        ]
+    },
+    "other": {
+        "name": "sonstiges",
+        "content": [
+            {
+                "name": "Handyladekabel"
+            },
+            {
+                "name": "Snacks"
+            },
+            {
+                "name": "Wasser für Fahrt"
+            }
+        ]
+    }
+}
