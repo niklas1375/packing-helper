@@ -16,7 +16,6 @@ interface SubmitResponse {
 function isSubmitResponse(obj: any): obj is SubmitResponse {
   return (
     "rootTaskId" in obj &&
-    "oooTaskId" in obj &&
     "status" in obj &&
     "text" in obj
   );
@@ -29,7 +28,8 @@ const matchers = {
       received.status === 201 &&
       received.text === "Created" &&
       typeof received.rootTaskId === "string" &&
-      typeof received.oooTaskId === "string";
+      (typeof received.oooTaskId === "string" ||
+        typeof received.oooTaskId === "undefined");
     if (pass) {
       return {
         message: () =>

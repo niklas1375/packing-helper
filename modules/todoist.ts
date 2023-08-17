@@ -13,22 +13,24 @@ function submitTasks(req: Request, res: Response) {
   }
   let rootTaskId: string;
   let oooTaskId: string;
-  const dueDate = _getDueDate(req.body.tripBeginDate);
-  const rootTaskPromiseArray = [
-    api
-      .addTask({
-        content: "OOO erstellen für " + req.body.tripName,
-        dueDate: dueDate,
-        labels: ["Arbeit", "Reisen"],
-      })
-      .then((oooTask) => {
-        oooTaskId = oooTask.id;
-      })
-      .catch((error) => {
-        console.log(error);
-        res.status(500);
-        res.send("Error. See logs for details.");
-      }),
+  const tripBeginDate = new Date(req.body.tripBeginDate)
+  const dueDate = _getDueDate(tripBeginDate);
+  const rootTaskPromiseArray: any[] = [];
+  // only create ooo task if trip occurs on at least one weekday
+  if (_checkIfContainsWeekday(tripBeginDate, req.body.tripLength)) {
+    rootTaskPromiseArray.push(
+      api
+        .addTask({
+          content: "OOO erstellen für " + req.body.tripName,
+          dueDate: dueDate,
+          labels: ["Arbeit", "Reisen"],
+        })
+        .then((oooTask) => {
+          oooTaskId = oooTask.id;
+        })
+    );
+  }
+  rootTaskPromiseArray.push(
     api
       .addTask({
         content: "Packen für " + req.body.tripName,
@@ -39,12 +41,7 @@ function submitTasks(req: Request, res: Response) {
         rootTaskId = rootTask.id;
         _traverseTasks(todoistJson, rootTaskId, api);
       })
-      .catch((error) => {
-        console.log(error);
-        res.status(500);
-        res.send("Error. See logs for details.");
-      }),
-  ];
+  );
   Promise.all(rootTaskPromiseArray)
     .then(() => {
       res.status(201);
@@ -81,8 +78,7 @@ async function _traverseTasks(
   return Promise.all(innerPromiseArray);
 }
 
-function _getDueDate(tripBeginDate: Date): string {
-  const tripDate = new Date(tripBeginDate);
+function _getDueDate(tripDate: Date): string {
   tripDate.setDate(tripDate.getDate() - 1);
   return tripDate.toISOString().split("T")[0];
 }
@@ -96,6 +92,19 @@ function _getTodoistApi(req: Request, res: Response): TodoistApi | undefined {
     res.redirect("/auth/login");
     return undefined;
   }
+}
+
+function _checkIfContainsWeekday(
+  tripBeginDate: Date,
+  tripLength: number
+): boolean {
+  // longer than 2 days automatically means inclusion of a weekday
+  if (tripLength > 2) return true;
+  const beginDay = tripBeginDate.getDay();
+  // day before saturday is beginDay
+  if (beginDay < 5) return true;
+  // 2 day trip beginning on sunday is the last remaining option for a weekday to occur
+  return beginDay == 6 && tripLength > 1;
 }
 
 export { submitTasks };
