@@ -27,6 +27,9 @@
                 "content": [
                     {
                         "name": "Strandtuch"
+                    },
+                    {
+                        "name": "Powel"
                     }
                 ]
             },
@@ -326,6 +329,9 @@
                     },
                     {
                         "name": "Neopren-Stirnband"
+                    },
+                    {
+                        "name": "Powel"
                     }
                 ]
             },
