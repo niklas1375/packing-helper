@@ -1,0 +1,86 @@
+# Simple compilation request
+POST http://localhost:3000/api/compile
+Content-Type: application/json
+
+{
+    "accomodation": "hotel",
+    "activities": ["running"],
+    "transport": "car",
+    "triptype": "leisure",
+    "weather": ["wet"]
+}
+
+# get accomodations
+GET http://localhost:3000/api/accomodation
+
+# Simplified Submit Request
+POST http://localhost:3000/api/submitTasks
+Content-Type: application/javascript
+
+{
+    "tripName": "Testtrip",
+    "tripLength": 5,
+    "tripBeginDate": "2023-08-18T08:00:00.000Z",
+    "packingList": {
+        "clothing": {
+            "name": "Kleidung",
+            "content": [
+                {
+                    "name": "Unterwäsche",
+                    "dayModifier": 1
+                },
+                {
+                    "name": "Socken lang / kurz",
+                    "dayModifier": 1
+                },
+                {
+                    "name": "Schlafshirt"
+                },
+                {
+                    "name": "Schuhe"
+                }
+            ]
+        },
+        "toiletries": {
+            "name": "Hygiene & Co.",
+            "content": [
+                {
+                    "name": "Zahnbürste & Zahnpasta"
+                },
+                {
+                    "name": "Duschgel"
+                },
+                {
+                    "name": "Brillenetui"
+                },
+                {
+                    "name": "Medikamente"
+                }
+            ]
+        },
+        "gear": {
+            "name": "Ausrüstung",
+            "content": []
+        },
+        "organisational": {
+            "name": "Organisatorisches",
+            "content": []
+        },
+        "entertainment": {
+            "name": "Unterhaltung",
+            "content": [
+                {
+                    "name": "Buch"
+                }
+            ]
+        },
+        "other": {
+            "name": "sonstiges",
+            "content": [
+                {
+                    "name": "Handyladekabel"
+                }
+            ]
+        }
+    }
+}

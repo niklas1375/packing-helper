@@ -1,0 +1,32 @@
+# Todoist Sync API 
+POST https://api.todoist.com/sync/v9/sync
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer {{personalAuthToken}}
+
+commands=[
+  {
+    "type": "project_add",
+    "temp_id": "0a57a3db-2ff1-4d2d-adf6-12490c13c712",
+    "uuid": "2c0f6e03-c372-46ba-8e85-d94af56abcf3",
+    "args": { "name": "Shopping List" }
+  },
+  {
+    "type": "item_add",
+    "temp_id": "ef3d840e-84c9-4433-9a32-86ae9a1e7d42",
+    "uuid": "49ede211-12f3-42e9-8345-4c0d2b29c08d",
+    "args": { "content": "Buy Milk", "project_id": "0a57a3db-2ff1-4d2d-adf6-12490c13c712" }
+  },
+  {
+    "type": "item_add",
+    "temp_id": "8a23c8cb-1d76-469d-a2c0-80a28b3ea6f6",
+    "uuid": "46619250-ae02-4ab0-bd31-3c9ab0307e53",
+    "args": { "content": "Buy Coffee", "project_id": "0a57a3db-2ff1-4d2d-adf6-12490c13c712" }
+  },
+  {
+    "type": "item_add",
+    "temp_id": "bf087eaf-aea9-4cb1-ab57-85188a2d428f",
+    "uuid": "d0a1666b-d615-4250-aac5-65c7ea89091a",
+    "args": { "content": "Buy Sugar", "project_id": "0a57a3db-2ff1-4d2d-adf6-12490c13c712" }
+  }]
+
+# auth token test
