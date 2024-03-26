@@ -41,7 +41,11 @@
     },
     "organisational": {
         "name": "Organisatorisches",
-        "content": []
+        "content": [
+            {
+                "name": "Lieferpause Biokiste"
+            }
+        ]
     },
     "entertainment": {
         "name": "Unterhaltung",
