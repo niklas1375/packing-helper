@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@doist/todoist-api-typescript": "^3.0.2",
+    "@doist/todoist-api-typescript": "^3.0.3",
     "axios": "^1.7.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
