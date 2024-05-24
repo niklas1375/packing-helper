@@ -44,6 +44,10 @@
                 "dayThreshold": 4
             },
             {
+                "name": "Wäschesack",
+                "dayThreshold": 4
+            },
+            {
                 "name": "Kondome"
             },
             {
