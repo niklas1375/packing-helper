@@ -24,6 +24,10 @@
         "name": "Rudern"
     },
     {
+        "key": "sightseeing",
+        "name": "Sightseeing"
+    },
+    {
         "key": "skiing",
         "name": "Ski fahren"
     },

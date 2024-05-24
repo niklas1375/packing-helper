@@ -621,6 +621,54 @@
         }
     },
     {
+        "key": "sightseeing",
+        "name": "Sightseeing",
+        "content": {
+            "clothing": {
+                "name": "Kleidung",
+                "content": [
+                    {
+                        "name": "Kappe",
+                        "relevantForWeather": [
+                            "sunny",
+                            "warm"
+                        ]
+                    },
+                    {
+                        "name": "Mütze",
+                        "relevantForWeather": [
+                            "cold"
+                        ]
+                    }
+                ]
+            },
+            "toiletries": {
+                "name": "Hygiene & Co.",
+                "content": []
+            },
+            "gear": {
+                "name": "Ausrüstung",
+                "content": [
+                    {
+                        "name": "Bauchtasche"
+                    }
+                ]
+            },
+            "organisational": {
+                "name": "Organisatorisches",
+                "content": []
+            },
+            "entertainment": {
+                "name": "Unterhaltung",
+                "content": []
+            },
+            "other": {
+                "name": "sonstiges",
+                "content": []
+            }
+        }
+    },
+    {
         "key": "skiing",
         "name": "Ski fahren",
         "content": {
