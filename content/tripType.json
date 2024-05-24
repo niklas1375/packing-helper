@@ -63,11 +63,16 @@
             },
             "toiletries": {
                 "name": "Hygiene & Co.",
-                "content": []
+                "content": [
+                    {
+                        "name": "Kondome"
+                    }
+                ]
             },
             "gear": {
                 "name": "Ausrüstung",
-                "content": []
+                "content": [
+                ]
             },
             "organisational": {
                 "name": "Organisatorisches",
