@@ -22,7 +22,6 @@ describe("Test packingList functions", () => {
       },
     ];
     const todoistJSON = packingList.convertToTodoistJSON(4);
-    console.dir(todoistJSON);
     expect(todoistJSON).toEqual([
       {
         task: {
@@ -46,7 +45,6 @@ describe("Test packingList functions", () => {
       },
     ];
     const todoistJSON = packingList.convertToTodoistJSON(6);
-    console.dir(todoistJSON);
     expect(todoistJSON).toEqual([
       {
         task: {
@@ -70,7 +68,6 @@ describe("Test packingList functions", () => {
       },
     ];
     const todoistJSON = packingList.convertToTodoistJSON(4);
-    console.dir(todoistJSON);
     expect(todoistJSON).toEqual([
       {
         task: {
@@ -81,6 +78,41 @@ describe("Test packingList functions", () => {
             content: "4x Socken",
           },
         ],
+      },
+    ]);
+  });
+
+  test("Test weatherDependency not met", () => {
+    const packingListA = new PackingList();
+    const packingListB = new PackingList();
+    packingListB.clothing.content = [
+      {
+        name: "Regenjacke",
+        relevantForWeather: ["wet"],
+      },
+    ];
+
+    packingListA.addPackingList(packingListB, ["sunny"]);
+
+    expect(packingListA.clothing.content).toEqual([]);
+  });
+
+  test("Test weatherDependency met", () => {
+    const packingListA = new PackingList();
+    const packingListB = new PackingList();
+    packingListB.clothing.content = [
+      {
+        name: "Regenjacke",
+        relevantForWeather: ["wet"],
+      },
+    ];
+
+    packingListA.addPackingList(packingListB, ["wet"]);
+
+    expect(packingListA.clothing.content).toEqual([
+      {
+        name: "Regenjacke",
+        relevantForWeather: ["wet"],
       },
     ]);
   });
