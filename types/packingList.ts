@@ -120,14 +120,18 @@ export class PackingList implements IPackingList {
       this.other,
     ]
       .map((category: PackingCategory) => {
+        category.content = category.content.filter(
+          (item: PackingItem) =>
+            !item.dayThreshold || item.dayThreshold <= tripLength
+        );
         return {
           task: {
             content: category.name,
           },
           subTasks: category.content.map((item: PackingItem) => {
             const taskString =
-              item.dayModifier && item.dayModifier > 0
-                ? item.dayModifier * tripLength + "x " + item.name
+              item.dayMultiplier && item.dayMultiplier > 0
+                ? item.dayMultiplier * tripLength + "x " + item.name
                 : item.name;
             return {
               content: taskString,

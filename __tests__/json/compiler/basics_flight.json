@@ -4,11 +4,11 @@
         "content": [
             {
                 "name": "Unterwäsche",
-                "dayModifier": 1
+                "dayMultiplier": 1
             },
             {
                 "name": "Socken lang / kurz",
-                "dayModifier": 1
+                "dayMultiplier": 1
             },
             {
                 "name": "Schlafshirt"
@@ -32,6 +32,10 @@
             },
             {
                 "name": "Medikamente"
+            },
+            {
+                "name": "Rasierer",
+                "dayThreshold": 3
             },
             {
                 "name": "Handgepäckgröße Hygienartikel"

@@ -1,5 +1,6 @@
 export type PackingItem = {
     name: string;
-    dayModifier?: number;
+    dayMultiplier?: number;
+    dayThreshold?: number;
     relevantForWeather?: string[];
 }

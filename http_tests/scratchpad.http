@@ -27,11 +27,11 @@ Content-Type: application/json
             "content": [
                 {
                     "name": "Unterwäsche",
-                    "dayModifier": 1
+                    "dayMultiplier": 1
                 },
                 {
                     "name": "Socken lang / kurz",
-                    "dayModifier": 1
+                    "dayMultiplier": 1
                 },
                 {
                     "name": "Schlafshirt"
