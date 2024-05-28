@@ -114,7 +114,7 @@ export class PackingList implements IPackingList {
     tripName: string,
     tripLength: number,
     tripBeginDate: Date,
-    isAbroad: boolean,
+    isAbroad: boolean
   ): any {
     const bTripContainsWeekday = this._checkIfContainsWeekday(
       tripLength,
@@ -131,9 +131,16 @@ export class PackingList implements IPackingList {
       .map((category: PackingCategory) => {
         category.content = category.content.filter((item: PackingItem) => {
           let filteredIn = true;
-          filteredIn = filteredIn && (!item.dayThreshold || item.dayThreshold <= tripLength);
-          filteredIn = filteredIn && (!item.onlyIfWeekday || (item.onlyIfWeekday && bTripContainsWeekday));
-          filteredIn = filteredIn && (!item.onlyIfAbroad || (item.onlyIfAbroad && isAbroad));
+          filteredIn =
+            filteredIn &&
+            (!item.dayThreshold || item.dayThreshold <= tripLength);
+          filteredIn =
+            filteredIn &&
+            (!item.onlyIfWeekday ||
+              (item.onlyIfWeekday && bTripContainsWeekday));
+          filteredIn =
+            filteredIn &&
+            (!item.onlyIfAbroad || (item.onlyIfAbroad && isAbroad));
           return filteredIn;
         });
         return {
@@ -158,8 +165,17 @@ export class PackingList implements IPackingList {
             if (item.dueShift || item.afterReturn) {
               todoistTaskJSON.dueDate = this._getDueDateString(
                 tripBeginDate,
-                item.dueShift || (tripLength + 1)
+                item.dueShift || tripLength + 1
               );
+              // to keep track of related tasks, 'outside' tasks always have the travel label
+              todoistTaskJSON.labels = (todoistTaskJSON.labels || []).concat([
+                "Reisen",
+              ]);
+            }
+
+            // remove duplicates
+            if (todoistTaskJSON.labels && todoistTaskJSON.labels.length > 0) {
+              todoistTaskJSON.labels = [...new Set(todoistTaskJSON.labels)];
             }
             return todoistTaskJSON;
           }),
