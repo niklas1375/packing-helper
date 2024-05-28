@@ -169,10 +169,10 @@ export class PackingList implements IPackingList {
     // longer than 2 days automatically means inclusion of a weekday
     if (tripLength > 2) return true;
     const beginDay = tripBeginDate.getDay();
-    // day before saturday is beginDay
+    // day before saturday (6) is beginDay
     if (beginDay < 5) return true;
     // 2 day trip beginning on sunday is the last remaining option for a weekday to occur
-    return beginDay == 6 && tripLength > 1;
+    return beginDay == 0 && tripLength > 1;
   }
 
   _getDueDateString(tripDate: Date, offset?: number): string {
