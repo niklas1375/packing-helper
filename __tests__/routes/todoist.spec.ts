@@ -41,8 +41,8 @@ describe("Submit Tasks to todoist", () => {
    * Duration of trip contains at least one weekday
    */
   test("Test submitting tasks to todoist during the week", async () => {
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
+    const in3Days = new Date();
+    in3Days.setDate(in3Days.getDate() + 3);
     const compileRes = await request(mockApp)
       .post("/api/compile")
       .send({})
@@ -53,7 +53,7 @@ describe("Submit Tasks to todoist", () => {
       .send({
         tripName: "Testtrip",
         tripLength: 5, // makes sure there's at least one weekday
-        tripBeginDate: tomorrow.toISOString(),
+        tripBeginDate: in3Days.toISOString(),
         packingList: compileRes.body,
       })
       .expect("Content-Type", /json/)
