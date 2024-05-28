@@ -1,4 +1,4 @@
-# Simple compilation request
+### Simple compilation request
 POST http://localhost:3000/api/compile
 Content-Type: application/json
 
@@ -10,10 +10,10 @@ Content-Type: application/json
     "weather": ["wet"]
 }
 
-# get accomodations
+### get accomodations
 GET http://localhost:3000/api/accomodation
 
-# Simplified Submit Request
+### Simplified Submit Request
 POST http://localhost:3000/api/submitTasks
 Content-Type: application/json
 
