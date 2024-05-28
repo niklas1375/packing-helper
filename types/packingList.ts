@@ -110,7 +110,15 @@ export class PackingList implements IPackingList {
     });
   }
 
-  convertToTodoistJSON(tripLength: number): any {
+  convertToTodoistJSON(
+    tripName: string,
+    tripLength: number,
+    tripBeginDate: Date
+  ): any {
+    const bTripContainsWeekday = this._checkIfContainsWeekday(
+      tripLength,
+      tripBeginDate
+    );
     return [
       this.clothing,
       this.entertainment,
@@ -120,25 +128,56 @@ export class PackingList implements IPackingList {
       this.other,
     ]
       .map((category: PackingCategory) => {
-        category.content = category.content.filter(
-          (item: PackingItem) =>
-            !item.dayThreshold || item.dayThreshold <= tripLength
-        );
+        category.content = category.content.filter((item: PackingItem) => {
+          let filteredIn = true;
+          filteredIn = filteredIn && (!item.dayThreshold || item.dayThreshold <= tripLength);
+          filteredIn = filteredIn && (!item.onlyIfWeekday || (item.onlyIfWeekday && bTripContainsWeekday));
+          return filteredIn;
+        });
         return {
           task: {
             content: category.name,
           },
           subTasks: category.content.map((item: PackingItem) => {
-            const taskString =
-              item.dayMultiplier && item.dayMultiplier > 0
-                ? item.dayMultiplier * tripLength + "x " + item.name
-                : item.name;
-            return {
+            let taskString = item.name;
+            if (item.dayMultiplier && item.dayMultiplier > 0) {
+              taskString = item.dayMultiplier * tripLength + "x " + item.name;
+            }
+            if (item.addTripNameToTask) {
+              taskString += " für " + tripName;
+            }
+            let todoistTaskJSON: any = {
               content: taskString,
             };
+            if (item.additionalLabels && item.additionalLabels.length > 0) {
+              todoistTaskJSON.labels = item.additionalLabels;
+            }
+            if (item.dueShift) {
+              todoistTaskJSON.dueDate = this._getDueDateString(
+                tripBeginDate,
+                item.dueShift
+              );
+            }
+            return todoistTaskJSON;
           }),
         };
       })
       .filter((mainTask) => mainTask.subTasks && mainTask.subTasks.length > 0);
+  }
+
+  _checkIfContainsWeekday(tripLength: number, tripBeginDate: Date): boolean {
+    // longer than 2 days automatically means inclusion of a weekday
+    if (tripLength > 2) return true;
+    const beginDay = tripBeginDate.getDay();
+    // day before saturday is beginDay
+    if (beginDay < 5) return true;
+    // 2 day trip beginning on sunday is the last remaining option for a weekday to occur
+    return beginDay == 6 && tripLength > 1;
+  }
+
+  _getDueDateString(tripDate: Date, offset?: number): string {
+    offset = offset || -1;
+    tripDate.setDate(tripDate.getDate() + offset);
+    return tripDate.toISOString().split("T")[0];
   }
 }

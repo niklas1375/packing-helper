@@ -4,10 +4,10 @@ Content-Type: application/json
 
 {
     "accomodation": "hotel",
-    "activities": ["running"],
+    "activities": [],
     "transport": "car",
     "triptype": "leisure",
-    "weather": ["wet"]
+    "weather": []
 }
 
 ### get accomodations

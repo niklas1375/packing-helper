@@ -67,6 +67,16 @@
                 "name": "Müll leeren (Bio & Rest)"
             },
             {
+              "name": "OOO erstellen",
+              "onlyIfWeekday": true,
+              "additionalLabels": [
+                "Arbeit",
+                "Reisen"
+              ],
+              "addTripNameToTask": true,
+              "dueShift": -1
+            },
+            {
                 "name": "Busticket"
             },
             {

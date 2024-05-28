@@ -64,9 +64,6 @@ describe("Submit Tasks to todoist", () => {
     // check for main packing tasks
     const createdTask = await api.getTask(submitRes.body.rootTaskId);
     expect(createdTask.id).toBe(submitRes.body.rootTaskId);
-    // check for OOO task
-    const createdOOOTask = await api.getTask(submitRes.body.oooTaskId);
-    expect(createdOOOTask.id).toBe(submitRes.body.oooTaskId);
     // deep check would also be possible...
 
     // clean up
@@ -83,7 +80,6 @@ describe("Submit Tasks to todoist", () => {
     nextSaturday.setDate(
       nextSaturday.getDate() + ((7 + 6 - nextSaturday.getDay()) % 7)
     );
-    console.log(nextSaturday.toISOString());
 
     const compileRes = await request(mockApp)
       .post("/api/compile")

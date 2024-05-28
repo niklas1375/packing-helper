@@ -1,6 +1,9 @@
 import { PackingList } from "../../types/packingList";
 
 describe("Test packingList functions", () => {
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
   test("Test dayThreshold not surpassed", () => {
     const packingList = new PackingList();
     packingList.toiletries.content = [
@@ -9,7 +12,7 @@ describe("Test packingList functions", () => {
         dayThreshold: 4,
       },
     ];
-    const todoistJSON = packingList.convertToTodoistJSON(2);
+    const todoistJSON = packingList.convertToTodoistJSON("Test trip", 2, tomorrow);
     expect(todoistJSON).toEqual([]);
   });
 
@@ -21,7 +24,7 @@ describe("Test packingList functions", () => {
         dayThreshold: 4,
       },
     ];
-    const todoistJSON = packingList.convertToTodoistJSON(4);
+    const todoistJSON = packingList.convertToTodoistJSON("Test trip", 4, tomorrow);
     expect(todoistJSON).toEqual([
       {
         task: {
@@ -44,7 +47,7 @@ describe("Test packingList functions", () => {
         dayThreshold: 4,
       },
     ];
-    const todoistJSON = packingList.convertToTodoistJSON(6);
+    const todoistJSON = packingList.convertToTodoistJSON("Test trip", 6, tomorrow);
     expect(todoistJSON).toEqual([
       {
         task: {
@@ -67,7 +70,7 @@ describe("Test packingList functions", () => {
         dayMultiplier: 1,
       },
     ];
-    const todoistJSON = packingList.convertToTodoistJSON(4);
+    const todoistJSON = packingList.convertToTodoistJSON("Test trip", 4, tomorrow);
     expect(todoistJSON).toEqual([
       {
         task: {
