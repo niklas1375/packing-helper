@@ -84,8 +84,12 @@
                 "afterReturn": true
             },
             {
-                "name": "Steckdosenadapter Zielland?",
-                "onlyIfAbroad": true
+                "name": "Urlaubsmodus Todoist aktivieren",
+                "dueShift": 0
+            },
+            {
+                "name": "Urlaubsmodus Todoist deaktivieren",
+                "afterReturn": true
             }
         ]
     },
