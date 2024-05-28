@@ -4,6 +4,7 @@ export type PackingItem = {
     dayThreshold?: number;
     relevantForWeather?: string[];
     onlyIfWeekday?: boolean;
+    onlyIfAbroad?: boolean;
     // positive / negative number of days relative to trip begin date
     dueShift?: number;
     additionalLabels?: string[];

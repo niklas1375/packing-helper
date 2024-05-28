@@ -113,7 +113,8 @@ export class PackingList implements IPackingList {
   convertToTodoistJSON(
     tripName: string,
     tripLength: number,
-    tripBeginDate: Date
+    tripBeginDate: Date,
+    isAbroad: boolean,
   ): any {
     const bTripContainsWeekday = this._checkIfContainsWeekday(
       tripLength,
@@ -132,6 +133,7 @@ export class PackingList implements IPackingList {
           let filteredIn = true;
           filteredIn = filteredIn && (!item.dayThreshold || item.dayThreshold <= tripLength);
           filteredIn = filteredIn && (!item.onlyIfWeekday || (item.onlyIfWeekday && bTripContainsWeekday));
+          filteredIn = filteredIn && (!item.onlyIfAbroad || (item.onlyIfAbroad && isAbroad));
           return filteredIn;
         });
         return {

@@ -27,7 +27,8 @@ describe("Test packingList functions", () => {
     const todoistJSON = packingList.convertToTodoistJSON(
       "Test trip",
       2,
-      tomorrow
+      tomorrow,
+      false,
     );
     expect(todoistJSON).toEqual([]);
   });
@@ -43,7 +44,8 @@ describe("Test packingList functions", () => {
     const todoistJSON = packingList.convertToTodoistJSON(
       "Test trip",
       4,
-      tomorrow
+      tomorrow,
+      false,
     );
     expect(todoistJSON).toEqual([
       {
@@ -70,7 +72,8 @@ describe("Test packingList functions", () => {
     const todoistJSON = packingList.convertToTodoistJSON(
       "Test trip",
       6,
-      tomorrow
+      tomorrow,
+      false,
     );
     expect(todoistJSON).toEqual([
       {
@@ -97,7 +100,8 @@ describe("Test packingList functions", () => {
     const todoistJSON = packingList.convertToTodoistJSON(
       "Test trip",
       4,
-      tomorrow
+      tomorrow,
+      false,
     );
     expect(todoistJSON).toEqual([
       {
@@ -163,7 +167,8 @@ describe("Test packingList functions", () => {
     const todoistJSON = packingList.convertToTodoistJSON(
       "Test trip",
       2,
-      nextSaturday
+      nextSaturday,
+      false,
     );
     expect(todoistJSON).toEqual([]);
   });
@@ -188,7 +193,8 @@ describe("Test packingList functions", () => {
     const todoistJSON = packingList.convertToTodoistJSON(
       tripName,
       4,
-      tomorrow
+      tomorrow,
+      false,
     );
     expect(todoistJSON).toEqual([
       {

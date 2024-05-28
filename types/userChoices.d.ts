@@ -4,4 +4,5 @@ export type UserChoices = {
   transport: string;
   triptype: string;
   weather: string[];
+  tripAbroad: boolean;
 };

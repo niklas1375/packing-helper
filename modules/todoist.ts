@@ -13,7 +13,8 @@ async function submitTasks(req: Request, res: Response) {
   const todoistJson = packingList.convertToTodoistJSON(
     req.body.tripName,
     req.body.tripLength,
-    tripBeginDate
+    tripBeginDate,
+    req.body.isAbroad,
   );
   const api = _getTodoistApi(req, res);
   if (!api) {
