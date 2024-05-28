@@ -7,7 +7,8 @@ Content-Type: application/json
     "activities": [],
     "transport": "car",
     "triptype": "leisure",
-    "weather": []
+    "weather": [],
+    "isAbroad": true
 }
 
 ### get accomodations

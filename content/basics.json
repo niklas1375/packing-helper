@@ -65,6 +65,27 @@
                 ],
                 "addTripNameToTask": true,
                 "dueShift": -2
+            },
+            {
+                "name": "Perso / Reisepass",
+                "onlyIfAbroad": true
+            },
+            {
+                "name": "Visum?",
+                "onlyIfAbroad": true
+            },
+            {
+                "name": "Kreditkarte für Zielland freigeben",
+                "onlyIfAbroad": true
+            },
+            {
+                "name": "Kreditkarte wieder sperren",
+                "onlyIfAbroad": true,
+                "afterReturn": true
+            },
+            {
+                "name": "Steckdosenadapter Zielland?",
+                "onlyIfAbroad": true
             }
         ]
     },

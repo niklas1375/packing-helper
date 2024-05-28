@@ -73,29 +73,38 @@
                 "name": "Müll leeren (Bio & Rest)"
             },
             {
-              "name": "OOO erstellen",
-              "onlyIfWeekday": true,
-              "additionalLabels": [
-                "Arbeit",
-                "Reisen"
-              ],
-              "addTripNameToTask": true,
-              "dueShift": -2
+                "name": "OOO erstellen",
+                "onlyIfWeekday": true,
+                "additionalLabels": [
+                    "Arbeit",
+                    "Reisen"
+                ],
+                "addTripNameToTask": true,
+                "dueShift": -2
+            },
+            {
+                "name": "Perso / Reisepass",
+                "onlyIfAbroad": true
+            },
+            {
+                "name": "Visum?",
+                "onlyIfAbroad": true
+            },
+            {
+                "name": "Kreditkarte für Zielland freigeben",
+                "onlyIfAbroad": true
+            },
+            {
+                "name": "Kreditkarte wieder sperren",
+                "onlyIfAbroad": true,
+                "afterReturn": true
+            },
+            {
+                "name": "Steckdosenadapter Zielland?",
+                "onlyIfAbroad": true
             },
             {
                 "name": "Flugticket"
-            },
-            {
-                "name": "Perso / Reisepass"
-            },
-            {
-                "name": "Visum?"
-            },
-            {
-                "name": "Kreditkarte für Zielland freigeben"
-            },
-            {
-                "name": "Steckdosenadapter Zielland?"
             },
             {
                 "name": "Todo anlegen, Flüge in myFlightradar eintragen"
@@ -105,9 +114,6 @@
             },
             {
                 "name": "Hotelreservierung"
-            },
-            {
-                "name": "Perso"
             }
         ]
     },

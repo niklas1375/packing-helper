@@ -154,10 +154,11 @@ export class PackingList implements IPackingList {
             if (item.additionalLabels && item.additionalLabels.length > 0) {
               todoistTaskJSON.labels = item.additionalLabels;
             }
-            if (item.dueShift) {
+            // if afterReturn is true: dueShift = triplength + 1
+            if (item.dueShift || item.afterReturn) {
               todoistTaskJSON.dueDate = this._getDueDateString(
                 tripBeginDate,
-                item.dueShift
+                item.dueShift || (tripLength + 1)
               );
             }
             return todoistTaskJSON;

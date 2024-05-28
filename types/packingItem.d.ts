@@ -7,6 +7,7 @@ export type PackingItem = {
     onlyIfAbroad?: boolean;
     // positive / negative number of days relative to trip begin date
     dueShift?: number;
+    afterReturn?: boolean;
     additionalLabels?: string[];
     addTripNameToTask?: boolean;
 }
