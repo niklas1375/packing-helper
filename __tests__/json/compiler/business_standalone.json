@@ -77,7 +77,7 @@
                 "Reisen"
               ],
               "addTripNameToTask": true,
-              "dueShift": -1
+              "dueShift": -2
             },
             {
                 "name": "Hotelreservierung"

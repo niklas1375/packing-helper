@@ -74,7 +74,7 @@
                 "Reisen"
               ],
               "addTripNameToTask": true,
-              "dueShift": -1
+              "dueShift": -2
             },
             {
                 "name": "Todo anlegen, Postkarten zu schicken"

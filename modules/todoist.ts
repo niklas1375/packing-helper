@@ -89,6 +89,8 @@ async function _traverseTasks(
 function _TaskFinished() {
   globalResolvedCounter += 1;
   if (globalResolvedCounter > globalOpenCounter) return;
+  // don't log in test
+  if (process.env.JEST_WORKER_ID !== undefined || process.env.NODE_ENV === 'test') return;
   console.debug(
     `Resolved ${globalResolvedCounter} of ${globalOpenCounter} Tasks`
   );
