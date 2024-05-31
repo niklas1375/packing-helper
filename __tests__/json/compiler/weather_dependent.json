@@ -35,9 +35,6 @@
                 ]
             },
             {
-                "name": "Pulsgurt"
-            },
-            {
                 "name": "Regenfeste Schuhe"
             }
         ]
@@ -70,6 +67,9 @@
             },
             {
                 "name": "Garmin Uhr"
+            },
+            {
+                "name": "Pulsgurt"
             }
         ]
     },

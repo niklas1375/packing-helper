@@ -582,9 +582,6 @@
                         "relevantForWeather": [
                             "wet"
                         ]
-                    },
-                    {
-                        "name": "Pulsgurt"
                     }
                 ]
             },
@@ -600,6 +597,9 @@
                     },
                     {
                         "name": "Garmin Uhr"
+                    },
+                    {
+                        "name": "Pulsgurt"
                     }
                 ]
             },
