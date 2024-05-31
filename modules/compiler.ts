@@ -58,7 +58,8 @@ function compileListFromSelections(req: Request, res: Response) {
 
   const tripstartDate = new Date(choices.tripstart);
   const tripendDate = new Date(choices.tripend);
-  const diffDays = Math.round(
+  // +1 for start day
+  const diffDays = 1 + Math.round(
     Math.abs(
       (tripstartDate.getTime() - tripendDate.getTime()) / (24 * 60 * 60 * 1000)
     )

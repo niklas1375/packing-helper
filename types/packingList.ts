@@ -110,8 +110,10 @@ export class PackingList implements IPackingList {
 
         if (item.dayMultiplier && item.dayMultiplier > 0) {
           const multiplierString = item.dayMultiplier * tripLength + "x ";
-          if (item.name.indexOf(item.dayMultiplier * tripLength + "x ") < 0) {
-            item.name = item.dayMultiplier * tripLength + "x " + item.name;
+          if (item.name.match(/(\d+x\s+)+/g)) {
+            item.name = item.name.replace(/(\d+x\s+)+/gm, multiplierString);
+          } else {
+            item.name = multiplierString + item.name;
           }
         }
         newContent.push(item);
@@ -157,10 +159,6 @@ export class PackingList implements IPackingList {
     tripLength: number,
     tripBeginDate: Date
   ): any {
-    const bTripContainsWeekday = this._checkIfContainsWeekday(
-      tripLength,
-      tripBeginDate
-    );
     return [
       this.clothing,
       this.entertainment,
