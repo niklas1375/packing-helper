@@ -13,7 +13,7 @@ async function submitTasks(req: Request, res: Response) {
   const todoistJson = packingList.convertToTodoistJSON(
     req.body.tripName,
     req.body.tripLength,
-    tripBeginDate,
+    new Date(tripBeginDate),
   );
   const api = _getTodoistApi(req, res);
   if (!api) {
@@ -23,7 +23,7 @@ async function submitTasks(req: Request, res: Response) {
 
   const rootTask = await api.addTask({
     content: "Packen für " + req.body.tripName,
-    dueDate: _getDueDate(tripBeginDate),
+    dueDate: _getDueDate(new Date(tripBeginDate)),
     labels: ["Reisen"],
   });
   // skip finished log here because it would only show 1 of 1

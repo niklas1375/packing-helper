@@ -185,7 +185,7 @@ export class PackingList implements IPackingList {
             // if afterReturn is true: dueShift = triplength + 1
             if (item.dueShift || item.afterReturn) {
               todoistTaskJSON.dueDate = this._getDueDateString(
-                tripBeginDate,
+                new Date(tripBeginDate),
                 item.dueShift || tripLength + 1
               );
               // to keep track of related tasks, 'outside' tasks always have the travel label
