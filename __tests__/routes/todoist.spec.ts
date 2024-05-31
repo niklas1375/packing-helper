@@ -43,17 +43,29 @@ describe("Submit Tasks to todoist", () => {
   test("Test submitting tasks to todoist during the week", async () => {
     const in3Days = new Date();
     in3Days.setDate(in3Days.getDate() + 3);
+    const in8Days = new Date();
+    in8Days.setDate(in3Days.getDate() + 8);
+    const tripBasics = {
+      tripName: "Testtrip",
+      tripLength: 5,
+      tripBeginDate: in3Days.toISOString(),
+      endDate: in8Days.toISOString(),
+    };
+
     const compileRes = await request(mockApp)
       .post("/api/compile")
-      .send({})
+      .send({
+        tripname: tripBasics.tripName,
+        tripstart: tripBasics.tripBeginDate,
+        tripend: tripBasics.endDate,
+        isAbroad: false,
+      })
       .expect("Content-Type", /json/)
       .expect(200);
     const submitRes = await request(mockApp)
       .post("/api/submitTasks")
       .send({
-        tripName: "Testtrip",
-        tripLength: 5, // makes sure there's at least one weekday
-        tripBeginDate: in3Days.toISOString(),
+        ...tripBasics,
         packingList: compileRes.body,
       })
       .expect("Content-Type", /json/)

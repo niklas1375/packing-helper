@@ -14,7 +14,6 @@ async function submitTasks(req: Request, res: Response) {
     req.body.tripName,
     req.body.tripLength,
     tripBeginDate,
-    req.body.isAbroad,
   );
   const api = _getTodoistApi(req, res);
   if (!api) {

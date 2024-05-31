@@ -1,8 +1,11 @@
 export type UserChoices = {
-  accomodation: string[];
-  activities: string[];
-  transport: string;
+  tripname: string;
+  tripstart: string;
+  tripend: string;
   triptype: string;
+  accomodation: string[];
+  transport: string;
+  activities: string[];
   weather: string[];
-  tripAbroad: boolean;
+  isAbroad: boolean;
 };

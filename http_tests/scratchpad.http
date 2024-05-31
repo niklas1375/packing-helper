@@ -3,12 +3,15 @@ POST http://localhost:3000/api/compile
 Content-Type: application/json
 
 {
+    "tripname": "Testtrip",
+    "tripstart": "2024-06-03",
+    "tripend": "2024-06-05",
+    "isAbroad": false,
     "accomodation": "hotel",
     "activities": [],
     "transport": "car",
     "triptype": "leisure",
-    "weather": [],
-    "isAbroad": true
+    "weather": []
 }
 
 ### get accomodations
@@ -31,7 +34,7 @@ Content-Type: application/json
                     "dayMultiplier": 1
                 },
                 {
-                    "name": "Socken lang / kurz",
+                    "name": "2x Socken lang / kurz",
                     "dayMultiplier": 1
                 },
                 {

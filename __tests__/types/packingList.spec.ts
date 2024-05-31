@@ -17,6 +17,11 @@ describe("Test packingList functions", () => {
   );
 
   test("Test dayThreshold not surpassed", () => {
+    const tripName = "Test trip";
+    const tripLength = 2;
+    const tripBeginDate = tomorrow;
+    const isAbroad = false;
+
     const packingList = new PackingList();
     packingList.toiletries.content = [
       {
@@ -24,16 +29,22 @@ describe("Test packingList functions", () => {
         dayThreshold: 4,
       },
     ];
+
+    packingList.filterForExclusions(tripLength, tripBeginDate, isAbroad);
     const todoistJSON = packingList.convertToTodoistJSON(
-      "Test trip",
-      2,
-      tomorrow,
-      false,
+      tripName,
+      tripLength,
+      tripBeginDate
     );
     expect(todoistJSON).toEqual([]);
   });
 
   test("Test dayThreshold equaled", () => {
+    const tripName = "Test trip";
+    const tripLength = 4;
+    const tripBeginDate = tomorrow;
+    const isAbroad = false;
+
     const packingList = new PackingList();
     packingList.toiletries.content = [
       {
@@ -41,11 +52,11 @@ describe("Test packingList functions", () => {
         dayThreshold: 4,
       },
     ];
+    packingList.filterForExclusions(tripLength, tripBeginDate, isAbroad);
     const todoistJSON = packingList.convertToTodoistJSON(
-      "Test trip",
-      4,
-      tomorrow,
-      false,
+      tripName,
+      tripLength,
+      tripBeginDate
     );
     expect(todoistJSON).toEqual([
       {
@@ -62,6 +73,11 @@ describe("Test packingList functions", () => {
   });
 
   test("Test dayThreshold surpassed", () => {
+    const tripName = "Test trip";
+    const tripLength = 6;
+    const tripBeginDate = tomorrow;
+    const isAbroad = false;
+
     const packingList = new PackingList();
     packingList.toiletries.content = [
       {
@@ -69,11 +85,11 @@ describe("Test packingList functions", () => {
         dayThreshold: 4,
       },
     ];
+    packingList.filterForExclusions(tripLength, tripBeginDate, isAbroad);
     const todoistJSON = packingList.convertToTodoistJSON(
-      "Test trip",
-      6,
-      tomorrow,
-      false,
+      tripName,
+      tripLength,
+      tripBeginDate
     );
     expect(todoistJSON).toEqual([
       {
@@ -90,6 +106,11 @@ describe("Test packingList functions", () => {
   });
 
   test("Test dayMultiplier surpassed", () => {
+    const tripName = "Test trip";
+    const tripLength = 4;
+    const tripBeginDate = tomorrow;
+    const isAbroad = false;
+
     const packingList = new PackingList();
     packingList.clothing.content = [
       {
@@ -97,11 +118,11 @@ describe("Test packingList functions", () => {
         dayMultiplier: 1,
       },
     ];
+    packingList.filterForExclusions(tripLength, tripBeginDate, isAbroad);
     const todoistJSON = packingList.convertToTodoistJSON(
-      "Test trip",
-      4,
-      tomorrow,
-      false,
+      tripName,
+      tripLength,
+      tripBeginDate
     );
     expect(todoistJSON).toEqual([
       {
@@ -153,6 +174,11 @@ describe("Test packingList functions", () => {
   });
 
   test("Test no weekday is given", () => {
+    const tripName = "Test trip";
+    const tripLength = 2;
+    const tripBeginDate = nextSaturday;
+    const isAbroad = false;
+
     const packingList = new PackingList();
     packingList.organisational.content = [
       {
@@ -164,19 +190,23 @@ describe("Test packingList functions", () => {
       },
     ];
 
+    packingList.filterForExclusions(tripLength, tripBeginDate, isAbroad);
     const todoistJSON = packingList.convertToTodoistJSON(
-      "Test trip",
-      2,
-      nextSaturday,
-      false,
+      tripName,
+      tripLength,
+      tripBeginDate
     );
     expect(todoistJSON).toEqual([]);
   });
 
   test("Test weekday is given", () => {
-    const packingList = new PackingList();
+    const tripName = "Test trip";
+    const tripLength = 4;
+    const tripBeginDate = tomorrow;
+    const isAbroad = false;
     const dueShift = -2;
-    const tripName = "Test Trip";
+
+    const packingList = new PackingList();
     packingList.organisational.content = [
       {
         name: "OOO erstellen",
@@ -187,14 +217,14 @@ describe("Test packingList functions", () => {
       },
     ];
 
-    const shiftedDueString = _getDueDateString(tomorrow, dueShift)
+    const shiftedDueString = _getDueDateString(tomorrow, dueShift);
 
+    packingList.filterForExclusions(tripLength, tripBeginDate, isAbroad);
     // > 2 days ensures there is a weekday in the trip
     const todoistJSON = packingList.convertToTodoistJSON(
       tripName,
-      4,
-      tomorrow,
-      false,
+      tripLength,
+      tripBeginDate
     );
     expect(todoistJSON).toEqual([
       {
@@ -203,7 +233,7 @@ describe("Test packingList functions", () => {
         },
         subTasks: [
           {
-            content: "OOO erstellen für "+ tripName,
+            content: "OOO erstellen für " + tripName,
             labels: ["Arbeit", "Reisen"],
             dueDate: shiftedDueString,
           },

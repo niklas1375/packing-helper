@@ -78,6 +78,48 @@ export class PackingList implements IPackingList {
     );
   }
 
+  filterForExclusions(
+    tripLength: number,
+    tripBeginDate: Date,
+    isAbroad: boolean
+  ) {
+    const bTripContainsWeekday = this._checkIfContainsWeekday(
+      tripLength,
+      tripBeginDate
+    );
+    [
+      this.clothing,
+      this.entertainment,
+      this.gear,
+      this.organisational,
+      this.toiletries,
+      this.other,
+    ].forEach((category: PackingCategory) => {
+      const newContent: PackingItem[] = [];
+      category.content.forEach((item: PackingItem) => {
+        let filteredIn = true;
+        filteredIn =
+          filteredIn && (!item.dayThreshold || item.dayThreshold <= tripLength);
+        filteredIn =
+          filteredIn &&
+          (!item.onlyIfWeekday || (item.onlyIfWeekday && bTripContainsWeekday));
+        filteredIn =
+          filteredIn && (!item.onlyIfAbroad || (item.onlyIfAbroad && isAbroad));
+
+        if (!filteredIn) return;
+
+        if (item.dayMultiplier && item.dayMultiplier > 0) {
+          const multiplierString = item.dayMultiplier * tripLength + "x ";
+          if (item.name.indexOf(item.dayMultiplier * tripLength + "x ") < 0) {
+            item.name = item.dayMultiplier * tripLength + "x " + item.name;
+          }
+        }
+        newContent.push(item);
+      });
+      category.content = newContent;
+    });
+  }
+
   removeDuplicates() {
     this.clothing.content = this._filterArrayDuplicates(this.clothing.content);
 
@@ -113,8 +155,7 @@ export class PackingList implements IPackingList {
   convertToTodoistJSON(
     tripName: string,
     tripLength: number,
-    tripBeginDate: Date,
-    isAbroad: boolean
+    tripBeginDate: Date
   ): any {
     const bTripContainsWeekday = this._checkIfContainsWeekday(
       tripLength,
@@ -129,34 +170,16 @@ export class PackingList implements IPackingList {
       this.other,
     ]
       .map((category: PackingCategory) => {
-        category.content = category.content.filter((item: PackingItem) => {
-          let filteredIn = true;
-          filteredIn =
-            filteredIn &&
-            (!item.dayThreshold || item.dayThreshold <= tripLength);
-          filteredIn =
-            filteredIn &&
-            (!item.onlyIfWeekday ||
-              (item.onlyIfWeekday && bTripContainsWeekday));
-          filteredIn =
-            filteredIn &&
-            (!item.onlyIfAbroad || (item.onlyIfAbroad && isAbroad));
-          return filteredIn;
-        });
         return {
           task: {
             content: category.name,
           },
           subTasks: category.content.map((item: PackingItem) => {
-            let taskString = item.name;
-            if (item.dayMultiplier && item.dayMultiplier > 0) {
-              taskString = item.dayMultiplier * tripLength + "x " + item.name;
-            }
             if (item.addTripNameToTask) {
-              taskString += " für " + tripName;
+              item.name += " für " + tripName;
             }
             let todoistTaskJSON: any = {
-              content: taskString,
+              content: item.name,
             };
             if (item.additionalLabels && item.additionalLabels.length > 0) {
               todoistTaskJSON.labels = item.additionalLabels;

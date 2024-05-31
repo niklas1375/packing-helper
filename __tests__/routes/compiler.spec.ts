@@ -18,13 +18,21 @@ import sunny_warm from "../json/compiler/sunny_warm.json";
 import weather_dependent from "../json/compiler/weather_dependent.json";
 
 describe("Compiler routes", () => {
+  // setup for 2 day trip during the week --> fixed dates
+  const tripBasics = {
+    tripname: "Testtrip",
+    tripstart: new Date("2024-06-03").toISOString(),
+    tripend: new Date("2024-06-05").toISOString(),
+    isAbroad: false,
+  };
+
   /*
    * Test empty object
    */
   test("Test empty choices of activities and weather", async () => {
     const res = await request(app)
       .post("/api/compile")
-      .send({})
+      .send(tripBasics)
       .expect("Content-Type", /json/)
       .expect(200);
     expect(res.body).toEqual(basics_standalone);
@@ -36,6 +44,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "car",
@@ -50,6 +59,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "train",
@@ -67,6 +77,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: ["cycling", "cycling"],
         transport: "car",
@@ -81,6 +92,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "car",
@@ -98,6 +110,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: ["nonsense"],
         transport: "car",
@@ -112,6 +125,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: ["nonsense", "cycling"],
         transport: "car",
@@ -126,6 +140,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "car",
@@ -140,6 +155,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "car",
@@ -157,6 +173,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "car",
@@ -174,6 +191,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "bus",
@@ -188,6 +206,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "flight",
@@ -205,6 +224,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "camping",
         activities: [],
         transport: "car",
@@ -219,6 +239,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "huette",
         activities: [],
         transport: "car",
@@ -233,6 +254,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "youthhostel",
         activities: [],
         transport: "car",
@@ -250,6 +272,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: ["cycling", "diving"],
         transport: "car",
@@ -267,6 +290,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "car",
@@ -284,6 +308,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: ["running"],
         transport: "car",
@@ -301,6 +326,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [],
         transport: "car",
@@ -318,6 +344,7 @@ describe("Compiler routes", () => {
     const res = await request(app)
       .post("/api/compile")
       .send({
+        ...tripBasics,
         accomodation: "hotel",
         activities: [
           "cycling",

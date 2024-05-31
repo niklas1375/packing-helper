@@ -3,11 +3,11 @@
         "name": "Kleidung",
         "content": [
             {
-                "name": "Unterwäsche",
+                "name": "2x Unterwäsche",
                 "dayMultiplier": 1
             },
             {
-                "name": "Socken lang / kurz",
+                "name": "2x Socken lang / kurz",
                 "dayMultiplier": 1
             },
             {
@@ -32,14 +32,6 @@
             },
             {
                 "name": "Medikamente"
-            },
-            {
-                "name": "Rasierer",
-                "dayThreshold": 4
-            },
-            {
-                "name": "Wäschesack",
-                "dayThreshold": 4
             }
         ]
     },
@@ -65,23 +57,6 @@
                 ],
                 "addTripNameToTask": true,
                 "dueShift": -2
-            },
-            {
-                "name": "Perso / Reisepass",
-                "onlyIfAbroad": true
-            },
-            {
-                "name": "Visum?",
-                "onlyIfAbroad": true
-            },
-            {
-                "name": "Kreditkarte für Zielland freigeben",
-                "onlyIfAbroad": true
-            },
-            {
-                "name": "Kreditkarte wieder sperren",
-                "onlyIfAbroad": true,
-                "afterReturn": true
             },
             {
                 "name": "Urlaubsmodus Todoist aktivieren",
