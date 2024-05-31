@@ -1,5 +1,5 @@
 # stage 1
-FROM docker.io/node:alpine as packing-helper-build
+FROM docker.io/node:lts as packing-helper-build
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 # stage 2
-FROM docker.io/node:alpine
+FROM docker.io/node:lts
 WORKDIR /app
 COPY package* ./
 RUN npm install --omit=dev
