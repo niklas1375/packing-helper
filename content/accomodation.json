@@ -180,6 +180,9 @@
                 "content": [
                     {
                         "name": "DAV-Ausweis"
+                    },
+                    {
+                        "name": "Bargeld"
                     }
                 ]
             },
@@ -196,9 +199,6 @@
                 "content": [
                     {
                         "name": "Powerbank"
-                    },
-                    {
-                        "name": "Bargeld"
                     }
                 ]
             }
