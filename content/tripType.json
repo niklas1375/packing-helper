@@ -40,6 +40,10 @@
                     },
                     {
                         "name": "SAP-Badge?"
+                    },
+                    {
+                        "name": "Mobi KM pflegen",
+                        "afterReturn": true
                     }
                 ]
             },
@@ -136,6 +140,10 @@
                     },
                     {
                         "name": "SAP-Badge?"
+                    },
+                    {
+                        "name": "Mobi KM pflegen",
+                        "afterReturn": true
                     },
                     {
                         "name": "Todo anlegen, Postkarten zu schicken"

@@ -234,6 +234,7 @@ describe("Test packingList functions", () => {
         subTasks: [
           {
             content: "OOO erstellen für " + tripName,
+            description: tripName,
             labels: ["Arbeit", "Reisen"],
             dueDate: shiftedDueString,
           },
