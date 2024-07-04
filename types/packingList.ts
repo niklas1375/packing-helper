@@ -193,6 +193,9 @@ export class PackingList implements IPackingList {
                 "Reisen",
               ]);
             }
+            if (item.afterReturn) {
+              todoistTaskJSON.afterReturn = true;
+            }
 
             // remove duplicates
             if (todoistTaskJSON.labels && todoistTaskJSON.labels.length > 0) {

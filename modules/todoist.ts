@@ -13,7 +13,7 @@ async function submitTasks(req: Request, res: Response) {
   const todoistJson = packingList.convertToTodoistJSON(
     req.body.tripName,
     req.body.tripLength,
-    new Date(tripBeginDate),
+    new Date(tripBeginDate)
   );
   const api = _getTodoistApi(req, res);
   if (!api) {
@@ -54,7 +54,12 @@ async function _traverseTasks(
   for (let jsonTask of todoistJSON) {
     globalOpenCounter += 1;
     const task = jsonTask.task ? jsonTask.task : jsonTask;
-    task.parentId = parentTaskId;
+    // don't put afterReturn in initial packing task
+    if (task.afterReturn) {
+      delete task.afterReturn;
+    } else {
+      task.parentId = parentTaskId;
+    }
 
     /**
      * push task creation to promise array. `Then` returns a promise which is
@@ -90,7 +95,11 @@ function _TaskFinished() {
   globalResolvedCounter += 1;
   if (globalResolvedCounter > globalOpenCounter) return;
   // don't log in test
-  if (process.env.JEST_WORKER_ID !== undefined || process.env.NODE_ENV === 'test') return;
+  if (
+    process.env.JEST_WORKER_ID !== undefined ||
+    process.env.NODE_ENV === "test"
+  )
+    return;
   console.debug(
     `Resolved ${globalResolvedCounter} of ${globalOpenCounter} Tasks`
   );
