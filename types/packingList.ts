@@ -188,10 +188,11 @@ export class PackingList implements IPackingList {
                 new Date(tripBeginDate),
                 item.dueShift || tripLength + 1
               );
-              // to keep track of related tasks, 'outside' tasks always have the travel label
+              // to keep track of related tasks, 'outside' tasks always have the travel label + description
               todoistTaskJSON.labels = (todoistTaskJSON.labels || []).concat([
                 "Reisen",
               ]);
+              todoistTaskJSON.description = tripName;
             }
             if (item.afterReturn) {
               todoistTaskJSON.afterReturn = true;
