@@ -125,7 +125,7 @@
                         "name": "Hotelreservierung"
                     },
                     {
-                        "name": "Perso"
+                        "name": "Perso / Reisepass"
                     }
                 ]
             },
@@ -180,6 +180,9 @@
                 "content": [
                     {
                         "name": "DAV-Ausweis"
+                    },
+                    {
+                        "name": "Bargeld"
                     }
                 ]
             },
@@ -196,9 +199,6 @@
                 "content": [
                     {
                         "name": "Powerbank"
-                    },
-                    {
-                        "name": "Bargeld"
                     }
                 ]
             }
@@ -234,7 +234,7 @@
                         "name": "Herbergenreservierung"
                     },
                     {
-                        "name": "Perso"
+                        "name": "Perso / Reisepass"
                     }
                 ]
             },

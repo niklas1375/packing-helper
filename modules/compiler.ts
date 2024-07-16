@@ -41,7 +41,9 @@ function compileListFromSelections(req: Request, res: Response) {
   const weatherSelection = weatherList.filter((entry) =>
     choices.weather?.includes(entry.key)
   );
-  const weatherChoiceKeys = weatherSelection.map(weatherSel => weatherSel.key);
+  const weatherChoiceKeys = weatherSelection.map(
+    (weatherSel) => weatherSel.key
+  );
 
   [transportChoice, tripChoice].forEach((choice) => {
     if (!choice) return;
@@ -53,6 +55,17 @@ function compileListFromSelections(req: Request, res: Response) {
       packingList.addPackingList(choice.content, weatherChoiceKeys);
     })
   );
+
+  const tripstartDate = new Date(choices.tripstart);
+  const tripendDate = new Date(choices.tripend);
+  // +1 for start day
+  const diffDays = 1 + Math.round(
+    Math.abs(
+      (tripstartDate.getTime() - tripendDate.getTime()) / (24 * 60 * 60 * 1000)
+    )
+  );
+
+  packingList.filterForExclusions(diffDays, tripstartDate, choices.isAbroad);
 
   packingList.removeDuplicates();
 

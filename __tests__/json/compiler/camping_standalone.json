@@ -3,11 +3,11 @@
         "name": "Kleidung",
         "content": [
             {
-                "name": "Unterwäsche",
+                "name": "3x Unterwäsche",
                 "dayMultiplier": 1
             },
             {
-                "name": "Socken lang / kurz",
+                "name": "3x Socken lang / kurz",
                 "dayMultiplier": 1
             },
             {
@@ -40,15 +40,10 @@
                 "name": "Medikamente"
             },
             {
-                "name": "Rasierer",
-                "dayThreshold": 4
-            },
-            {
-                "name": "Wäschesack",
-                "dayThreshold": 4
-            },
-            {
                 "name": "Kondome"
+            }, 
+            {
+                "name": "Gleitgel"
             },
             {
                 "name": "Spülmittel"
@@ -113,6 +108,24 @@
             },
             {
                 "name": "Müll leeren (Bio & Rest)"
+            },
+            {
+                "name": "OOO erstellen",
+                "onlyIfWeekday": true,
+                "additionalLabels": [
+                    "Arbeit",
+                    "Reisen"
+                ],
+                "addTripNameToTask": true,
+                "dueShift": -2
+            },
+            {
+                "name": "Urlaubsmodus Todoist aktivieren",
+                "dueShift": 0
+            },
+            {
+                "name": "Urlaubsmodus Todoist deaktivieren",
+                "afterReturn": true
             },
             {
                 "name": "Todo anlegen, Postkarten zu schicken"

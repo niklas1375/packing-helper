@@ -78,6 +78,50 @@ export class PackingList implements IPackingList {
     );
   }
 
+  filterForExclusions(
+    tripLength: number,
+    tripBeginDate: Date,
+    isAbroad: boolean
+  ) {
+    const bTripContainsWeekday = this._checkIfContainsWeekday(
+      tripLength,
+      tripBeginDate
+    );
+    [
+      this.clothing,
+      this.entertainment,
+      this.gear,
+      this.organisational,
+      this.toiletries,
+      this.other,
+    ].forEach((category: PackingCategory) => {
+      const newContent: PackingItem[] = [];
+      category.content.forEach((item: PackingItem) => {
+        let filteredIn = true;
+        filteredIn =
+          filteredIn && (!item.dayThreshold || item.dayThreshold <= tripLength);
+        filteredIn =
+          filteredIn &&
+          (!item.onlyIfWeekday || (item.onlyIfWeekday && bTripContainsWeekday));
+        filteredIn =
+          filteredIn && (!item.onlyIfAbroad || (item.onlyIfAbroad && isAbroad));
+
+        if (!filteredIn) return;
+
+        if (item.dayMultiplier && item.dayMultiplier > 0) {
+          const multiplierString = item.dayMultiplier * tripLength + "x ";
+          if (item.name.match(/(\d+x\s+)+/g)) {
+            item.name = item.name.replace(/(\d+x\s+)+/gm, multiplierString);
+          } else {
+            item.name = multiplierString + item.name;
+          }
+        }
+        newContent.push(item);
+      });
+      category.content = newContent;
+    });
+  }
+
   removeDuplicates() {
     this.clothing.content = this._filterArrayDuplicates(this.clothing.content);
 
@@ -110,7 +154,11 @@ export class PackingList implements IPackingList {
     });
   }
 
-  convertToTodoistJSON(tripLength: number): any {
+  convertToTodoistJSON(
+    tripName: string,
+    tripLength: number,
+    tripBeginDate: Date
+  ): any {
     return [
       this.clothing,
       this.entertainment,
@@ -120,25 +168,60 @@ export class PackingList implements IPackingList {
       this.other,
     ]
       .map((category: PackingCategory) => {
-        category.content = category.content.filter(
-          (item: PackingItem) =>
-            !item.dayThreshold || item.dayThreshold <= tripLength
-        );
         return {
           task: {
             content: category.name,
           },
           subTasks: category.content.map((item: PackingItem) => {
-            const taskString =
-              item.dayMultiplier && item.dayMultiplier > 0
-                ? item.dayMultiplier * tripLength + "x " + item.name
-                : item.name;
-            return {
-              content: taskString,
+            if (item.addTripNameToTask) {
+              item.name += " für " + tripName;
+            }
+            let todoistTaskJSON: any = {
+              content: item.name,
             };
+            if (item.additionalLabels && item.additionalLabels.length > 0) {
+              todoistTaskJSON.labels = item.additionalLabels;
+            }
+            // if afterReturn is true: dueShift = triplength + 1
+            if (item.dueShift || item.afterReturn) {
+              todoistTaskJSON.dueDate = this._getDueDateString(
+                new Date(tripBeginDate),
+                item.dueShift || tripLength + 1
+              );
+              // to keep track of related tasks, 'outside' tasks always have the travel label + description
+              todoistTaskJSON.labels = (todoistTaskJSON.labels || []).concat([
+                "Reisen",
+              ]);
+              todoistTaskJSON.description = tripName;
+            }
+            if (item.afterReturn) {
+              todoistTaskJSON.afterReturn = true;
+            }
+
+            // remove duplicates
+            if (todoistTaskJSON.labels && todoistTaskJSON.labels.length > 0) {
+              todoistTaskJSON.labels = [...new Set(todoistTaskJSON.labels)];
+            }
+            return todoistTaskJSON;
           }),
         };
       })
       .filter((mainTask) => mainTask.subTasks && mainTask.subTasks.length > 0);
+  }
+
+  _checkIfContainsWeekday(tripLength: number, tripBeginDate: Date): boolean {
+    // longer than 2 days automatically means inclusion of a weekday
+    if (tripLength > 2) return true;
+    const beginDay = tripBeginDate.getDay();
+    // day before saturday (6) is beginDay
+    if (beginDay < 5) return true;
+    // 2 day trip beginning on sunday is the last remaining option for a weekday to occur
+    return beginDay == 0 && tripLength > 1;
+  }
+
+  _getDueDateString(tripDate: Date, offset?: number): string {
+    offset = offset || -1;
+    tripDate.setDate(tripDate.getDate() + offset);
+    return tripDate.toISOString().split("T")[0];
   }
 }

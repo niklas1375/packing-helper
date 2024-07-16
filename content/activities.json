@@ -342,10 +342,7 @@
                 "name": "Organisatorisches",
                 "content": [
                     {
-                        "name": "Brevet"
-                    },
-                    {
-                        "name": "LogBuch / eReader"
+                        "name": "Brevet & Logbuch"
                     }
                 ]
             },
@@ -585,9 +582,6 @@
                         "relevantForWeather": [
                             "wet"
                         ]
-                    },
-                    {
-                        "name": "Pulsgurt"
                     }
                 ]
             },
@@ -603,6 +597,9 @@
                     },
                     {
                         "name": "Garmin Uhr"
+                    },
+                    {
+                        "name": "Pulsgurt"
                     }
                 ]
             },
