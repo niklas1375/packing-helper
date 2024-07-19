@@ -1,0 +1,69 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = "file:./dev.db"
+}
+
+model PackingItem {
+    id                 String   @id @default(cuid())
+    listId             String
+    name               String
+    category           String
+    dayMultiplier      Int?
+    dayThreshold       Int?
+    relevantForWeather String?
+    onlyIfWeekday      Boolean?
+    onlyIfAbroad       Boolean?
+    // positive / negative number of days relative to trip begin date
+    dueShift           Int?
+    afterReturn        Boolean?
+    additionalLabels   String?
+    addTripNameToTask  Boolean?
+
+    // Relations
+    accomodation Accomodation? @relation(fields: [listId], references: [id])
+    activity     Activity?     @relation(fields: [listId], references: [id])
+    basics       Basics?       @relation(fields: [listId], references: [id])
+    transport    Transport?    @relation(fields: [listId], references: [id])
+    tripType     TripType?     @relation(fields: [listId], references: [id])
+    weather      Weather?      @relation(fields: [listId], references: [id])
+}
+
+model Accomodation {
+    id           String        @id @default(cuid())
+    name         String
+    packingItems PackingItem[]
+}
+
+model Activity {
+    id           String        @id @default(cuid())
+    name         String
+    packingItems PackingItem[]
+}
+
+model Basics {
+    id           String        @id @default(cuid())
+    name         String
+    packingItems PackingItem[]
+}
+
+model Transport {
+    id           String        @id @default(cuid())
+    name         String
+    packingItems PackingItem[]
+}
+
+model TripType {
+    id           String        @id @default(cuid())
+    name         String
+    packingItems PackingItem[]
+}
+
+model Weather {
+    id           String        @id @default(cuid())
+    name         String
+    packingItems PackingItem[]
+}
