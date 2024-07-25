@@ -3,6 +3,8 @@ import { PackingItem } from "./packingItem";
 import { IPackingList } from "./packingListInterface";
 
 export class PackingList implements IPackingList {
+  [key: string]: Function | PackingCategory;
+  
   clothing: PackingCategory = {
     name: "Kleidung",
     content: [],

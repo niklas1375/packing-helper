@@ -8,7 +8,7 @@ datasource db {
 }
 
 model PackingItem {
-    id                 String   @id @default(cuid())
+    item_id            String   @id @default(cuid())
     listId             String
     name               String
     category           String
@@ -24,46 +24,12 @@ model PackingItem {
     addTripNameToTask  Boolean?
 
     // Relations
-    accomodation Accomodation? @relation(fields: [listId], references: [id])
-    activity     Activity?     @relation(fields: [listId], references: [id])
-    basics       Basics?       @relation(fields: [listId], references: [id])
-    transport    Transport?    @relation(fields: [listId], references: [id])
-    tripType     TripType?     @relation(fields: [listId], references: [id])
-    weather      Weather?      @relation(fields: [listId], references: [id])
+    packingList PackingList? @relation(fields: [listId], references: [id])
 }
 
-model Accomodation {
+model PackingList {
     id           String        @id @default(cuid())
     name         String
-    packingItems PackingItem[]
-}
-
-model Activity {
-    id           String        @id @default(cuid())
-    name         String
-    packingItems PackingItem[]
-}
-
-model Basics {
-    id           String        @id @default(cuid())
-    name         String
-    packingItems PackingItem[]
-}
-
-model Transport {
-    id           String        @id @default(cuid())
-    name         String
-    packingItems PackingItem[]
-}
-
-model TripType {
-    id           String        @id @default(cuid())
-    name         String
-    packingItems PackingItem[]
-}
-
-model Weather {
-    id           String        @id @default(cuid())
-    name         String
+    type         String
     packingItems PackingItem[]
 }

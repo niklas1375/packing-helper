@@ -1,6 +1,8 @@
 import { PackingCategory } from "./packingCategory";
 
 export interface IPackingList {
+  [key: string]: PackingCategory | Function
+
   clothing: PackingCategory;
   toiletries: PackingCategory;
   gear: PackingCategory;
