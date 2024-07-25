@@ -10,7 +10,7 @@ import basics_import from "../content/basics.json";
 import { UserChoices } from "../types/userChoices";
 import { PackingList } from "../types/packingList";
 import { IPackingList } from "../types/packingListInterface";
-import { ContentType } from "../types/contentType";
+import { NamedPackingList } from "../types/namedPackingList";
 
 function compileListFromSelections(req: Request, res: Response) {
   const packingList = new PackingList();
@@ -18,11 +18,11 @@ function compileListFromSelections(req: Request, res: Response) {
   const basics: IPackingList = Object.assign({}, basics_import);
   packingList.addPackingList(basics);
 
-  const accomodationsList: ContentType[] = accomodations;
-  const activitiesList: ContentType[] = activities;
-  const transportList: ContentType[] = transport;
-  const triptypesList: ContentType[] = triptypes;
-  const weatherList: ContentType[] = weather;
+  const accomodationsList: NamedPackingList[] = accomodations;
+  const activitiesList: NamedPackingList[] = activities;
+  const transportList: NamedPackingList[] = transport;
+  const triptypesList: NamedPackingList[] = triptypes;
+  const weatherList: NamedPackingList[] = weather;
 
   const choices: UserChoices = req.body;
 
