@@ -1,36 +1,58 @@
 import { Request, Response } from "express";
-import accomodations from "../content/accomodation.json";
-import activities from "../content/activities.json";
-import transport from "../content/transport.json";
-import triptypes from "../content/tripType.json";
-import weather from "../content/weather.json";
-import { ContentType } from "../types/contentType";
+import { PrismaClient } from '@prisma/client'
 
-function getAccomodationTypes(_: Request, res: Response) {
+const prisma = new PrismaClient();
+
+async function getAccomodationTypes(_: Request, res: Response) {
+  const accomodations = await prisma.packingList.findMany({
+    where: {
+      type: "accomodation"
+    }
+  });
   res.json(_getTypesFromJSON(accomodations));
 }
 
-function getActivityTypes(_: Request, res: Response) {
+async function getActivityTypes(_: Request, res: Response) {
+  const activities = await prisma.packingList.findMany({
+    where: {
+      type: "activity"
+    }
+  });
   res.json(_getTypesFromJSON(activities));
 }
 
-function getTransportTypes(_: Request, res: Response) {
-  res.json(_getTypesFromJSON(transport));
+async function getTransportTypes(_: Request, res: Response) {
+  const transportTypes = await prisma.packingList.findMany({
+    where: {
+      type: "transport"
+    }
+  });
+  res.json(_getTypesFromJSON(transportTypes));
 }
 
-function getTripTypes(_: Request, res: Response) {
-  res.json(_getTypesFromJSON(triptypes));
+async function getTripTypes(_: Request, res: Response) {
+  const tripTypes = await prisma.packingList.findMany({
+    where: {
+      type: "triptype"
+    }
+  });
+  res.json(_getTypesFromJSON(tripTypes));
 }
 
-function getWeatherTypes(_: Request, res: Response) {
-  res.json(_getTypesFromJSON(weather));
+async function getWeatherTypes(_: Request, res: Response) {
+  const weathers = await prisma.packingList.findMany({
+    where: {
+      type: "weather"
+    }
+  });
+  res.json(_getTypesFromJSON(weathers));
 }
 
-function _getTypesFromJSON(typesJSON: ContentType[]) {
+function _getTypesFromJSON(typesJSON: any[]) {
   return typesJSON
     .map((typeJSON) => {
       return {
-        key: typeJSON.key,
+        key: typeJSON.id,
         name: typeJSON.name,
       };
     })
