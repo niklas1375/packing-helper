@@ -1,75 +1,82 @@
 import { Request, Response } from "express";
-
-import accomodations from "../content/accomodation.json";
-import activities from "../content/activities.json";
-import transport from "../content/transport.json";
-import triptypes from "../content/tripType.json";
-import weather from "../content/weather.json";
-import basics_import from "../content/basics.json";
+import { Prisma, PrismaClient } from "@prisma/client";
 
 import { UserChoices } from "../types/userChoices";
 import { PackingList } from "../types/packingList";
-import { IPackingList } from "../types/packingListInterface";
-import { NamedPackingList } from "../types/namedPackingList";
 
-function compileListFromSelections(req: Request, res: Response) {
-  const packingList = new PackingList();
+const prisma = new PrismaClient();
 
-  const basics: IPackingList = Object.assign({}, basics_import);
-  packingList.addPackingList(basics);
+async function compileListFromSelections(req: Request, res: Response) {
+  try {
+    const basicsDbList = await prisma.packingList.findMany({
+      where: {
+        type: "basics",
+      },
+      include: {
+        packingItems: true,
+      },
+    });
+    // there should only be one
+    const packingList = new PackingList(basicsDbList[0]);
 
-  const accomodationsList: NamedPackingList[] = accomodations;
-  const activitiesList: NamedPackingList[] = activities;
-  const transportList: NamedPackingList[] = transport;
-  const triptypesList: NamedPackingList[] = triptypes;
-  const weatherList: NamedPackingList[] = weather;
+    const choices: UserChoices = req.body;
+    let packingListIds: string[] = [];
+    packingListIds = packingListIds.concat(choices.accomodation);
+    packingListIds = packingListIds.concat(choices.activities);
+    packingListIds.push(choices.transport);
+    packingListIds.push(choices.triptype);
+    packingListIds = packingListIds.concat(choices.weather);
 
-  const choices: UserChoices = req.body;
+    packingListIds = packingListIds.filter((list) => !!list);
 
-  const accChoice = accomodationsList.filter((entry) =>
-    choices.accomodation?.includes(entry.key)
-  );
-  const actChoices = activitiesList.filter((entry) =>
-    choices.activities?.includes(entry.key)
-  );
-  const transportChoice = transportList.find(
-    (entry) => entry.key === choices.transport
-  );
-  const tripChoice = triptypesList.find(
-    (entry) => entry.key === choices.triptype
-  );
-  const weatherSelection = weatherList.filter((entry) =>
-    choices.weather?.includes(entry.key)
-  );
-  const weatherChoiceKeys = weatherSelection.map(
-    (weatherSel) => weatherSel.key
-  );
+    const chosenPackingLists = await prisma.packingList.findMany({
+      where: {
+        id: {
+          in: packingListIds,
+        },
+      },
+      include: {
+        packingItems: true,
+      },
+    });
 
-  [transportChoice, tripChoice].forEach((choice) => {
-    if (!choice) return;
-    packingList.addPackingList(choice!.content);
-  });
+    const weatherChoiceKeys = chosenPackingLists
+      .filter((list) => list.type === "weather")
+      .map((list) => list.name);
 
-  [accChoice, actChoices, weatherSelection].forEach((list) =>
-    list.forEach((choice) => {
-      packingList.addPackingList(choice.content, weatherChoiceKeys);
-    })
-  );
+    chosenPackingLists.forEach((list) => {
+      const internalObject: PackingList = new PackingList(list);
+      packingList.addPackingList(internalObject, weatherChoiceKeys);
+    });
 
-  const tripstartDate = new Date(choices.tripstart);
-  const tripendDate = new Date(choices.tripend);
-  // +1 for start day
-  const diffDays = 1 + Math.round(
-    Math.abs(
-      (tripstartDate.getTime() - tripendDate.getTime()) / (24 * 60 * 60 * 1000)
-    )
-  );
+    const tripstartDate = new Date(choices.tripstart);
+    const tripendDate = new Date(choices.tripend);
+    // +1 for start day
+    const diffDays =
+      1 +
+      Math.round(
+        Math.abs(
+          (tripstartDate.getTime() - tripendDate.getTime()) /
+            (24 * 60 * 60 * 1000)
+        )
+      );
 
-  packingList.filterForExclusions(diffDays, tripstartDate, choices.isAbroad);
+    packingList.filterForExclusions(diffDays, tripstartDate, choices.isAbroad);
 
-  packingList.removeDuplicates();
+    packingList.removeDuplicates();
 
-  res.json(packingList);
+    res.json(packingList);
+  } catch (e) {
+    if (e instanceof Prisma.PrismaClientKnownRequestError) {
+      // The .code property can be accessed in a type-safe manner
+      console.error(e.code, e.name, e.message);
+    }
+    if (e instanceof Prisma.PrismaClientValidationError) {
+      // The .code property can be accessed in a type-safe manner
+      console.error(e.name, e.message);
+    }
+    throw e;
+  }
 }
 
 export { compileListFromSelections };
