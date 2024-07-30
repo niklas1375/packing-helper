@@ -4,7 +4,7 @@ import { IPackingList } from "./packingListInterface";
 
 export class PackingList implements IPackingList {
   [key: string]: Function | PackingCategory;
-  
+
   clothing: PackingCategory = {
     name: "Kleidung",
     content: [],
@@ -29,6 +29,42 @@ export class PackingList implements IPackingList {
     name: "sonstiges",
     content: [],
   };
+
+  constructor(dbNamedList?: any) {
+    if (!dbNamedList) {
+      return;
+    }
+    for (let index = 0; index < dbNamedList.packingItems.length; index++) {
+      const packingItem = dbNamedList.packingItems[index];
+      const categoryProbable = this[packingItem.category];
+      if (typeof categoryProbable === "function") {
+        continue;
+      }
+      const category = <PackingCategory>categoryProbable;
+      category.content.push(this._intItemFromDBO(packingItem));
+      this[packingItem.category] = category;
+    }
+  }
+
+  _intItemFromDBO(dbItem: any): PackingItem {
+    const item: PackingItem = {
+      name: dbItem.name,
+      dayMultiplier: dbItem.dayMultiplier,
+      dayThreshold: dbItem.dayThreshold,
+      relevantForWeather: dbItem.relevantForWeather
+        ? dbItem.relevantForWeather.split(",")
+        : [],
+      onlyIfWeekday: dbItem.onlyIfWeekday,
+      onlyIfAbroad: dbItem.onlyIfAbroad,
+      dueShift: dbItem.dueShift,
+      afterReturn: dbItem.afterReturn,
+      additionalLabels: dbItem.additionalLabels
+        ? dbItem.additionalLabels.split(",")
+        : [],
+      addTripNameToTask: dbItem.addTripNameToTask,
+    };
+    return item;
+  }
 
   addPackingList(
     additionalList: IPackingList,
