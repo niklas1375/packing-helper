@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Static routes Get all accomodations 1`] = `
+[
+  {
+    "key": "cm0167zsu001wdlnegyn5cv98",
+    "name": "Camping",
+  },
+  {
+    "key": "cm0167zsz004xdlnespbj4rcp",
+    "name": "Hotel",
+  },
+  {
+    "key": "cm0167zsu0003dlne9o9ahwl1",
+    "name": "Hütte",
+  },
+  {
+    "key": "cm0167zsx004bdlnefrf1clkm",
+    "name": "Jugendherberge",
+  },
+]
+`;
+
+exports[`Static routes Get all activities 1`] = `
+[
+  {
+    "key": "cm0167ztk007cdlnesmlwzr3r",
+    "name": "Bouldern",
+  },
+  {
+    "key": "cm0167ztj006xdlneo58kcn7h",
+    "name": "Fahrrad fahren",
+  },
+  {
+    "key": "cm0167zsu0001dlnehd63mfi8",
+    "name": "Klettersteig",
+  },
+  {
+    "key": "cm0167ztl007kdlnexvzg32ep",
+    "name": "Konzert",
+  },
+  {
+    "key": "cm0167zsu002ddlne3q0dftko",
+    "name": "Laufen",
+  },
+  {
+    "key": "cm0167zsu000ddlneh43thcsy",
+    "name": "Rudern",
+  },
+  {
+    "key": "cm0167zsu000tdlneyfddgasz",
+    "name": "Sightseeing",
+  },
+  {
+    "key": "cm0167zsy004gdlne9ladyn7e",
+    "name": "Ski fahren",
+  },
+  {
+    "key": "cm0167zsu0000dlnewnnz6afq",
+    "name": "Strand",
+  },
+  {
+    "key": "cm0167zsu0002dlned2usb8ha",
+    "name": "Tauchen",
+  },
+  {
+    "key": "cm0167zsu001idlneoqabzsi8",
+    "name": "Wandern",
+  },
+]
+`;
+
+exports[`Static routes Get all transports 1`] = `
+[
+  {
+    "key": "cm0167zt10057dlnebb9xxnn4",
+    "name": "Auto",
+  },
+  {
+    "key": "cm0167zt00050dlnewtxq8mqe",
+    "name": "Bus",
+  },
+  {
+    "key": "cm0167zt2005adlnecyn33jm8",
+    "name": "Flugzeug",
+  },
+  {
+    "key": "cm0167zt5005hdlnephzk0wzi",
+    "name": "Zug",
+  },
+]
+`;
+
+exports[`Static routes Get all triptypes 1`] = `
+[
+  {
+    "key": "cm0167zt8005odlnepqzqsod3",
+    "name": "Business",
+  },
+  {
+    "key": "cm0167zt9005xdlne4bola1zi",
+    "name": "Freizeit",
+  },
+  {
+    "key": "cm0167zta0061dlnex56t1ejl",
+    "name": "Mix",
+  },
+]
+`;
+
+exports[`Static routes Get all weathers 1`] = `
+[
+  {
+    "key": "cm0167ztb006bdlne8dy88htm",
+    "name": "Kaltes Wetter",
+  },
+  {
+    "key": "cm0167ztf006udlneg02yiqhy",
+    "name": "Nasses Wetter",
+  },
+  {
+    "key": "cm0167ztc006jdlneperyc9zk",
+    "name": "Sonniges Wetter",
+  },
+  {
+    "key": "cm0167ztd006ndlnegyoem91r",
+    "name": "Warmes Wetter",
+  },
+]
+`;
