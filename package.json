@@ -7,7 +7,8 @@
     "test": "jest --coverage --setupFiles dotenv/config",
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "migrate-db": "node dist/db/migrator.js"
   },
   "keywords": [],
   "author": "",
@@ -15,12 +16,15 @@
   "dependencies": {
     "@doist/todoist-api-typescript": "^3.0.3",
     "axios": "^1.7.4",
+    "better-sqlite3": "^11.2.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
+    "kysely": "^0.27.4",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
     "@types/express": "^4.17.21",
     "@types/express-session": "^1.18.0",
     "@types/jest": "^29.5.12",

@@ -1,36 +1,47 @@
 import { Request, Response } from "express";
-import accomodations from "../content/accomodation.json";
-import activities from "../content/activities.json";
-import transport from "../content/transport.json";
-import triptypes from "../content/tripType.json";
-import weather from "../content/weather.json";
-import { ContentType } from "../types/contentType";
+import { findPackingLists } from "../db/PackingListRepository";
+import { PackingList } from "../types/db/types";
 
-function getAccomodationTypes(_: Request, res: Response) {
+async function getAccomodationTypes(_: Request, res: Response) {
+  const accomodations = await findPackingLists({
+    type: "accomodation"
+  });
   res.json(_getTypesFromJSON(accomodations));
 }
 
-function getActivityTypes(_: Request, res: Response) {
+async function getActivityTypes(_: Request, res: Response) {
+  const activities = await findPackingLists({
+    type: "activity"
+  });
   res.json(_getTypesFromJSON(activities));
 }
 
-function getTransportTypes(_: Request, res: Response) {
+async function getTransportTypes(_: Request, res: Response) {
+  const transport = await findPackingLists({
+    type: "transport"
+  });
   res.json(_getTypesFromJSON(transport));
 }
 
-function getTripTypes(_: Request, res: Response) {
+async function getTripTypes(_: Request, res: Response) {
+  const triptypes = await findPackingLists({
+    type: "triptype"
+  });
   res.json(_getTypesFromJSON(triptypes));
 }
 
-function getWeatherTypes(_: Request, res: Response) {
+async function getWeatherTypes(_: Request, res: Response) {
+  const weather = await findPackingLists({
+    type: "weather"
+  });
   res.json(_getTypesFromJSON(weather));
 }
 
-function _getTypesFromJSON(typesJSON: ContentType[]) {
+function _getTypesFromJSON(typesJSON: PackingList[]) {
   return typesJSON
     .map((typeJSON) => {
       return {
-        key: typeJSON.key,
+        key: typeJSON.id,
         name: typeJSON.name,
       };
     })
