@@ -105,6 +105,7 @@ function packingItems(listId: Expression<string>) {
         "PackingItem.afterReturn",
         "PackingItem.additionalLabels",
         "PackingItem.addTripNameToTask",
+        "PackingItem.updated_at",
       ])
   )
     .$notNull()
