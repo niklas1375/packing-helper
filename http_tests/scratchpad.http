@@ -7,10 +7,10 @@ Content-Type: application/json
     "tripstart": "2024-06-03",
     "tripend": "2024-06-05",
     "isAbroad": false,
-    "accomodation": "hotel",
+    "accomodation": "clz1azi1b000qo0hvaa5kak18",
     "activities": [],
-    "transport": "car",
-    "triptype": "leisure",
+    "transport": "clz1azi2l007no0hvl57cq07l",
+    "triptype": "clz1azi1x006no0hvlnkpgff3",
     "weather": []
 }
 

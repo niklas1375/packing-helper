@@ -549,32 +549,32 @@
                     {
                         "name": "Kappe",
                         "relevantForWeather": [
-                            "sunny",
-                            "warm"
+                            "clz1azi280079o0hvr733pkji",
+                            "clz1azi2e007do0hv7j7u30cn"
                         ]
                     },
                     {
                         "name": "Mütze",
                         "relevantForWeather": [
-                            "cold"
+                            "clz1azi230071o0hvu2txxcpf"
                         ]
                     },
                     {
                         "name": "Pro Vest",
                         "relevantForWeather": [
-                            "cold"
+                            "clz1azi230071o0hvu2txxcpf"
                         ]
                     },
                     {
                         "name": "Laufhandschuhe",
                         "relevantForWeather": [
-                            "cold"
+                            "clz1azi230071o0hvu2txxcpf"
                         ]
                     },
                     {
                         "name": "Buff",
                         "relevantForWeather": [
-                            "cold"
+                            "clz1azi230071o0hvu2txxcpf"
                         ]
                     },
                     {
@@ -627,14 +627,14 @@
                     {
                         "name": "Kappe",
                         "relevantForWeather": [
-                            "sunny",
-                            "warm"
+                            "clz1azi280079o0hvr733pkji",
+                            "clz1azi2e007do0hv7j7u30cn"
                         ]
                     },
                     {
                         "name": "Mütze",
                         "relevantForWeather": [
-                            "cold"
+                            "clz1azi230071o0hvu2txxcpf"
                         ]
                     }
                 ]
