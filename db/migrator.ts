@@ -7,7 +7,7 @@ import { Database } from "../types/db/types";
 async function migrateToLatest() {
   const db = new Kysely<Database>({
     dialect: new SqliteDialect({
-      database: new SQLite("./dev.db"),
+      database: new SQLite(process.env.DATABASE_URL),
     }),
   });
 

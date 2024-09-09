@@ -8,7 +8,7 @@
     "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "migrate-db": "node dist/db/migrator.js"
+    "migrate-db": "npm run build && node --env-file=.env dist/db/migrator.js"
   },
   "keywords": [],
   "author": "",
