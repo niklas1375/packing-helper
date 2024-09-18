@@ -1,4 +1,3 @@
-import { PackingCategory } from "./packingCategory";
 import { IPackingList } from "./packingListInterface";
 
 export type ContentType = {

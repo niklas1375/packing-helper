@@ -1,75 +1,59 @@
 import { Request, Response } from "express";
 
-import accomodations from "../content/accomodation.json";
-import activities from "../content/activities.json";
-import transport from "../content/transport.json";
-import triptypes from "../content/tripType.json";
-import weather from "../content/weather.json";
-import basics_import from "../content/basics.json";
-
 import { UserChoices } from "../types/userChoices";
 import { PackingList } from "../types/packingList";
-import { IPackingList } from "../types/packingListInterface";
-import { ContentType } from "../types/contentType";
+import { PackingList as DbPackingList } from "../types/db/types";
+import {
+  findBasicsPackingListWithItems,
+  findPackingListsWithItemsById,
+} from "../db/PackingListRepository";
 
-function compileListFromSelections(req: Request, res: Response) {
-  const packingList = new PackingList();
+export async function compileListFromSelections(req: Request, res: Response) {
+  try {
+    const packingList: PackingList = new PackingList(
+      await findBasicsPackingListWithItems()
+    );
 
-  const basics: IPackingList = Object.assign({}, basics_import);
-  packingList.addPackingList(basics);
+    const choices: UserChoices = req.body;
+    let packingListIds: string[] = [];
+    packingListIds = packingListIds.concat(choices.accomodation);
+    packingListIds = packingListIds.concat(choices.activities);
+    packingListIds.push(choices.transport);
+    packingListIds.push(choices.triptype);
+    packingListIds = packingListIds.concat(choices.weather);
 
-  const accomodationsList: ContentType[] = accomodations;
-  const activitiesList: ContentType[] = activities;
-  const transportList: ContentType[] = transport;
-  const triptypesList: ContentType[] = triptypes;
-  const weatherList: ContentType[] = weather;
+    packingListIds = packingListIds.filter((list) => !!list);
 
-  const choices: UserChoices = req.body;
+    const chosenPackingLists: Awaited<DbPackingList[]> =
+      await findPackingListsWithItemsById(packingListIds);
 
-  const accChoice = accomodationsList.filter((entry) =>
-    choices.accomodation?.includes(entry.key)
-  );
-  const actChoices = activitiesList.filter((entry) =>
-    choices.activities?.includes(entry.key)
-  );
-  const transportChoice = transportList.find(
-    (entry) => entry.key === choices.transport
-  );
-  const tripChoice = triptypesList.find(
-    (entry) => entry.key === choices.triptype
-  );
-  const weatherSelection = weatherList.filter((entry) =>
-    choices.weather?.includes(entry.key)
-  );
-  const weatherChoiceKeys = weatherSelection.map(
-    (weatherSel) => weatherSel.key
-  );
+    const weatherChoiceKeys: string[] = chosenPackingLists
+      .filter((list) => list.type === "weather")
+      .map((list) => list.name);
 
-  [transportChoice, tripChoice].forEach((choice) => {
-    if (!choice) return;
-    packingList.addPackingList(choice!.content);
-  });
+    chosenPackingLists.forEach((list) => {
+      const internalObject: PackingList = new PackingList(list);
+      packingList.addPackingList(internalObject, weatherChoiceKeys);
+    });
 
-  [accChoice, actChoices, weatherSelection].forEach((list) =>
-    list.forEach((choice) => {
-      packingList.addPackingList(choice.content, weatherChoiceKeys);
-    })
-  );
+    const tripstartDate = new Date(choices.tripstart);
+    const tripendDate = new Date(choices.tripend);
+    // +1 for start day
+    const diffDays =
+      1 +
+      Math.round(
+        Math.abs(
+          (tripstartDate.getTime() - tripendDate.getTime()) /
+            (24 * 60 * 60 * 1000)
+        )
+      );
 
-  const tripstartDate = new Date(choices.tripstart);
-  const tripendDate = new Date(choices.tripend);
-  // +1 for start day
-  const diffDays = 1 + Math.round(
-    Math.abs(
-      (tripstartDate.getTime() - tripendDate.getTime()) / (24 * 60 * 60 * 1000)
-    )
-  );
+    packingList.filterForExclusions(diffDays, tripstartDate, choices.isAbroad);
 
-  packingList.filterForExclusions(diffDays, tripstartDate, choices.isAbroad);
+    packingList.removeDuplicates();
 
-  packingList.removeDuplicates();
-
-  res.json(packingList);
+    res.json(packingList);
+  } catch (error) {
+    console.error(error);
+  }
 }
-
-export { compileListFromSelections };

@@ -1,6 +1,7 @@
 import { PackingCategory } from "./packingCategory";
 import { PackingItem } from "./packingItem";
 import { IPackingList } from "./packingListInterface";
+import { PackingItem as DbPackingItem } from "../types/db/types";
 
 export class PackingList implements IPackingList {
   clothing: PackingCategory = {
@@ -27,6 +28,81 @@ export class PackingList implements IPackingList {
     name: "sonstiges",
     content: [],
   };
+  private categoryKeys: string[] = [
+    "clothing",
+    "toiletries",
+    "gear",
+    "organisational",
+    "entertainment",
+    "other",
+  ];
+
+  constructor(dbNamedList?: any) {
+    if (!dbNamedList) {
+      return;
+    }
+    for (let index = 0; index < dbNamedList.packingItems.length; index++) {
+      const packingItem: DbPackingItem = dbNamedList.packingItems[index];
+      const itemCategory: string = packingItem.category;
+      if (!this.categoryKeys.includes(itemCategory)) {
+        continue;
+      }
+      const categoryProbable = this[itemCategory as keyof PackingList];
+      const category = <PackingCategory>categoryProbable;
+      category.content.push(this._intItemFromDBO(packingItem));
+      switch (itemCategory) {
+        case "clothing":
+          this.clothing = category;
+          break;
+        case "toiletries":
+          this.toiletries = category;
+          break;
+        case "gear":
+          this.gear = category;
+          break;
+        case "organisational":
+          this.organisational = category;
+          break;
+        case "entertainment":
+          this.entertainment = category;
+          break;
+        case "other":
+          this.other = category;
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
+
+  _intItemFromDBO(dbItem: DbPackingItem): PackingItem {
+    const item: PackingItem = {
+      name: dbItem.name,
+      dayMultiplier: dbItem.dayMultiplier,
+      dayThreshold: dbItem.dayThreshold,
+      relevantForWeather: dbItem.relevantForWeather
+        ? dbItem.relevantForWeather.split(",")
+        : [],
+      onlyIfWeekday: this._boolize(dbItem.onlyIfWeekday),
+      onlyIfAbroad: this._boolize(dbItem.onlyIfAbroad),
+      dueShift: dbItem.dueShift,
+      afterReturn: this._boolize(dbItem.afterReturn),
+      additionalLabels: dbItem.additionalLabels
+        ? dbItem.additionalLabels.split(",")
+        : [],
+      addTripNameToTask: this._boolize(dbItem.addTripNameToTask),
+    };
+    return item;
+  }
+
+  _boolize(input: number | undefined): boolean | undefined {
+    if (typeof input === "number") {
+      return input === 0 ? false : true;
+    } else {
+      return undefined;
+    }
+  }
 
   addPackingList(
     additionalList: IPackingList,
