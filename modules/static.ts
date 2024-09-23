@@ -49,7 +49,7 @@ export function createPackingListOfType(type: string) {
     const newPackingList: NewPackingList = req.body;
     newPackingList.type = type;
     newPackingList.id = createId();
-    newPackingList.updated_at = new Date();
+    newPackingList.updated_at = new Date().toISOString();
     try {
       const createdList = await createPackingList(newPackingList);
       res.status(201);
@@ -65,9 +65,17 @@ export function createPackingListOfType(type: string) {
 // creation POST for packing list items
 export async function createPackingItemForList(req: Request, res: Response) {
   const newPackingItem: NewPackingItem = req.body;
+  if (!newPackingItem.name || !newPackingItem.category) {
+    res.status(400);
+    res.json({
+      message: "The attributes name and category must be provided.",
+    });
+    return;
+  }
+
   newPackingItem.listId = req.params.listId;
   newPackingItem.item_id = createId();
-  newPackingItem.updated_at = new Date();
+  newPackingItem.updated_at = new Date().toISOString();
   try {
     const createdItem = await createPackingItem(newPackingItem);
     res.status(201);
@@ -91,6 +99,7 @@ export async function updatePackingList(req: Request, res: Response) {
   }
   const updateObject: PackingListUpdate = {
     name: req.body.name,
+    updated_at: new Date().toISOString(),
   };
   try {
     await updatePackingListOnDb(updateId, updateObject);
@@ -109,7 +118,7 @@ export async function updatePackingItemForList(req: Request, res: Response) {
   const updateObject: PackingItemUpdate = req.body;
   delete updateObject.item_id;
   delete updateObject.listId;
-  updateObject.updated_at = new Date();
+  updateObject.updated_at = new Date().toISOString();
   try {
     await updatePackingItem(updateId, updateObject);
     res.status(204);
@@ -119,7 +128,6 @@ export async function updatePackingItemForList(req: Request, res: Response) {
     res.status(500);
     res.send("Internal Server Error");
   }
-  throw new Error("Function not implemented.");
 }
 
 // DELETE for packing list

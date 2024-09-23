@@ -79,11 +79,10 @@ export async function createPackingList(packingList: NewPackingList) {
 }
 
 export async function deletePackingList(id: string) {
-  return await db
-    .deleteFrom("PackingList")
-    .where("id", "=", id)
-    .returningAll()
-    .executeTakeFirst();
+  // delete items first
+  await db.deleteFrom("PackingItem").where("listId", "=", id).execute();
+  // then delete the list
+  return await db.deleteFrom("PackingList").where("id", "=", id).execute();
 }
 
 function packingItems(listId: Expression<string>) {
