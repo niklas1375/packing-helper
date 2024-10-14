@@ -158,6 +158,18 @@ export async function deletePackingItemFromList(req: Request, res: Response) {
   }
 }
 
+export async function getPackingListTypes(_: Request, res: Response) {
+  try {
+    const types = await findDistinctListTypes();
+    res.status(200);
+    res.json(types);
+  } catch (error) {
+    console.error(error);
+    res.status(500);
+    res.send("Internal Server Error");
+  }
+}
+
 function _getTypesFromJSON(typesJSON: PackingList[]) {
   return typesJSON
     .map((typeJSON) => {

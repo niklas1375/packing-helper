@@ -2,7 +2,7 @@ import { Router } from "express";
 import { staticContent } from '../modules'
 
 export const register = (app: Router) => {
-    // accomodation routes
+    app.get('/listtypes', staticContent.getPackingListTypes);
     app.get('/accomodation', staticContent.getPackingListsOfType("accomodation"));
     app.get('/accomodation/:listId', staticContent.getSinglePackingList);
     app.get('/accomodation/:listId/items', staticContent.getItemsForPackingList);
