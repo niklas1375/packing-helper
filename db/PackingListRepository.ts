@@ -7,6 +7,10 @@ import {
 import { db } from "./database";
 import { jsonArrayFrom } from "kysely/helpers/sqlite";
 
+export async function findDistinctListTypes() {
+  return await db.selectFrom("PackingList").select("type").distinct().execute();
+}
+
 export async function findPackingListById(id: string) {
   return await db
     .selectFrom("PackingList")
