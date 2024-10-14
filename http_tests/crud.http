@@ -1,3 +1,6 @@
+GET http://localhost:3000/api/listtypes
+
+###
 POST http://localhost:3000/api/activities
 Content-Type: application/json
 
@@ -7,7 +10,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/api/activities/oidcbvno67bx1nck8pzv5q50/items
+POST http://localhost:3000/api/packinglists/oidcbvno67bx1nck8pzv5q50/items
 Content-Type: application/json
 
 {
@@ -21,11 +24,15 @@ GET http://localhost:3000/api/activities
 
 ###
 
-GET http://localhost:3000/api/activities/oidcbvno67bx1nck8pzv5q50/items
+GET http://localhost:3000/api/packinglists/oidcbvno67bx1nck8pzv5q50/items
 
 ###
 
-PATCH http://localhost:3000/api/activities/oidcbvno67bx1nck8pzv5q50/items/jq8dzgvhm64wkc8bcigo9ys3
+GET http://localhost:3000/api/packinglists/cm0167ztl007kdlnexvzg32ep?expand=items
+
+###
+
+PATCH http://localhost:3000/api/packinglists/oidcbvno67bx1nck8pzv5q50/items/jq8dzgvhm64wkc8bcigo9ys3
 Content-Type: application/json
 
 {
@@ -34,4 +41,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/activities/oidcbvno67bx1nck8pzv5q50
+DELETE http://localhost:3000/api/packinglists/oidcbvno67bx1nck8pzv5q50
