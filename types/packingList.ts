@@ -79,6 +79,7 @@ export class PackingList implements IPackingList {
   _intItemFromDBO(dbItem: DbPackingItem): PackingItem {
     const item: PackingItem = {
       name: dbItem.name,
+      category: dbItem.category,
       dayMultiplier: dbItem.dayMultiplier,
       dayThreshold: dbItem.dayThreshold,
       relevantForWeather: dbItem.relevantForWeather
