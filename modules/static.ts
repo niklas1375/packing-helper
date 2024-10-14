@@ -6,6 +6,8 @@ import {
   deletePackingList as deletePackingListOnDb,
   updatePackingList as updatePackingListOnDb,
   createPackingList,
+  findDistinctListTypes,
+  findPackingListWithItemsById,
 } from "../db/PackingListRepository";
 import {
   NewPackingItem,
@@ -33,7 +35,12 @@ export function getPackingListsOfType(type: string) {
 
 // single GET for packing lists
 export async function getSinglePackingList(req: Request, res: Response) {
-  const packingList = await findPackingListById(req.params.listId);
+  let packingList;
+  if (req.query.expand === "items") {
+    packingList = await findPackingListWithItemsById(req.params.listId);
+  } else {
+    packingList = await findPackingListById(req.params.listId);
+  }
   res.json(packingList);
 }
 
