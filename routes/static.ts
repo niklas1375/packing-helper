@@ -20,6 +20,7 @@ export const register = (app: Router) => {
     // generic routes
     app.get('/packinglists/:listId', staticContent.getSinglePackingList);
     app.get('/packinglists/:listId/items', staticContent.getItemsForPackingList);
+    app.get('/packinglists/:listId/items/:itemId', staticContent.getSinglePackingItem);
     app.post('/packinglists/:listId/items', staticContent.createPackingItemForList);
     app.patch('/packinglists/:listId', staticContent.updatePackingList);
     app.patch('/packinglists/:listId/items/:itemId', staticContent.updatePackingItemForList);

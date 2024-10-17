@@ -19,6 +19,7 @@ import {
 import {
   createPackingItem,
   deletePackingItem,
+  findPackingItemById,
   findPackingItemsForList,
   updatePackingItem,
 } from "../db/PackingItemRepository";
@@ -163,6 +164,12 @@ export async function deletePackingItemFromList(req: Request, res: Response) {
     res.status(500);
     res.send("Internal Server Error");
   }
+}
+
+// GET for packing list item
+export async function getSinglePackingItem(req: Request, res: Response) {
+  const packingItem = await findPackingItemById(req.params.itemId);
+  res.json(packingItem);
 }
 
 export async function getPackingListTypes(_: Request, res: Response) {
