@@ -88,3 +88,13 @@ Content-Type: application/json
         }
     }
 }
+###
+
+PATCH http://localhost:3000/api/packinglists/cm0167zsu002ddlne3q0dftko/items/cm0167zsu001adlnexsylzga4
+Content-Type: application/json
+
+{
+    "relevantForWeather": [
+        "cm0167ztb006bdlne8dy88htm"
+    ]
+}

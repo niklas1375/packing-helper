@@ -13,6 +13,7 @@ import {
   NewPackingItem,
   NewPackingList,
   PackingItemUpdate,
+  PackingItem as DbPackingItem,
   PackingList,
   PackingListUpdate,
 } from "../types/db/types";
@@ -23,6 +24,7 @@ import {
   findPackingItemsForList,
   updatePackingItem,
 } from "../db/PackingItemRepository";
+import { PackingItem } from "../types/packingItem";
 
 // mass GET for packing lists
 export function getPackingListsOfType(type: string) {
@@ -47,8 +49,20 @@ export async function getSinglePackingList(req: Request, res: Response) {
 
 // mass GET for packing list items
 export async function getItemsForPackingList(req: Request, res: Response) {
-  const packingItems = await findPackingItemsForList(req.params.listId);
-  res.json(packingItems);
+  const packingItems: DbPackingItem[] = await findPackingItemsForList(
+    req.params.listId
+  );
+  const transformedPackingItems: PackingItem[] = packingItems.map((item) => {
+    const newItem: PackingItem = {
+      name: item.name,
+      category: item.category,
+    };
+    if (item.relevantForWeather) {
+      newItem.relevantForWeather = item.relevantForWeather.split(",");
+    }
+    return newItem;
+  });
+  res.json(transformedPackingItems);
 }
 
 // creation POST for packing lists
@@ -84,6 +98,9 @@ export async function createPackingItemForList(req: Request, res: Response) {
   newPackingItem.listId = req.params.listId;
   newPackingItem.item_id = createId();
   newPackingItem.updated_at = new Date().toISOString();
+  if (newPackingItem.relevantForWeather) {
+    newPackingItem.relevantForWeather = req.body.relevantForWeather.join(",");
+  }
   try {
     const createdItem = await createPackingItem(newPackingItem);
     res.status(201);
@@ -127,6 +144,9 @@ export async function updatePackingItemForList(req: Request, res: Response) {
   delete updateObject.item_id;
   delete updateObject.listId;
   updateObject.updated_at = new Date().toISOString();
+  if (req.body.relevantForWeather) {
+    updateObject.relevantForWeather = req.body.relevantForWeather.join(",");
+  }
   try {
     await updatePackingItem(updateId, updateObject);
     res.status(204);
@@ -168,8 +188,22 @@ export async function deletePackingItemFromList(req: Request, res: Response) {
 
 // GET for packing list item
 export async function getSinglePackingItem(req: Request, res: Response) {
-  const packingItem = await findPackingItemById(req.params.itemId);
-  res.json(packingItem);
+  const packingItem: DbPackingItem | undefined = await findPackingItemById(
+    req.params.itemId
+  );
+  if (!packingItem) {
+    res.status(404);
+    res.send();
+    return;
+  }
+  const newItem: PackingItem = {
+    name: packingItem.name,
+    category: packingItem.category,
+  };
+  if (packingItem.relevantForWeather) {
+    newItem.relevantForWeather = packingItem.relevantForWeather.split(",");
+  }
+  res.json(newItem);
 }
 
 export async function getPackingListTypes(_: Request, res: Response) {
