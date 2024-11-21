@@ -95,6 +95,6 @@ Content-Type: application/json
 
 {
     "relevantForWeather": [
-        "cm0167ztb006bdlne8dy88htm"
+        "cold"
     ]
 }
