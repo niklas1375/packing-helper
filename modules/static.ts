@@ -52,16 +52,9 @@ export async function getItemsForPackingList(req: Request, res: Response) {
   const packingItems: DbPackingItem[] = await findPackingItemsForList(
     req.params.listId
   );
-  const transformedPackingItems: PackingItem[] = packingItems.map((item) => {
-    const newItem: PackingItem = {
-      name: item.name,
-      category: item.category,
-    };
-    if (item.relevantForWeather) {
-      newItem.relevantForWeather = item.relevantForWeather.split(",");
-    }
-    return newItem;
-  });
+  const transformedPackingItems: PackingItem[] = packingItems.map((item) =>
+    _transformPackingItemfromSqlite(item)
+  );
   res.json(transformedPackingItems);
 }
 
@@ -98,11 +91,9 @@ export async function createPackingItemForList(req: Request, res: Response) {
   newPackingItem.listId = req.params.listId;
   newPackingItem.item_id = createId();
   newPackingItem.updated_at = new Date().toISOString();
-  if (newPackingItem.relevantForWeather) {
-    newPackingItem.relevantForWeather = req.body.relevantForWeather.join(",");
-  }
+  const sqliteObject: NewPackingItem = _transformNewPackingItemToSqlite(newPackingItem);
   try {
-    const createdItem = await createPackingItem(newPackingItem);
+    const createdItem = await createPackingItem(sqliteObject);
     res.status(201);
     res.json(createdItem);
   } catch (error) {
@@ -144,11 +135,9 @@ export async function updatePackingItemForList(req: Request, res: Response) {
   delete updateObject.item_id;
   delete updateObject.listId;
   updateObject.updated_at = new Date().toISOString();
-  if (req.body.relevantForWeather) {
-    updateObject.relevantForWeather = req.body.relevantForWeather.join(",");
-  }
+  const sqliteUpdateObject = _transformPackingItemUpdateToSqlite(updateObject);
   try {
-    await updatePackingItem(updateId, updateObject);
+    await updatePackingItem(updateId, sqliteUpdateObject);
     res.status(204);
     res.send();
   } catch (error) {
@@ -196,13 +185,7 @@ export async function getSinglePackingItem(req: Request, res: Response) {
     res.send();
     return;
   }
-  const newItem: PackingItem = {
-    name: packingItem.name,
-    category: packingItem.category,
-  };
-  if (packingItem.relevantForWeather) {
-    newItem.relevantForWeather = packingItem.relevantForWeather.split(",");
-  }
+  const newItem: PackingItem = _transformPackingItemfromSqlite(packingItem);
   res.json(newItem);
 }
 
@@ -230,4 +213,51 @@ function _getTypesFromJSON(typesJSON: PackingList[]) {
       // ignore equal names --> doesn't matter if they appear after each other as long as they're together
       return itemA.name > itemB.name ? 1 : -1;
     });
+}
+
+function _transformPackingItemUpdateToSqlite(
+  input: PackingItemUpdate
+): PackingItemUpdate {
+  Object.keys(input).forEach((key) => {
+    if (typeof (input as any)[key] === "boolean") {
+      (input as any)[key] = (input as any)[key] ? 1 : 0;
+    }
+    if (Array.isArray((input as any)[key])) {
+      (input as any)[key] = (input as any)[key].join(",");
+    }
+  });
+  return input;
+}
+
+function _transformNewPackingItemToSqlite(
+  input: NewPackingItem
+): NewPackingItem {
+  Object.keys(input).forEach((key) => {
+    if (typeof (input as any)[key] === "boolean") {
+      (input as any)[key] = (input as any)[key] ? 1 : 0;
+    }
+    if (Array.isArray((input as any)[key])) {
+      (input as any)[key] = (input as any)[key].join(",");
+    }
+  });
+  return input;
+}
+
+function _transformPackingItemfromSqlite(input: DbPackingItem): PackingItem {
+  const newItem: PackingItem = {
+    name: input.name,
+    category: input.category,
+  };
+  if (input.relevantForWeather) {
+    newItem.relevantForWeather = input.relevantForWeather.split(",");
+  }
+  if (input.additionalLabels) {
+    newItem.additionalLabels = input.additionalLabels.split(",");
+  }
+  newItem.onlyIfAbroad = !!input.onlyIfAbroad;
+  newItem.onlyIfWeekday = !!input.onlyIfWeekday;
+  newItem.afterReturn = !!input.afterReturn;
+  newItem.addTripNameToTask = !!input.addTripNameToTask;
+  // TODO: booleans enttransformieren; beide transformer methoden an entsprechenden Stellen verwenden
+  return newItem;
 }
