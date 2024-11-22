@@ -15,3 +15,7 @@ UPDATE PackingItem set relevantForWeather = 'cold' where name = 'Pro Vest';
 UPDATE PackingItem set relevantForWeather = 'cold' where name = 'Laufhandschuhe';
 UPDATE PackingItem set relevantForWeather = 'cold' where name = 'Buff';
 UPDATE PackingItem set relevantForWeather = 'wet' where name = 'Regenjacke';
+
+
+--SQLite
+SELECT * from PackingItem where dayThreshold is not null

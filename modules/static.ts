@@ -91,7 +91,8 @@ export async function createPackingItemForList(req: Request, res: Response) {
   newPackingItem.listId = req.params.listId;
   newPackingItem.item_id = createId();
   newPackingItem.updated_at = new Date().toISOString();
-  const sqliteObject: NewPackingItem = _transformNewPackingItemToSqlite(newPackingItem);
+  const sqliteObject: NewPackingItem =
+    _transformNewPackingItemToSqlite(newPackingItem);
   try {
     const createdItem = await createPackingItem(sqliteObject);
     res.status(201);
@@ -258,6 +259,10 @@ function _transformPackingItemfromSqlite(input: DbPackingItem): PackingItem {
   newItem.onlyIfWeekday = !!input.onlyIfWeekday;
   newItem.afterReturn = !!input.afterReturn;
   newItem.addTripNameToTask = !!input.addTripNameToTask;
-  // TODO: booleans enttransformieren; beide transformer methoden an entsprechenden Stellen verwenden
+
+  // unnecessary to transform
+  newItem.dayMultiplier = input.dayMultiplier;
+  newItem.dayThreshold = input.dayThreshold;
+  newItem.dueShift = input.dueShift;
   return newItem;
 }
