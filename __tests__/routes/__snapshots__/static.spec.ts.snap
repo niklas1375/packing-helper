@@ -111,19 +111,19 @@ exports[`Static routes Get all triptypes 1`] = `
 exports[`Static routes Get all weathers 1`] = `
 [
   {
-    "key": "cm0167ztb006bdlne8dy88htm",
+    "key": "cold",
     "name": "Kaltes Wetter",
   },
   {
-    "key": "cm0167ztf006udlneg02yiqhy",
+    "key": "wet",
     "name": "Nasses Wetter",
   },
   {
-    "key": "cm0167ztc006jdlneperyc9zk",
+    "key": "sunny",
     "name": "Sonniges Wetter",
   },
   {
-    "key": "cm0167ztd006ndlnegyoem91r",
+    "key": "warm",
     "name": "Warmes Wetter",
   },
 ]

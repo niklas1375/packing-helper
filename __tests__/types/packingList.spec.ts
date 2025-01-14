@@ -26,6 +26,7 @@ describe("Test packingList functions", () => {
     packingList.toiletries.content = [
       {
         name: "Rasierer",
+        category: "toiletries",
         dayThreshold: 4,
       },
     ];
@@ -49,6 +50,7 @@ describe("Test packingList functions", () => {
     packingList.toiletries.content = [
       {
         name: "Rasierer",
+        category: "toiletries",
         dayThreshold: 4,
       },
     ];
@@ -82,6 +84,7 @@ describe("Test packingList functions", () => {
     packingList.toiletries.content = [
       {
         name: "Rasierer",
+        category: "toiletries",
         dayThreshold: 4,
       },
     ];
@@ -115,6 +118,7 @@ describe("Test packingList functions", () => {
     packingList.clothing.content = [
       {
         name: "Socken",
+        category: "clothing",
         dayMultiplier: 1,
       },
     ];
@@ -144,6 +148,7 @@ describe("Test packingList functions", () => {
     packingListB.clothing.content = [
       {
         name: "Regenjacke",
+        category: "clothing",
         relevantForWeather: ["wet"],
       },
     ];
@@ -159,6 +164,7 @@ describe("Test packingList functions", () => {
     packingListB.clothing.content = [
       {
         name: "Regenjacke",
+        category: "clothing",
         relevantForWeather: ["wet"],
       },
     ];
@@ -168,6 +174,7 @@ describe("Test packingList functions", () => {
     expect(packingListA.clothing.content).toEqual([
       {
         name: "Regenjacke",
+        category: "clothing",
         relevantForWeather: ["wet"],
       },
     ]);
@@ -183,6 +190,7 @@ describe("Test packingList functions", () => {
     packingList.organisational.content = [
       {
         name: "OOO erstellen",
+        category: "organisational",
         onlyIfWeekday: true,
         additionalLabels: ["Arbeit", "Reisen"],
         addTripNameToTask: true,
@@ -210,6 +218,7 @@ describe("Test packingList functions", () => {
     packingList.organisational.content = [
       {
         name: "OOO erstellen",
+        category: "organisational",
         onlyIfWeekday: true,
         additionalLabels: ["Arbeit", "Reisen"],
         addTripNameToTask: true,

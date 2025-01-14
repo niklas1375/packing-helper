@@ -88,3 +88,16 @@ Content-Type: application/json
         }
     }
 }
+###
+
+PATCH http://localhost:3000/api/packinglists/cm0167zsu002ddlne3q0dftko/items/cm0167zsu001adlnexsylzga4
+Content-Type: application/json
+
+{
+    "relevantForWeather": [
+        "cold"
+    ]
+}
+
+###
+GET http://localhost:4200/api/packinglists/cm0167zsu001tdlnee4h4wdkx/items/cm0167zsv003mdlnes60pr24f

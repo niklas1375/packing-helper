@@ -7,6 +7,10 @@ import {
 import { db } from "./database";
 import { jsonArrayFrom } from "kysely/helpers/sqlite";
 
+export async function findDistinctListTypes() {
+  return await db.selectFrom("PackingList").select("type").distinct().execute();
+}
+
 export async function findPackingListById(id: string) {
   return await db
     .selectFrom("PackingList")
@@ -79,11 +83,10 @@ export async function createPackingList(packingList: NewPackingList) {
 }
 
 export async function deletePackingList(id: string) {
-  return await db
-    .deleteFrom("PackingList")
-    .where("id", "=", id)
-    .returningAll()
-    .executeTakeFirst();
+  // delete items first
+  await db.deleteFrom("PackingItem").where("listId", "=", id).execute();
+  // then delete the list
+  return await db.deleteFrom("PackingList").where("id", "=", id).execute();
 }
 
 function packingItems(listId: Expression<string>) {

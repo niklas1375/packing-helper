@@ -14,6 +14,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -22,6 +23,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -30,6 +32,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -38,6 +41,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -51,6 +55,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -64,6 +69,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -77,6 +83,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -85,6 +92,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -97,6 +105,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -106,6 +115,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -115,6 +125,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -123,6 +134,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -131,6 +143,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -139,6 +152,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -147,6 +161,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -160,6 +175,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -168,6 +184,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -176,6 +193,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -189,6 +207,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -197,6 +216,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -205,6 +225,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -213,6 +234,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -221,6 +243,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -229,6 +252,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -237,6 +261,7 @@ exports[`Compiler routes Consecutive Test with empty choices of activities and w
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -263,6 +288,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -271,6 +297,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -279,6 +306,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -287,6 +315,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -295,6 +324,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -303,6 +333,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -316,6 +347,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -329,6 +361,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -337,6 +370,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -345,6 +379,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -353,6 +388,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -361,6 +397,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -369,6 +406,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -377,6 +415,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -385,6 +424,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -393,6 +433,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -401,6 +442,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -409,6 +451,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -417,6 +460,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -430,6 +474,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -438,6 +483,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -450,6 +496,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -459,6 +506,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -468,6 +516,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -476,6 +525,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -489,6 +539,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -497,6 +548,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -505,6 +557,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -513,6 +566,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -521,6 +575,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -529,6 +584,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -537,6 +593,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -545,6 +602,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -558,6 +616,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -566,6 +625,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -574,6 +634,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -582,6 +643,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -590,6 +652,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -598,6 +661,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -606,6 +670,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -614,6 +679,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -622,6 +688,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -630,6 +697,7 @@ exports[`Compiler routes Test accomodation type camping with empty choices 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -656,6 +724,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -664,6 +733,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -672,6 +742,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -680,6 +751,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -693,6 +765,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -701,6 +774,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -714,6 +788,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -722,6 +797,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -730,6 +806,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -738,6 +815,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -746,6 +824,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -759,6 +838,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -767,6 +847,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -779,6 +860,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -788,6 +870,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -797,6 +880,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -805,6 +889,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -813,6 +898,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -821,6 +907,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -834,6 +921,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -842,6 +930,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -850,6 +939,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -858,6 +948,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -871,6 +962,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -879,6 +971,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -887,6 +980,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -895,6 +989,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -903,6 +998,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -911,6 +1007,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -919,6 +1016,7 @@ exports[`Compiler routes Test accomodation type huette with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -945,6 +1043,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -953,6 +1052,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -961,6 +1061,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -969,6 +1070,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -982,6 +1084,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -999,6 +1102,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1007,6 +1111,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1019,6 +1124,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -1028,6 +1134,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -1037,6 +1144,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1045,6 +1153,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1053,6 +1162,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1061,6 +1171,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1074,6 +1185,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1082,6 +1194,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1090,6 +1203,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1103,6 +1217,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1111,6 +1226,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1119,6 +1235,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1127,6 +1244,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1135,6 +1253,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1143,6 +1262,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1151,6 +1271,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1159,6 +1280,7 @@ exports[`Compiler routes Test accomodation type youthhostel with empty choices 1
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1185,6 +1307,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -1193,6 +1316,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -1201,6 +1325,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1209,6 +1334,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1217,6 +1343,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1225,6 +1352,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1233,6 +1361,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1241,6 +1370,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1249,6 +1379,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1262,6 +1393,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1275,6 +1407,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1283,6 +1416,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1291,6 +1425,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1299,6 +1434,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1307,6 +1443,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1315,6 +1452,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1323,6 +1461,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1331,6 +1470,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1339,6 +1479,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1347,6 +1488,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1355,6 +1497,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1363,6 +1506,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1371,6 +1515,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1379,6 +1524,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1387,6 +1533,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1395,6 +1542,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1403,6 +1551,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1416,6 +1565,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1424,6 +1574,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1436,6 +1587,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -1445,6 +1597,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -1454,6 +1607,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1462,6 +1616,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1470,6 +1625,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1478,6 +1634,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1486,6 +1643,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1499,6 +1657,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1507,6 +1666,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1515,6 +1675,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1523,6 +1684,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1536,6 +1698,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1544,6 +1707,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1552,6 +1716,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1560,6 +1725,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1568,6 +1734,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1576,6 +1743,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1584,6 +1752,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1592,6 +1761,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1600,6 +1770,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1608,6 +1779,7 @@ exports[`Compiler routes Test combining two or more activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1634,6 +1806,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -1642,6 +1815,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -1650,6 +1824,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1658,6 +1833,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1666,6 +1842,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1674,6 +1851,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1682,6 +1860,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1690,6 +1869,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1698,6 +1878,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1711,6 +1892,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1724,6 +1906,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1732,6 +1915,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1740,6 +1924,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1748,6 +1933,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1756,6 +1942,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1764,6 +1951,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1772,6 +1960,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1780,6 +1969,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1788,6 +1978,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1796,6 +1987,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1804,6 +1996,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1812,6 +2005,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1820,6 +2014,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1828,6 +2023,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1836,6 +2032,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1844,6 +2041,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1852,6 +2050,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1865,6 +2064,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1873,6 +2073,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1885,6 +2086,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -1894,6 +2096,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -1903,6 +2106,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1911,6 +2115,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1919,6 +2124,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1927,6 +2133,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1935,6 +2142,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1948,6 +2156,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1956,6 +2165,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1964,6 +2174,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1972,6 +2183,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1985,6 +2197,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -1993,6 +2206,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2001,6 +2215,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2009,6 +2224,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2017,6 +2233,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2025,6 +2242,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2033,6 +2251,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2041,6 +2260,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2049,6 +2269,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2057,6 +2278,7 @@ exports[`Compiler routes Test combining two or more activities while ignoring du
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2083,6 +2305,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2091,6 +2314,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2099,6 +2323,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2107,26 +2332,11 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Schuhe",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Kurze Kleidung",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Badehose",
         "relevantForWeather": [],
       },
     ],
@@ -2136,6 +2346,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2146,30 +2357,14 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
     "name": "Unterhaltung",
   },
   "gear": {
-    "content": [
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Kappe",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Trinkflasche",
-        "relevantForWeather": [],
-      },
-    ],
+    "content": [],
     "name": "Ausrüstung",
   },
   "organisational": {
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2178,6 +2373,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2190,6 +2386,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -2199,6 +2396,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -2208,6 +2406,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2216,6 +2415,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2224,6 +2424,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2232,6 +2433,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2245,6 +2447,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2253,6 +2456,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2261,18 +2465,11 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Wasser für Fahrt",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnenbrille",
         "relevantForWeather": [],
       },
     ],
@@ -2282,6 +2479,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2290,6 +2488,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2298,6 +2497,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2306,6 +2506,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2314,6 +2515,7 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2322,26 +2524,11 @@ exports[`Compiler routes Test combining two or more weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Gleitgel",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnencreme",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Stichheiler",
         "relevantForWeather": [],
       },
     ],
@@ -2364,6 +2551,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2372,6 +2560,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2380,6 +2569,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2388,26 +2578,11 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Schuhe",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Kurze Kleidung",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Badehose",
         "relevantForWeather": [],
       },
     ],
@@ -2417,6 +2592,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2427,30 +2603,14 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
     "name": "Unterhaltung",
   },
   "gear": {
-    "content": [
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Kappe",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Trinkflasche",
-        "relevantForWeather": [],
-      },
-    ],
+    "content": [],
     "name": "Ausrüstung",
   },
   "organisational": {
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2459,6 +2619,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2471,6 +2632,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -2480,6 +2642,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -2489,6 +2652,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2497,6 +2661,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2505,6 +2670,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2513,6 +2679,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2526,6 +2693,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2534,6 +2702,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2542,18 +2711,11 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Wasser für Fahrt",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnenbrille",
         "relevantForWeather": [],
       },
     ],
@@ -2563,6 +2725,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2571,6 +2734,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2579,6 +2743,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2587,6 +2752,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2595,6 +2761,7 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2603,26 +2770,11 @@ exports[`Compiler routes Test combining two or more weathers while ignoring dupl
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Gleitgel",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnencreme",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Stichheiler",
         "relevantForWeather": [],
       },
     ],
@@ -2645,6 +2797,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2653,6 +2806,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2661,6 +2815,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2669,6 +2824,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2682,6 +2838,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2699,6 +2856,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2707,6 +2865,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2719,6 +2878,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -2728,6 +2888,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -2737,6 +2898,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2750,6 +2912,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2763,6 +2926,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2771,6 +2935,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2779,6 +2944,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2787,6 +2953,7 @@ exports[`Compiler routes Test empty choices of activities and weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2813,6 +2980,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2821,6 +2989,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -2829,6 +2998,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2837,6 +3007,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2850,6 +3021,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2867,6 +3039,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2875,6 +3048,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2887,6 +3061,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -2896,6 +3071,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -2905,6 +3081,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2913,6 +3090,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2921,6 +3099,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2929,6 +3108,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2942,6 +3122,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2950,6 +3131,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2958,6 +3140,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2971,6 +3154,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2979,6 +3163,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2987,6 +3172,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -2995,6 +3181,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3003,6 +3190,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3011,6 +3199,7 @@ exports[`Compiler routes Test empty choices of activities and weather 2`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3037,6 +3226,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3045,6 +3235,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3053,6 +3244,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3061,6 +3253,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3069,6 +3262,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3077,6 +3271,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3085,6 +3280,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3098,6 +3294,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3111,6 +3308,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3119,6 +3317,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3127,6 +3326,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3135,6 +3335,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3143,6 +3344,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3151,6 +3353,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3159,6 +3362,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3167,6 +3371,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3180,6 +3385,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3188,6 +3394,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3200,6 +3407,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -3209,6 +3417,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -3218,6 +3427,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3226,6 +3436,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3234,6 +3445,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3242,6 +3454,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3255,6 +3468,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3263,6 +3477,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3271,6 +3486,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3279,6 +3495,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3292,6 +3509,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3300,6 +3518,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3308,6 +3527,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3316,6 +3536,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3324,6 +3545,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3332,6 +3554,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3340,6 +3563,7 @@ exports[`Compiler routes Test to ignore duplicate activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3366,6 +3590,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3374,6 +3599,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3382,6 +3608,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3390,6 +3617,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3403,6 +3631,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3413,22 +3642,14 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
     "name": "Unterhaltung",
   },
   "gear": {
-    "content": [
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Kappe",
-        "relevantForWeather": [],
-      },
-    ],
+    "content": [],
     "name": "Ausrüstung",
   },
   "organisational": {
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3437,6 +3658,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3449,6 +3671,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -3458,6 +3681,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -3467,6 +3691,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3475,6 +3700,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3483,6 +3709,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3491,6 +3718,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3504,6 +3732,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3512,6 +3741,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3520,18 +3750,11 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Wasser für Fahrt",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnenbrille",
         "relevantForWeather": [],
       },
     ],
@@ -3541,6 +3764,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3549,6 +3773,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3557,6 +3782,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3565,6 +3791,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3573,6 +3800,7 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3581,18 +3809,11 @@ exports[`Compiler routes Test to ignore duplicate weathers 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Gleitgel",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnencreme",
         "relevantForWeather": [],
       },
     ],
@@ -3615,6 +3836,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3623,6 +3845,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3631,6 +3854,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3639,6 +3863,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3652,6 +3877,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3669,6 +3895,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3677,6 +3904,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3689,6 +3917,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -3698,6 +3927,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -3707,6 +3937,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3715,6 +3946,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3723,6 +3955,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3731,6 +3964,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3744,6 +3978,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3752,6 +3987,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3760,6 +3996,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3773,6 +4010,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3781,6 +4019,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3789,6 +4028,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3797,6 +4037,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3805,6 +4046,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3813,6 +4055,7 @@ exports[`Compiler routes Test to ignore nonsense activities 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3839,6 +4082,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3847,6 +4091,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -3855,6 +4100,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3863,6 +4109,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3871,6 +4118,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3879,6 +4127,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3887,6 +4136,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3900,6 +4150,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3913,6 +4164,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3921,6 +4173,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3929,6 +4182,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3937,6 +4191,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3945,6 +4200,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3953,6 +4209,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3961,6 +4218,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3969,6 +4227,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3982,6 +4241,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -3990,6 +4250,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4002,6 +4263,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -4011,6 +4273,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -4020,6 +4283,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4028,6 +4292,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4036,6 +4301,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4044,6 +4310,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4057,6 +4324,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4065,6 +4333,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4073,6 +4342,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4081,6 +4351,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4094,6 +4365,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4102,6 +4374,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4110,6 +4383,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4118,6 +4392,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4126,6 +4401,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4134,6 +4410,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4142,6 +4419,7 @@ exports[`Compiler routes Test to ignore nonsense activities mixed with actual 1`
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4168,6 +4446,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4176,6 +4455,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4184,6 +4464,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4192,6 +4473,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4205,6 +4487,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4222,6 +4505,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4230,6 +4514,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4242,6 +4527,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -4251,6 +4537,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -4260,6 +4547,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4268,6 +4556,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4276,6 +4565,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4284,6 +4574,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4297,6 +4588,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4305,6 +4597,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4313,6 +4606,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4326,6 +4620,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4334,6 +4629,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4342,6 +4638,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4350,6 +4647,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4358,6 +4656,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4366,6 +4665,7 @@ exports[`Compiler routes Test to ignore nonsense weather 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4392,6 +4692,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4400,6 +4701,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4408,6 +4710,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4416,6 +4719,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4429,6 +4733,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4439,22 +4744,14 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
     "name": "Unterhaltung",
   },
   "gear": {
-    "content": [
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Kappe",
-        "relevantForWeather": [],
-      },
-    ],
+    "content": [],
     "name": "Ausrüstung",
   },
   "organisational": {
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4463,6 +4760,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4475,6 +4773,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -4484,6 +4783,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -4493,6 +4793,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4501,6 +4802,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4509,6 +4811,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4517,6 +4820,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4530,6 +4834,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4538,6 +4843,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4546,18 +4852,11 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Wasser für Fahrt",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnenbrille",
         "relevantForWeather": [],
       },
     ],
@@ -4567,6 +4866,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4575,6 +4875,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4583,6 +4884,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4591,6 +4893,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4599,6 +4902,7 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4607,18 +4911,11 @@ exports[`Compiler routes Test to ignore nonsense weather mixed with actual 1`] =
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Gleitgel",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Sonnencreme",
         "relevantForWeather": [],
       },
     ],
@@ -4641,6 +4938,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4649,6 +4947,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4657,6 +4956,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4665,6 +4965,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4678,6 +4979,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4691,6 +4993,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4699,6 +5002,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4712,6 +5016,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4720,6 +5025,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4732,6 +5038,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -4741,6 +5048,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -4750,6 +5058,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4758,6 +5067,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4766,6 +5076,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4774,6 +5085,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4782,6 +5094,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4795,6 +5108,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4803,6 +5117,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4811,6 +5126,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4824,6 +5140,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4832,6 +5149,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4840,6 +5158,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4848,6 +5167,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4856,6 +5176,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4864,6 +5185,7 @@ exports[`Compiler routes Test transport type coach/bus with empty choices 1`] = 
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4890,6 +5212,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4898,6 +5221,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -4906,6 +5230,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4914,6 +5239,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4927,6 +5253,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4940,6 +5267,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4948,6 +5276,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4961,6 +5290,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4969,6 +5299,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -4981,6 +5312,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -4990,6 +5322,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -4999,6 +5332,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5007,6 +5341,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5015,6 +5350,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5023,6 +5359,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5031,6 +5368,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5039,6 +5377,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5052,6 +5391,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5065,6 +5405,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5073,6 +5414,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5081,6 +5423,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5089,6 +5432,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5097,6 +5441,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5105,6 +5450,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5113,6 +5459,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5121,6 +5468,7 @@ exports[`Compiler routes Test transport type flight with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5147,6 +5495,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -5155,6 +5504,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -5163,6 +5513,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5171,6 +5522,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5179,6 +5531,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5187,6 +5540,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5200,6 +5554,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5213,6 +5568,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5221,6 +5577,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5234,6 +5591,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5242,6 +5600,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5254,6 +5613,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -5263,6 +5623,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -5272,6 +5633,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5280,6 +5642,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5288,6 +5651,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5296,6 +5660,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5304,6 +5669,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5313,6 +5679,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5326,6 +5693,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5334,6 +5702,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5342,6 +5711,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5355,6 +5725,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5363,6 +5734,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5371,6 +5743,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5379,6 +5752,7 @@ exports[`Compiler routes Test trip type business with empty choices 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5405,6 +5779,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -5413,6 +5788,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": 1,
         "dayThreshold": null,
         "dueShift": null,
@@ -5421,6 +5797,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5429,6 +5806,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5437,6 +5815,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5445,6 +5824,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5453,6 +5833,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5461,26 +5842,11 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "clothing",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
         "name": "Laufsocken",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Regenjacke",
-        "relevantForWeather": [],
-      },
-      {
-        "additionalLabels": [],
-        "dayMultiplier": null,
-        "dayThreshold": null,
-        "dueShift": null,
-        "name": "Regenfeste Schuhe",
         "relevantForWeather": [],
       },
     ],
@@ -5490,6 +5856,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "entertainment",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5503,6 +5870,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5511,6 +5879,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5519,6 +5888,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "gear",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5532,6 +5902,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5540,6 +5911,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5552,6 +5924,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
           "Arbeit",
           "Reisen",
         ],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": -2,
@@ -5561,6 +5934,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": 0,
@@ -5570,6 +5944,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       {
         "additionalLabels": [],
         "afterReturn": true,
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5578,6 +5953,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5586,6 +5962,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5594,6 +5971,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "organisational",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5607,6 +5985,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5615,6 +5994,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5623,6 +6003,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "other",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5636,6 +6017,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
     "content": [
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5644,6 +6026,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5652,6 +6035,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5660,6 +6044,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5668,6 +6053,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
@@ -5676,6 +6062,7 @@ exports[`Compiler routes Test weather dependent items 1`] = `
       },
       {
         "additionalLabels": [],
+        "category": "toiletries",
         "dayMultiplier": null,
         "dayThreshold": null,
         "dueShift": null,
