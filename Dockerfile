@@ -14,5 +14,5 @@ RUN npm install --omit=dev
 COPY --from=packing-helper-build ./app/dist ./dist
 EXPOSE 3000
 ENV CONTAINER_RUN 1
-# TODO: ENV DATABASE_URL "/path/to/sqlite/db/on/pi --> hosted!"
+ENV DATABASE_URL "/dev/dev.db"
 CMD ["npm", "start"]
