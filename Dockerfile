@@ -10,7 +10,7 @@ RUN npm run build
 FROM docker.io/node:lts
 WORKDIR /app
 COPY package* ./
-RUN npm install --omit=dev
+RUN npm ci --omit=dev
 COPY --from=packing-helper-build ./app/dist ./dist
 EXPOSE 3000
 ENV CONTAINER_RUN=1
