@@ -1,5 +1,5 @@
 # stage 1
-FROM docker.io/node:lts as packing-helper-build
+FROM docker.io/node:lts AS packing-helper-build
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
