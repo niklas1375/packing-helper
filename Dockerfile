@@ -13,6 +13,6 @@ COPY package* ./
 RUN npm install --omit=dev
 COPY --from=packing-helper-build ./app/dist ./dist
 EXPOSE 3000
-ENV CONTAINER_RUN 1
-ENV DATABASE_URL "/dev/dev.db"
+ENV CONTAINER_RUN=1
+ENV DATABASE_URL="/dev/dev.db"
 CMD ["npm", "start"]
