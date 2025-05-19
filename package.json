@@ -18,7 +18,7 @@
     "@doist/todoist-api-typescript": "^3.0.3",
     "@paralleldrive/cuid2": "^2.2.2",
     "better-sqlite3": "^11.10.0",
-    "axios": "^1.8.3",
+    "axios": "^1.9.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
