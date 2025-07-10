@@ -28,7 +28,7 @@ describe("Submit Tasks to todoist", () => {
       saveUninitialized: false,
     })
   );
-  mockApp.all("*", function (req, _, next) {
+  mockApp.all(/(.*)/, function (req, _, next) {
     req.session.todoist_token = fallbackTodoistApiToken;
     next();
   });
