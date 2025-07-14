@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@doist/todoist-api-typescript": "^3.0.3",
+    "@doist/todoist-api-typescript": "^5.0.2",
     "@paralleldrive/cuid2": "^2.2.2",
     "better-sqlite3": "^11.10.0",
     "axios": "^1.10.0",
