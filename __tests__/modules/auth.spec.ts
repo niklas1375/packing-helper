@@ -1,7 +1,7 @@
 import { loginRedirect, logout, loginCallback } from "../../modules/auth";
 import { todoistClientId, todoistScopes } from "../../modules/secret-config";
 import { Request, Response } from "express";
-import { v4 as uuid } from "uuid";
+import { createId } from "@paralleldrive/cuid2";
 
 describe("Auth module test", () => {
   /*
@@ -61,11 +61,11 @@ describe("Auth module test", () => {
     // setup
     const req = {
       session: {
-        state_token: uuid(),
+        state_token: createId(),
       },
       query: {
-        state: uuid(),
-        code: uuid(),
+        state: createId(),
+        code: createId(),
       },
     } as any as Request;
     const res = {
