@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --setupFiles dotenv/config",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --setupFiles dotenv/config",
     "update-tests": "jest --updateSnapshot --setupFiles dotenv/config",
     "build": "npx tsc",
     "start": "node dist/index.js",
@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@doist/todoist-api-typescript": "^5.5.0",
-    "@paralleldrive/cuid2": "^3.3.0",
+    "@paralleldrive/cuid2": "^2.3.1",
     "better-sqlite3": "^11.10.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
