@@ -1,6 +1,5 @@
-import axios from "axios";
 import { Request, Response } from "express";
-import { v4 as uuid } from "uuid";
+import { createId } from "@paralleldrive/cuid2";
 import {
   todoistClientId,
   todoistClientSecret,
@@ -15,7 +14,7 @@ export function loginRedirect(req: Request, res: Response) {
     });
     return;
   }
-  const stateUUID = uuid();
+  const stateUUID = createId();
   req.session.state_token = stateUUID;
   res.json({
     loggedIn: false,
@@ -36,20 +35,33 @@ export async function loginCallback(req: Request, res: Response) {
     return;
   }
 
-  await axios
-    .post("https://todoist.com/oauth/access_token", {
-      client_id: todoistClientId,
-      client_secret: todoistClientSecret,
-      code: code,
-    })
-    .then((response) => {
-      req.session.todoist_token = response.data.access_token;
-      res.redirect("/");
-    })
-    .catch((response) => {
-      console.log(response.data?.error || response);
-      // TODO: error redirect?
+  try {
+    const response = await fetch("https://todoist.com/oauth/access_token", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        client_id: todoistClientId,
+        client_secret: todoistClientSecret,
+        code: code,
+      }),
     });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => null);
+      throw errorData || response;
+    }
+
+    const data = await response.json();
+
+    req.session.todoist_token = data.access_token;
+    res.redirect("/");
+  } catch (error) {
+    console.log((error as any)?.error || error);
+    // TODO: error redirect?
+  }
+
 }
 
 export function logout(req: Request, res: Response) {
