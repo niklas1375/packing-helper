@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Request, Response } from "express";
-import { v4 as uuid } from "uuid";
+import { createId } from "@paralleldrive/cuid2";
 import {
   todoistClientId,
   todoistClientSecret,
@@ -15,7 +15,7 @@ export function loginRedirect(req: Request, res: Response) {
     });
     return;
   }
-  const stateUUID = uuid();
+  const stateUUID = createId();
   req.session.state_token = stateUUID;
   res.json({
     loggedIn: false,
