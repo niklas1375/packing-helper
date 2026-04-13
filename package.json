@@ -19,13 +19,13 @@
     "@paralleldrive/cuid2": "^2.3.1",
     "better-sqlite3": "^12.6.2",
     "dotenv": "^17.2.3",
-    "express": "^5.1.0",
+    "express": "^5.2.1",
     "express-session": "^1.18.2",
     "kysely": "^0.28.8"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.12",
-    "@types/express": "^5.0.3",
+    "@types/express": "^5.0.6",
     "@types/express-session": "^1.18.1",
     "@types/jest": "^29.5.14",
     "@types/node": "^24.9.1",
