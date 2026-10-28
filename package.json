@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@doist/todoist-api-typescript": "^6.4.0",
+    "@doist/todoist-sdk": "^15.8.0",
     "@paralleldrive/cuid2": "^2.3.1",
-    "better-sqlite3": "^12.6.2",
+    "better-sqlite3": "^13.0.3",
     "dotenv": "^17.4.2",
     "express": "^5.1.0",
     "express-session": "^1.18.2",

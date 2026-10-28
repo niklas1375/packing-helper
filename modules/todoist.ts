@@ -1,4 +1,4 @@
-import { TodoistApi } from "@doist/todoist-api-typescript";
+import { TodoistApi } from "@doist/todoist-sdk";
 import { Request, Response } from "express";
 import { PackingList } from "../types/packingList";
 // import { fallbackTodoistApiToken } from "./secret-config";

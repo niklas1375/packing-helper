@@ -12,7 +12,7 @@ import {
 } from "../../modules/secret-config";
 
 import request from "supertest";
-import { TodoistApi } from "@doist/todoist-api-typescript";
+import { TodoistApi } from "@doist/todoist-sdk";
 
 import "../../jest.setup";
 
