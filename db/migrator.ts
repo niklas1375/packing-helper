@@ -1,7 +1,8 @@
 import * as path from "path";
 import SQLite from "better-sqlite3";
 import { promises as fs } from "fs";
-import { Kysely, Migrator, FileMigrationProvider, SqliteDialect } from "kysely";
+import { Kysely, SqliteDialect } from "kysely";
+import { Migrator, FileMigrationProvider, MigrationResult } from "kysely/dist/migration";
 import { Database } from "../types/db/types";
 
 async function migrateToLatest() {
@@ -23,7 +24,7 @@ async function migrateToLatest() {
 
   const { error, results } = await migrator.migrateToLatest();
 
-  results?.forEach((it) => {
+  results?.forEach((it: MigrationResult) => {
     if (it.status === "Success") {
       console.log(`migration "${it.migrationName}" was executed successfully`);
     } else if (it.status === "Error") {
