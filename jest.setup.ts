@@ -1,7 +1,7 @@
 declare global {
   namespace jest {
     interface Matchers<R> {
-      toBeSubmitResponse(): CustomMatcherResult;
+      toBeSubmitResponse(): { pass: boolean; message: () => string };
     }
   }
 }

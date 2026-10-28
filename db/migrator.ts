@@ -2,7 +2,7 @@ import * as path from "path";
 import SQLite from "better-sqlite3";
 import { promises as fs } from "fs";
 import { Kysely, SqliteDialect } from "kysely";
-import { Migrator, FileMigrationProvider, MigrationResult } from "kysely/dist/migration";
+import { Migrator, FileMigrationProvider, MigrationResult } from "kysely/migration";
 import { Database } from "../types/db/types";
 
 async function migrateToLatest() {
